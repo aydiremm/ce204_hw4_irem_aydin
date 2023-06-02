@@ -1,5 +1,6 @@
 package ce204_hw4_app.Menus;
 
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -136,28 +137,34 @@ public class VendorMenu extends Menu {
 
         // Prompt for car selection
         System.out.print("\nEnter the number of the car to remove: ");
-        int carNumber = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        String carNumberStr = scanner.nextLine();
+        int carNumber;
+        try {
+        	carNumber = Integer.parseInt(carNumberStr);
+        	// Check if the car number is valid
+            if (carNumber >= 1 && carNumber <= cars.size()) {
+                Car carToRemove = cars.get(carNumber - 1);
 
-        // Check if the car number is valid
-        if (carNumber >= 1 && carNumber <= cars.size()) {
-            Car carToRemove = cars.get(carNumber - 1);
-
-            // Remove the car from the list of cars and its associated vendor
-            cars.remove(carToRemove);
-            for (Vendor vendor : vendors) {
-                if (vendor.hasCar(carToRemove)) {
-                    vendor.removeCar(carToRemove);
-                    break;
+                // Remove the car from the list of cars and its associated vendor
+                cars.remove(carToRemove);
+                for (Vendor vendor : vendors) {
+                    if (vendor.hasCar(carToRemove)) {
+                        vendor.removeCar(carToRemove);
+                    }
                 }
+                System.out.println("------------------------------------------------");
+                System.out.println("Car removed successfully!");
+                
+            } else {
+            	System.out.println("------------------------------------------------");
+                System.out.println("Invalid car number!");
             }
-            System.out.println("------------------------------------------------");
-            System.out.println("Car removed successfully!");
-            
-        } else {
+        } catch (Exception e) {
         	System.out.println("------------------------------------------------");
             System.out.println("Invalid car number!");
-        }
+		}
+        
+        
     }
 
 

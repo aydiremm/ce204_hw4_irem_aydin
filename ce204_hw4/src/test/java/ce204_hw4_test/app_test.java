@@ -164,10 +164,11 @@ public class app_test {
      * @details This test simulates user input and verifies that vendor menu option 3 is executed correctly.
      */
 	@Test
-	public void vendorMenuOption3() {
+	public void runVendorMenuOptions() {
 		Main.isRunning = true;
         String input = "44\n3\n1\n1\neconomic\nBMW\nM5\n2020\n1\n1\nR\nR"
         		+ "\n2\n5"
+        		+ "\n2\nInputMismatch"
         		+ "\n2\n1"
         		+ "\n3\n3\n";
 		App app = new App(new Scanner(new StringReader(input)));
