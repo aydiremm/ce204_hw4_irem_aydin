@@ -1,3 +1,12 @@
+/**
+ * @file app_test.java
+ * @brief This file contains the unit tests for the App class.
+ */
+
+/**
+ * @package ce204_hw4_test
+ * @brief This package contains the unit tests for the App class.
+ */
 package ce204_hw4_test;
 
 import org.junit.Assert;
@@ -23,8 +32,24 @@ import java.io.PrintStream;
 import java.io.StringReader;
 import java.util.Scanner;
 
+
+/**
+ * @file app_test.java
+ * @brief This file contains the unit tests for the App class.
+ */
+
+/**
+ * @class app_test
+ * @brief This class contains the unit tests for the App class.
+ */
+
 public class app_test {
 	
+	
+	/**
+     * @brief Test case for the setMenu() method.
+     * @details This test verifies that the setMenu() method sets the selected menu correctly.
+     */
 	@Test
 	public void setMenuTest() {
 		App app = new App(null);
@@ -32,6 +57,11 @@ public class app_test {
 		assertTrue(app.selectedMenu instanceof MainMenu);
 	}
 
+	
+	/**
+     * @brief Test case for the setMainMenu() method.
+     * @details This test verifies that the setMainMenu() method sets the selected menu to the main menu.
+     */
 	@Test
 	public void setMainMenuTest() {
 		App app = new App(null);
@@ -39,6 +69,11 @@ public class app_test {
 	}
 
 	
+	
+	/**
+     * @brief Test case for the setUserMenu() method.
+     * @details This test verifies that the setUserMenu() method sets the selected menu to the user menu.
+     */
 	@Test
 	public void setUserMenuTest() {
 		App app = new App(null);
@@ -46,6 +81,11 @@ public class app_test {
 		assertTrue(app.selectedMenu instanceof UserMenu);
 	}
 	
+	
+	/**
+     * @brief Test case for the setVendorMenu() method.
+     * @details This test verifies that the setVendorMenu() method sets the selected menu to the vendor menu.
+     */
 	@Test
 	public void setVendorMenuTest() {
 		App app = new App(null);
@@ -53,6 +93,11 @@ public class app_test {
 		assertTrue(app.selectedMenu instanceof VendorMenu);
 	}
 
+	
+	/**
+     * @brief Test case for the runMainMenuOptions() method.
+     * @details This test simulates user input and verifies that the main menu options are executed correctly.
+     */
 	@Test
 	public void runMainMenuOptions() {
 		disableConsole();
@@ -62,6 +107,11 @@ public class app_test {
 		assertTrue(true);
 	}
 
+	
+	/**
+     * @brief Test case for the runUserMenuOptions() method.
+     * @details This test simulates user input and verifies that the user menu options are executed correctly.
+     */
 	@Test
 	public void runUserMenuOptions() {
 		Main.isRunning = true;
@@ -109,7 +159,10 @@ public class app_test {
 		
 	}
 	
-	
+	/**
+     * @brief Test case for the vendorMenuOption3() method.
+     * @details This test simulates user input and verifies that vendor menu option 3 is executed correctly.
+     */
 	@Test
 	public void vendorMenuOption3() {
 		Main.isRunning = true;
@@ -123,6 +176,11 @@ public class app_test {
 		Assert.assertTrue(true);		
 	}
 	
+	
+	/**
+     * @brief Test case for the mainClass() method.
+     * @details This test simulates user input and verifies that the main method is executed correctly.
+     */
 	@Test
 	public void mainClass() {
 		Main.isRunning = true;
@@ -142,6 +200,11 @@ public class app_test {
 		Assert.assertTrue(true);
 	}
 	
+	
+	/**
+     * @brief Helper method to disable console output.
+     * @details This method redirects the standard output to a ByteArrayOutputStream to disable console output.
+     */
 	private void disableConsole() {
 		System.setOut(new PrintStream(new ByteArrayOutputStream()));
 	}

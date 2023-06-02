@@ -89,10 +89,21 @@ public abstract class Car {
         return year;
     }
     
+    /**
+     * @brief Sets the vendor of the car.
+     *
+     * @return The vendor of the car.
+     */
     public void setVendor(Vendor vendor) {
     	this.vendor = vendor;
     }
     
+    
+    /**
+     * @brief Gets the vendor of the car.
+     *
+     * @return The vendor of the car.
+     */
     public Vendor getVendor() {
     	return vendor;
     }

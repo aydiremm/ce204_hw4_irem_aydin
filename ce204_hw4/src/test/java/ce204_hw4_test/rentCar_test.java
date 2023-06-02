@@ -1,3 +1,10 @@
+/**
+ * @file rentCar_test.java
+ * @brief This file contains the JUnit test cases for the rentCar package.
+ * @details The rentCar_test class contains test cases for creating different types of cars using the CarFactory,
+ *          testing the Vendor class constructor, calculating rental costs, and getting/setting car prices.
+ *          JUnit assertions are used to validate the expected results.
+ */
 package ce204_hw4_test;
 
 import static org.junit.Assert.*;
@@ -13,9 +20,28 @@ import ce204_hw4_lib.reservation.ConsoleOutput;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import ce204_hw4_lib.reservation.ConsoleOutputCapturer;
+
+
+/**
+ * @class rentCar_test
+ * @brief The rentCar_test class contains JUnit test cases for the rentCar package.
+ * @details The class includes test cases for creating different types of cars using the CarFactory,
+ *          testing the Vendor class constructor, calculating rental costs, and getting/setting car prices.
+ *          JUnit assertions are used to validate the expected results.
+ */
 public class rentCar_test {
 	CarFactory carFactory = new CarFactory();
 
+	
+	 /**
+     * @brief Test case for creating different types of cars using the CarFactory.
+     * 
+     * This test case checks if the CarFactory can create different types of cars
+     * such as economic, luxury, SUV, and sports cars. It verifies that the created
+     * cars have the correct brand, model, and year.
+     * 
+     * @throws AssertionError if any of the assertions fail
+     */
 	@Test
 	public void testCreateCar1() {
 		// Test data
@@ -59,6 +85,15 @@ public class rentCar_test {
 		assertNull(car);
 	}
 
+	
+	/**
+     * @brief Test case for the Vendor class constructor.
+     * 
+     * This test case verifies that the Vendor class constructor sets the vendor ID,
+     * vendor name, and contact information correctly.
+     * 
+     * @throws AssertionError if any of the assertions fail
+     */
 	@Test
 	public void testVendorConstructor1() {
 		int vendorId = 1;
@@ -74,6 +109,12 @@ public class rentCar_test {
 		assertEquals(0, vendor.getRentalCost(), 0.001);
 	}
 
+	
+	/**
+	   * @brief Test case for adding a car to a vendor.
+	   *
+	   * This test verifies that a car can be successfully added to a vendor.
+	   */
 	@Test
 	public void testAddCar2() {
 		int vendorId = 1;
@@ -84,6 +125,15 @@ public class rentCar_test {
 
 	}
 
+	
+	 /**
+     * @brief Test case for calculating the total rental cost.
+     * 
+     * This test case verifies that the Vendor class can calculate the total rental cost
+     * correctly by summing the individual rental costs of each car.
+     * 
+     * @throws AssertionError if any of the assertions fail
+     */
 	@Test
 	public void testCalculateTotalRentalCost() {
 		int vendorId = 1;
@@ -94,6 +144,15 @@ public class rentCar_test {
 
 	}
 
+	
+	/**
+     * @brief Test case for calculating the rental cost of a car.
+     * 
+     * This test case checks if the Vendor class can calculate the rental cost of a car
+     * correctly based on the car type and rental duration.
+     * 
+     * @throws AssertionError if any of the assertions fail
+     */
 	@Test
 	public void testCalculateRentalCost1() {
 		Vendor vendor = new Vendor(1, "ABC Motors", "123-456-7890");
@@ -126,6 +185,14 @@ public class rentCar_test {
 		vendor = new Vendor(1, "ABC Motors", "123-456-7890");
 	}
 
+	
+	/**
+	   * @brief Test case for calculating the rental cost of a car.
+	   *
+	   * This test verifies that the rental cost of a car is calculated correctly based on the car type and rental duration.
+	   *
+	   * @throws AssertionError If the expected cost is not equal to the actual cost within the allowed delta.
+	   */
 	@Test
 	public void testCalculateRentalCost() {
 		double expectedCost = 100.0; // Base price of "luxury" car type is 100.0
@@ -137,6 +204,14 @@ public class rentCar_test {
 		assertEquals(expectedCost, actualCost, 0.01); // Allow a small delta for double comparison
 	}
 
+	
+	/**
+     * @brief Test case for getting the price of a car.
+     *
+     * This test case checks if the getPrice method of the Car class returns the correct price of a car.
+     *
+     * @throws AssertionError if the assertion fails
+     */
 	@Test
 	public void testGetPrice() {
 		String brand = "bmw";
@@ -152,6 +227,14 @@ public class rentCar_test {
 		assertEquals(expectedPrice, actualPrice, 0.001);
 	}
 
+	
+	/**
+     * @brief Test case for setting the price of a car.
+     *
+     * This test case checks if the setPrice method of the Car class sets the price of a car correctly.
+     *
+     * @throws AssertionError if the assertion fails
+     */
 	@Test
 	public void testSetPrice() {
 		String brand = "bmw";
@@ -166,6 +249,12 @@ public class rentCar_test {
 		assertEquals(expectedPrice, actualPrice, 0.001);
 	}
 
+	
+	 /**
+	   * @brief Test case for adding a car to a vendor's inventory.
+	   *
+	   * This test verifies that a car can be successfully added to a vendor's inventory.
+	   */
 	@Test
 	public void testAddCar() {
 		String brand = "bmw";
@@ -180,6 +269,12 @@ public class rentCar_test {
 		assertTrue(vendor.hasCar(economicCar));
 	}
 
+	
+	/**
+	   * @brief Test case for removing a car from a vendor's inventory.
+	   *
+	   * This test verifies that a car can be successfully removed from a vendor's inventory.
+	   */
 	@Test
 	public void testRemoveCar() {
 		// Create a vendor
@@ -201,6 +296,14 @@ public class rentCar_test {
 		// Check if car2 is no longer in the vendor's inventory
 		assertFalse(vendor.hasCar(car2));
 	}
+	
+	
+	/**
+     * @brief Test case for displaying information about an SUV car.
+     *
+     * This test case checks if the displayInfo method of the SUVCar class correctly displays the information
+     * about an SUV car.
+     */
 	@Test
     public void testDisplayInfo() {
         // Create an SUV car
@@ -228,6 +331,13 @@ public class rentCar_test {
         assertEquals(expectedOutput, consoleOutput.trim());
     }
 	
+	
+	 /**
+     * @brief Test case for displaying information about a Sports car.
+     *
+     * This test case checks if the displayInfo method of the SportsCar class correctly displays the information
+     * about a Sports car.
+     */
 	@Test
     public void testDisplayInfo2() {
         // Create a SportsCar object
@@ -249,6 +359,14 @@ public class rentCar_test {
         // Assert the console output matches the expected output
         assertEquals(expectedOutput, consoleOutput);
     }
+	
+
+    /**
+     * @brief Test case for displaying information about a Luxury car.
+     *
+     * This test case checks if the displayInfo method of the LuxuryCar class correctly displays the information
+     * about a Luxury car.
+     */
 	@Test
     public void testDisplayInfo3() {
         // Create an instance of the LuxuryCar class
@@ -271,6 +389,13 @@ public class rentCar_test {
         assertEquals(expectedOutput, consoleOutput);
     }
 	
+	
+	 /**
+     * @brief Test case for displaying information about an Economic car.
+     *
+     * This test case checks if the displayInfo method of the EconomicCar class correctly displays the information
+     * about an Economic car.
+     */
 	@Test
     public void testDisplayInfo4() {
         // Create an instance of the EconomicCar class
