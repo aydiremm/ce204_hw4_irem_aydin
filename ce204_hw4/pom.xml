@@ -137,8 +137,11 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<includes>
-						<include>**/CalculatorAppTest.java</include>
-						<include>**/CalculatorTest.java</include>
+						<include>**/app_test.java</include>
+						<include>**/payment_test.java</include>
+						<include>**/rentCar_test.java</include>
+						<include>**/reservation_test.java</include>
+
 					</includes>
 				</configuration>
 			</plugin>
@@ -242,7 +245,7 @@
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>
-										com.ucoruh.calculator.CalculatorApp</mainClass>
+										ce204_hw4_app.Main</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
