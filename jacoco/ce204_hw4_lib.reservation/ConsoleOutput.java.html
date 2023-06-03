@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ConsoleOutput.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_lib.reservation</a> &gt; <span class="el_source">ConsoleOutput.java</span></div><h1>ConsoleOutput.java</h1><pre class="source lang-java linenums">/**
+  @file ConsoleOutput.java
+  @brief This package contains classes related to reservations.
+ 
+  The `ce204_hw4_lib.reservation` package contains classes that are involved in handling reservations.
+  It provides functionality for creating reservations, processing payments, and managing car rentals.
+  The classes in this package are designed to work together to facilitate the reservation process.
+ */
+/**
+@package ce204_hw4_lib.reservation
+@brief ce204_hw4_lib.reservation package contains all the classes and files related to the Rent Car App.
+*/
+
+package ce204_hw4_lib.reservation;
+
+/**
+ * @class ConsoleOutput
+ * @brief This file contains the definition of the ConsoleOutput class.
+ */
+
+/**
+ * @brief The ConsoleOutput class provides a mechanism to print messages to the
+ *        console.
+ */
+<span class="fc" id="L25">public class ConsoleOutput {</span>
+	/**
+	 * @brief Represents the accumulated output for the ConsoleOutput class.
+	 *
+	 *        This variable stores the accumulated output as a string.
+	 */
+<span class="fc" id="L31">	private static String output = &quot;&quot;;</span>
+
+	/**
+	 * @brief Prints the specified message.
+	 * @param message The message to be printed.
+	 */
+	public static void print(String message) {
+<span class="fc" id="L38">		output += message;</span>
+<span class="fc" id="L39">	}</span>
+
+	/**
+	 * @brief Returns the accumulated output.
+	 * @return The accumulated output.
+	 */
+	public static String getOutput() {
+<span class="fc" id="L46">		return output;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

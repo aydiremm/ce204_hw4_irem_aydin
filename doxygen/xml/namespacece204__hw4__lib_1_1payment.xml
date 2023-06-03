@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__lib_1_1payment" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_lib::payment</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy" prot="public">ce204_hw4_lib::payment::CashPaymentStrategy</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor" prot="public">ce204_hw4_lib::payment::CreditCardPaymentProcessor</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy" prot="public">ce204_hw4_lib::payment::CreditCardPaymentStrategy</innerclass>
+    <innerclass refid="interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor" prot="public">ce204_hw4_lib::payment::PaymentProcessor</innerclass>
+    <innerclass refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" prot="public">ce204_hw4_lib::payment::PaymentStrategy</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor" prot="public">ce204_hw4_lib::payment::PayPalPaymentProcessor</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy" prot="public">ce204_hw4_lib::payment::PayPalPaymentStrategy</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1Reservation" prot="public">ce204_hw4_lib::payment::Reservation</innerclass>
+    <briefdescription>
+<para>The <ref refid="namespacece204__hw4__lib_1_1payment" kindref="compound">ce204_hw4_lib.payment</ref> package contains all the classes and files related to the Rent Car App. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CashPaymentStrategy.java" line="6" column="1"/>
+  </compounddef>
+</doxygen>

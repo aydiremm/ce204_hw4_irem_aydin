@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PayPalPaymentStrategy_8java" kind="file" language="Java">
+    <compoundname>PayPalPaymentStrategy.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy" prot="public">ce204_hw4_lib::payment::PayPalPaymentStrategy</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1payment">ce204_hw4_lib::payment</innernamespace>
+    <briefdescription>
+<para>Contains classes related to payment processing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.payment;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy" kindref="compound">PayPalPaymentStrategy</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" kindref="compound">PaymentStrategy</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>email;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1aa76ec18889d0f7e50ca0b6d1c663f002" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1aa76ec18889d0f7e50ca0b6d1c663f002" kindref="member">PayPalPaymentStrategy</ref>(String<sp/>email)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.email<sp/>=<sp/>email;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1a63c51b7a134d86d776119d8111e26944" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1a63c51b7a134d86d776119d8111e26944" kindref="member">pay</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Paying<sp/>$&quot;</highlight><highlight class="normal"><sp/>+<sp/>amount<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>with<sp/>PayPal<sp/>account:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>email);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Additional<sp/>code<sp/>for<sp/>processing<sp/>PayPal<sp/>payment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SportsCar.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_lib.rentCar</a> &gt; <span class="el_source">SportsCar.java</span></div><h1>SportsCar.java</h1><pre class="source lang-java linenums">/**
+@file SportsCar.java
+@brief This file serves as a demonstration file for the Rent Car class.
+*/
+
+/**
+@package ce204_hw4_lib.rentCar
+@brief The ce204_hw4_lib.rentCar package contains all the classes and files related to the Calculator App.
+*/
+
+package ce204_hw4_lib.rentCar;
+
+/**
+ * @brief SportsCar class.
+ *
+ *        This class represents a sports car, which is a type of Car.
+ */
+public class SportsCar extends Car {
+
+	/**
+	 * @brief Constructs a SportsCar object with the specified brand, model, and
+	 *        year.
+	 *
+	 * @param brand The brand of the sports car.
+	 * @param model The model of the sports car.
+	 * @param year  The year of the sports car.
+	 */
+	public SportsCar(String brand, String model, int year) {
+<span class="fc" id="L29">		super(brand, model, year);</span>
+<span class="fc" id="L30">	}</span>
+
+	/**
+	 * @brief Displays the information about the sports car.
+	 *
+	 *        This method overrides the displayInfo() method in the Car class to
+	 *        display specific information about the sports car.
+	 */
+	public void displayInfo() {
+<span class="fc" id="L39">		System.out.println(&quot;Sports Car: &quot; + brand + &quot; &quot; + model + &quot; (&quot; + year + &quot;)&quot;);</span>
+<span class="fc" id="L40">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

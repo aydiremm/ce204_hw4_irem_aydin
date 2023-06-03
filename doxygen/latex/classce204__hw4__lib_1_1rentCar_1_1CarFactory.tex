@@ -1,0 +1,85 @@
+\hypertarget{classce204__hw4__lib_1_1rentCar_1_1CarFactory}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Car\+Factory Class Reference}
+\label{classce204__hw4__lib_1_1rentCar_1_1CarFactory}\index{ce204\_hw4\_lib.rentCar.CarFactory@{ce204\_hw4\_lib.rentCar.CarFactory}}
+
+
+Creates a car object based on the provided car type, brand, model, and.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1CarFactory_ac2a37a2dc0832321bae26ce45a2e4017}{create\+Car}} (String car\+Type, String brand, String model, int year)
+\begin{DoxyCompactList}\small\item\em Creates a new instance of a \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} based on the given car type, brand, model, and year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a car object based on the provided car type, brand, model, and. 
+
+Definition at line 16 of file Car\+Factory.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1CarFactory_ac2a37a2dc0832321bae26ce45a2e4017}\label{classce204__hw4__lib_1_1rentCar_1_1CarFactory_ac2a37a2dc0832321bae26ce45a2e4017}} 
+\index{ce204\_hw4\_lib.rentCar.CarFactory@{ce204\_hw4\_lib.rentCar.CarFactory}!createCar@{createCar}}
+\index{createCar@{createCar}!ce204\_hw4\_lib.rentCar.CarFactory@{ce204\_hw4\_lib.rentCar.CarFactory}}
+\doxysubsubsection{\texorpdfstring{createCar()}{createCar()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Car\+Factory.\+create\+Car (\begin{DoxyParamCaption}\item[{String}]{car\+Type,  }\item[{String}]{brand,  }\item[{String}]{model,  }\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new instance of a \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} based on the given car type, brand, model, and year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em car\+Type} & The type of car to create. Valid values are \char`\"{}economic\char`\"{}, \char`\"{}luxury\char`\"{}, \char`\"{}suv\char`\"{}, and \char`\"{}sports\char`\"{}.\\
+\hline
+{\em brand} & The brand of the car.\\
+\hline
+{\em model} & The model of the car.\\
+\hline
+{\em year} & The manufacturing year of the car.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} object of the specified type, or null if the car type is invalid. 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Car\+Factory.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                                                                       \{}
+\DoxyCodeLine{36         Car car = \textcolor{keyword}{null};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         \textcolor{keywordflow}{switch} (carType.toLowerCase()) \{}
+\DoxyCodeLine{39         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}economic"{}}:}
+\DoxyCodeLine{40             car = \textcolor{keyword}{new} EconomicCar(brand, model, year);}
+\DoxyCodeLine{41             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}luxury"{}}:}
+\DoxyCodeLine{44             car = \textcolor{keyword}{new} LuxuryCar(brand, model, year);}
+\DoxyCodeLine{45             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}suv"{}}:}
+\DoxyCodeLine{48             car = \textcolor{keyword}{new} SUVCar(brand, model, year);}
+\DoxyCodeLine{49             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}sports"{}}:}
+\DoxyCodeLine{52             car = \textcolor{keyword}{new} SportsCar(brand, model, year);}
+\DoxyCodeLine{53             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{56             System.out.println(\textcolor{stringliteral}{"{}Invalid car type."{}});}
+\DoxyCodeLine{57         \}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         \textcolor{keywordflow}{return} car;}
+\DoxyCodeLine{60     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/rent\+Car/\mbox{\hyperlink{CarFactory_8java}{Car\+Factory.\+java}}\end{DoxyCompactItemize}

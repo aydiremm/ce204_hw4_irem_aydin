@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__app_1_1Menus_1_1Menu" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>ce204_hw4_app::Menus::Menu</compoundname>
+    <derivedcompoundref refid="classce204__hw4__app_1_1Menus_1_1MainMenu" prot="public" virt="non-virtual">ce204_hw4_app.Menus.MainMenu</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__app_1_1Menus_1_1UserMenu" prot="public" virt="non-virtual">ce204_hw4_app.Menus.UserMenu</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__app_1_1Menus_1_1VendorMenu" prot="public" virt="non-virtual">ce204_hw4_app.Menus.VendorMenu</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" prot="protected" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref></type>
+        <definition>App ce204_hw4_app.Menus.Menu.app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <briefdescription>
+<para>Constructor method for the <ref refid="classce204__hw4__app_1_1Menus_1_1Menu" kindref="compound">Menu</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An instance of the <ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref> class that holds the reference to the application. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" line="41" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1MainMenu_1ae63e7f18380f85233207898da22f285b" compoundref="MainMenu_8java" startline="36" endline="38">ce204_hw4_app.Menus.MainMenu.MainMenu</referencedby>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1Menu_1a41fb46561d49b634d57ed3fd2841a10e" compoundref="Menu_8java" startline="52" endline="55">ce204_hw4_app.Menus.Menu.Menu</referencedby>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1MainMenu_1aeaf25aaa8b6fd323ce70dce815f92348" compoundref="MainMenu_8java" startline="48" endline="84">ce204_hw4_app.Menus.MainMenu.run</referencedby>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1a7a826d22e3310259d597ed276c75b1a2" compoundref="UserMenu_8java" startline="61" endline="98">ce204_hw4_app.Menus.UserMenu.run</referencedby>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1aeaf0207fde3ddc5f9c0bcbb90375953f" compoundref="VendorMenu_8java" startline="56" endline="92">ce204_hw4_app.Menus.VendorMenu.run</referencedby>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1afaa85cec4f3da7ffd597b62549284bbc" compoundref="UserMenu_8java" startline="48" endline="51">ce204_hw4_app.Menus.UserMenu.UserMenu</referencedby>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a859b6b6357a7743185b07d00f5faedef" compoundref="VendorMenu_8java" startline="41" endline="45">ce204_hw4_app.Menus.VendorMenu.VendorMenu</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" prot="protected" static="no" mutable="no">
+        <type>Scanner</type>
+        <definition>Scanner ce204_hw4_app.Menus.Menu.scanner</definition>
+        <argsstring></argsstring>
+        <name>scanner</name>
+        <briefdescription>
+<para>Scanner object for input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" line="45" column="19" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1MainMenu_1aeaf25aaa8b6fd323ce70dce815f92348" compoundref="MainMenu_8java" startline="48" endline="84">ce204_hw4_app.Menus.MainMenu.run</referencedby>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1a7a826d22e3310259d597ed276c75b1a2" compoundref="UserMenu_8java" startline="61" endline="98">ce204_hw4_app.Menus.UserMenu.run</referencedby>
+        <referencedby refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1aeaf0207fde3ddc5f9c0bcbb90375953f" compoundref="VendorMenu_8java" startline="56" endline="92">ce204_hw4_app.Menus.VendorMenu.run</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1Menu_1a41fb46561d49b634d57ed3fd2841a10e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_app.Menus.Menu.Menu</definition>
+        <argsstring>(App app)</argsstring>
+        <name>Menu</name>
+        <param>
+          <type><ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref></type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="classce204__hw4__app_1_1Menus_1_1Menu" kindref="compound">Menu</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref> object associated with this <ref refid="classce204__hw4__app_1_1Menus_1_1Menu" kindref="compound">Menu</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" line="52" column="8" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" bodystart="52" bodyend="55"/>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" compoundref="Menu_8java" startline="41">ce204_hw4_app.Menus.Menu.app</references>
+        <references refid="classce204__hw4__app_1_1App_1ae059ebde02c55adf77d895f9e03bcfe2" compoundref="App_8java" startline="62">ce204_hw4_app.App.scanner</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1Menu_1afddd026a97261b7f8d1573a9d12b574a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void ce204_hw4_app.Menus.Menu.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplementedby refid="classce204__hw4__app_1_1Menus_1_1MainMenu_1aeaf25aaa8b6fd323ce70dce815f92348">run</reimplementedby>
+        <reimplementedby refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1a7a826d22e3310259d597ed276c75b1a2">run</reimplementedby>
+        <reimplementedby refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1aeaf0207fde3ddc5f9c0bcbb90375953f">run</reimplementedby>
+        <briefdescription>
+<para>Executes the main functionality of the abstract class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method should be implemented by subclasses to define the specific behavior of the class. It represents the main entry point of the abstract class and is responsible for executing its core functionality. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" line="65" column="22"/>
+        <referencedby refid="classce204__hw4__app_1_1App_1a09751ceb690d98d4e993b23fb3d584ac" compoundref="App_8java" startline="83" endline="87">ce204_hw4_app.App.runMenu</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This abstract class provides a method or function to access or retrieve a reference to a paste button in a user interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The method or function would depend on the programming language, framework, or library being used. It is typically used to obtain a reference to the paste button object, allowing developers to manipulate its appearance or functionality. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ce204_hw4_app.Menus.UserMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1UserMenu"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ce204_hw4_app.Menus.VendorMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1VendorMenu"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_app.Menus.MainMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1MainMenu"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_app.Menus.Menu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1Menu"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ce204_hw4_app.App</label>
+        <link refid="classce204__hw4__app_1_1App"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>scanner</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>selectedMenu</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Scanner</label>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_app.Menus.Menu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1Menu"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>app</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>scanner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" line="33" column="17" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/Menu.java" bodystart="33" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" prot="protected" virt="non-virtual"><scope>ce204_hw4_app::Menus::Menu</scope><name>app</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1a41fb46561d49b634d57ed3fd2841a10e" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::Menu</scope><name>Menu</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1afddd026a97261b7f8d1573a9d12b574a" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::Menu</scope><name>run</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" prot="protected" virt="non-virtual"><scope>ce204_hw4_app::Menus::Menu</scope><name>scanner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

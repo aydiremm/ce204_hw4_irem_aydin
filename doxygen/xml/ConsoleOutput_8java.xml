@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ConsoleOutput_8java" kind="file" language="Java">
+    <compoundname>ConsoleOutput.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput" prot="public">ce204_hw4_lib::reservation::ConsoleOutput</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1reservation">ce204_hw4_lib::reservation</innernamespace>
+    <briefdescription>
+<para>This package contains classes related to reservations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <computeroutput><ref refid="namespacece204__hw4__lib_1_1reservation" kindref="compound">ce204_hw4_lib.reservation</ref></computeroutput> package contains classes that are involved in handling reservations. It provides functionality for creating reservations, processing payments, and managing car rentals. The classes in this package are designed to work together to facilitate the reservation process. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.reservation;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput" kindref="compound">ConsoleOutput</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>String<sp/>output<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1ad976953881a737e5fe1ae5445f2e6665" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1ad976953881a737e5fe1ae5445f2e6665" kindref="member">print</ref>(String<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output<sp/>+=<sp/>message;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1a4a6b1d258f15b0e20a399b5830b92ec6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1a4a6b1d258f15b0e20a399b5830b92ec6" kindref="member">getOutput</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>output;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java"/>
+  </compounddef>
+</doxygen>

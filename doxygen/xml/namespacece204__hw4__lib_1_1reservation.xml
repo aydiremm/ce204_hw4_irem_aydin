@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__lib_1_1reservation" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_lib::reservation</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput" prot="public">ce204_hw4_lib::reservation::ConsoleOutput</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer" prot="public">ce204_hw4_lib::reservation::ConsoleOutputCapturer</innerclass>
+    <innerclass refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" prot="public">ce204_hw4_lib::reservation::Observer</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager" prot="public">ce204_hw4_lib::reservation::ReservationManager</innerclass>
+    <innerclass refid="interfacece204__hw4__lib_1_1reservation_1_1Subject" prot="public">ce204_hw4_lib::reservation::Subject</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1reservation_1_1User" prot="public">ce204_hw4_lib::reservation::User</innerclass>
+    <briefdescription>
+<para><ref refid="namespacece204__hw4__lib_1_1reservation" kindref="compound">ce204_hw4_lib.reservation</ref> package contains all the classes and files related to the Rent Car App. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" line="10" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="VendorMenu_8java" kind="file" language="Java">
+    <compoundname>VendorMenu.java</compoundname>
+    <innerclass refid="classce204__hw4__app_1_1Menus_1_1VendorMenu" prot="public">ce204_hw4_app::Menus::VendorMenu</innerclass>
+    <innernamespace refid="namespacece204__hw4__app_1_1Menus">ce204_hw4_app::Menus</innernamespace>
+    <briefdescription>
+<para>Represents a menu for vendor-related actions in the car rental application. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_app.Menus;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.InputMismatchException;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Scanner;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacece204__hw4__app" kindref="compound">ce204_hw4_app</ref>.<ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ce204_hw4_lib.rentCar.Car;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ce204_hw4_lib.rentCar.CarFactory;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ce204_hw4_lib.rentCar.Vendor;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classce204__hw4__app_1_1Menus_1_1VendorMenu" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__app_1_1Menus_1_1VendorMenu" kindref="compound">VendorMenu</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu" kindref="compound">Menu</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;Car&gt;<sp/>cars;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;Vendor&gt;<sp/>vendors;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a859b6b6357a7743185b07d00f5faedef" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a859b6b6357a7743185b07d00f5faedef" kindref="member">VendorMenu</ref>(<ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" kindref="member">app</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>super(<ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" kindref="member">app</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>cars<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" kindref="member">app</ref>.<ref refid="classce204__hw4__app_1_1App_1a02856f89c949919b7e20aac2e0cb4ae6" kindref="member">getCars</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>vendors<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" kindref="member">app</ref>.<ref refid="classce204__hw4__app_1_1App_1ae9a397f2a6d8c508cba3b63405254cb3" kindref="member">getVendors</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="56" refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1aeaf0207fde3ddc5f9c0bcbb90375953f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1aeaf0207fde3ddc5f9c0bcbb90375953f" kindref="member">run</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>exitVendorMenu<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!exitVendorMenu)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;------------------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Vendor<sp/>Menu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;1.<sp/>Add<sp/>Car&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;2.<sp/>Remove<sp/>Car&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;3.<sp/>Exit&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;------------------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>your<sp/>choice:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>choice<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextInt();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();<sp/></highlight><highlight class="comment">//<sp/>Consume<sp/>the<sp/>newline<sp/>character</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(choice)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addCar();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>removeCar();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exitVendorMenu<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Exiting<sp/>Vendor<sp/>Menu...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>choice.<sp/>Please<sp/>try<sp/>again.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>to<sp/>the<sp/>role<sp/>selection<sp/>menu<sp/>after<sp/>exiting<sp/>the<sp/>vendor<sp/>menu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" kindref="member">app</ref>.<ref refid="classce204__hw4__app_1_1App_1a45b1be5449020dce05f62c29c1684558" kindref="member">setMainMenu</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addCar()<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;------------------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Adding<sp/>Car&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prompt<sp/>for<sp/>car<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>car<sp/>type<sp/>(economic/luxury/suv/sports):<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>carType<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>car<sp/>brand:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>brand<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>car<sp/>model:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>model<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>car<sp/>year:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextInt();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();<sp/></highlight><highlight class="comment">//<sp/>Consume<sp/>the<sp/>newline<sp/>character</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>car<sp/>price:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>price<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextDouble();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();<sp/></highlight><highlight class="comment">//<sp/>Consume<sp/>the<sp/>newline<sp/>character</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prompt<sp/>for<sp/>vendor<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>vendor<sp/>ID:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vendorId<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextInt();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();<sp/></highlight><highlight class="comment">//<sp/>Consume<sp/>the<sp/>newline<sp/>character</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>vendor<sp/>name:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>vendorName<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;Enter<sp/>vendor<sp/>contact<sp/>information:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>contactInformation<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>car<sp/>using<sp/>CarFactory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref><sp/>car<sp/>=<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1CarFactory" kindref="compound">CarFactory</ref>.<ref refid="classce204__hw4__lib_1_1rentCar_1_1CarFactory_1ac2a37a2dc0832321bae26ce45a2e4017" kindref="member">createCar</ref>(carType,<sp/>brand,<sp/>model,<sp/>year);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(car<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>car.<ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1ab9d0c0b758a044889ba11037736e1935" kindref="member">setPrice</ref>(price);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cars.add(car);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>vendor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Vendor" kindref="compound">Vendor</ref><sp/>vendor<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Vendor" kindref="compound">Vendor</ref>(vendorId,<sp/>vendorName,<sp/>contactInformation);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>car.<ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1acf1ac203ea15e7e70d2fb11bfc8b6c1b" kindref="member">setVendor</ref>(vendor);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>vendor.<ref refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1aa5c3b00bc23afa0b2202979ac383f29f" kindref="member">addCar</ref>(car);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>vendors.add(vendor);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Car<sp/>added<sp/>successfully!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeCar()<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;------------------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Removing<sp/>Car&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Display<sp/>available<sp/>cars<sp/>for<sp/>selection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;\nAvailable<sp/>Cars:&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>cars.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println((i<sp/>+<sp/>1)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>cars.get(i).getBrand()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>cars.get(i).getModel());</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prompt<sp/>for<sp/>car<sp/>selection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.print(</highlight><highlight class="stringliteral">&quot;\nEnter<sp/>the<sp/>number<sp/>of<sp/>the<sp/>car<sp/>to<sp/>remove:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>carNumberStr<sp/>=<sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" kindref="member">scanner</ref>.nextLine();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carNumber;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>carNumber<sp/>=<sp/>Integer.parseInt(carNumberStr);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>car<sp/>number<sp/>is<sp/>valid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(carNumber<sp/>&gt;=<sp/>1<sp/>&amp;&amp;<sp/>carNumber<sp/>&lt;=<sp/>cars.size())<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Car<sp/>carToRemove<sp/>=<sp/>cars.get(carNumber<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>the<sp/>car<sp/>from<sp/>the<sp/>list<sp/>of<sp/>cars<sp/>and<sp/>its<sp/>associated<sp/>vendor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cars.remove(carToRemove);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(Vendor<sp/>vendor<sp/>:<sp/>vendors)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vendor.<ref refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1aa9c1bccb34efccd0b002cd99ee5488ae" kindref="member">hasCar</ref>(carToRemove))<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vendor.<ref refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a9776b7db0e2ccccc8c364b480f23e1cc" kindref="member">removeCar</ref>(carToRemove);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;------------------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Car<sp/>removed<sp/>successfully!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;------------------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>car<sp/>number!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(Exception<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;------------------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>car<sp/>number!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java"/>
+  </compounddef>
+</doxygen>

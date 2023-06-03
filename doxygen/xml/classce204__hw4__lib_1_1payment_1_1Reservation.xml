@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1payment_1_1Reservation" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::payment::Reservation</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1payment_1_1Reservation_1aff781eac2b997869ab9037603e29316a" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" kindref="compound">PaymentStrategy</ref></type>
+        <definition>PaymentStrategy ce204_hw4_lib.payment.Reservation.paymentStrategy</definition>
+        <argsstring></argsstring>
+        <name>paymentStrategy</name>
+        <briefdescription>
+<para>The payment strategy for processing payments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java" line="25" column="25" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1Reservation_1a4fd8a8f1916488a421db09f34b4a11a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_lib.payment.Reservation.Reservation</definition>
+        <argsstring>(PaymentStrategy paymentStrategy)</argsstring>
+        <name>Reservation</name>
+        <param>
+          <type><ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" kindref="compound">PaymentStrategy</ref></type>
+          <declname>paymentStrategy</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classce204__hw4__lib_1_1payment_1_1Reservation" kindref="compound">Reservation</ref> object with the specified payment strategy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>paymentStrategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payment strategy to be used for processing payments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java" line="33" column="8" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1Reservation_1a2e72388d47d413a7d5a4a8e48dbee124" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.payment.Reservation.processPayment</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>processPayment</name>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Processes a payment for the reservation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method delegates the payment processing to the payment strategy
+   provided during object creation.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to be paid for the reservation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java" line="45" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java" bodystart="45" bodyend="47"/>
+        <references refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_1ac8dc89712d14a43bf57f627d776829b1">ce204_hw4_lib.payment.PaymentStrategy.pay</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a reservation for a payment. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>   This class encapsulates the logic for processing a payment for a
+   reservation using a payment strategy defined by the client. The
+   payment strategy is passed as a parameter during object creation and
+   can be changed at runtime.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java" line="21" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java" bodystart="21" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1payment_1_1Reservation_1aff781eac2b997869ab9037603e29316a" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::payment::Reservation</scope><name>paymentStrategy</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1Reservation_1a2e72388d47d413a7d5a4a8e48dbee124" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::Reservation</scope><name>processPayment</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1Reservation_1a4fd8a8f1916488a421db09f34b4a11a0" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::Reservation</scope><name>Reservation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

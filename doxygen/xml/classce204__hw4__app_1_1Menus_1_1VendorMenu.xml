@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__app_1_1Menus_1_1VendorMenu" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_app::Menus::VendorMenu</compoundname>
+    <basecompoundref refid="classce204__hw4__app_1_1Menus_1_1Menu" prot="public" virt="non-virtual">ce204_hw4_app.Menus.Menu</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a9a9147902816683cb92612741c2b850e" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref> &gt;</type>
+        <definition>List&lt;Car&gt; ce204_hw4_app.Menus.VendorMenu.cars</definition>
+        <argsstring></argsstring>
+        <name>cars</name>
+        <briefdescription>
+<para>List of cars available in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" line="30" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__app_1_1Menus_1_1VendorMenu_1abf7752afb2746bdd6b4b4f52bcaa8c27" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classce204__hw4__lib_1_1rentCar_1_1Vendor" kindref="compound">Vendor</ref> &gt;</type>
+        <definition>List&lt;Vendor&gt; ce204_hw4_app.Menus.VendorMenu.vendors</definition>
+        <argsstring></argsstring>
+        <name>vendors</name>
+        <briefdescription>
+<para>List of vendors in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" line="34" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a859b6b6357a7743185b07d00f5faedef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_app.Menus.VendorMenu.VendorMenu</definition>
+        <argsstring>(App app)</argsstring>
+        <name>VendorMenu</name>
+        <param>
+          <type><ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref></type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="classce204__hw4__app_1_1Menus_1_1VendorMenu" kindref="compound">VendorMenu</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref> object representing the car rental application. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" line="41" column="10" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" bodystart="41" bodyend="45"/>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" compoundref="Menu_8java" startline="41">ce204_hw4_app.Menus.Menu.app</references>
+        <references refid="classce204__hw4__app_1_1App_1a02856f89c949919b7e20aac2e0cb4ae6" compoundref="App_8java" startline="94" endline="96">ce204_hw4_app.App.getCars</references>
+        <references refid="classce204__hw4__app_1_1App_1ae9a397f2a6d8c508cba3b63405254cb3" compoundref="App_8java" startline="103" endline="105">ce204_hw4_app.App.getVendors</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1VendorMenu_1aeaf0207fde3ddc5f9c0bcbb90375953f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_app.Menus.VendorMenu.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classce204__hw4__app_1_1Menus_1_1Menu_1afddd026a97261b7f8d1573a9d12b574a">run</reimplements>
+        <briefdescription>
+<para>Executes the main functionality of the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method represents the main entry point of the class and is responsible for executing its core functionality. It displays a menu for vendors, allowing them to add or remove cars, or exit the menu. The user&apos;s choice is read from the input using a Scanner object. Based on the chosen option, the corresponding method is called to perform the requested action. The loop continues until the user chooses to exit the menu. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" line="56" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" bodystart="56" bodyend="92"/>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" compoundref="Menu_8java" startline="41">ce204_hw4_app.Menus.Menu.app</references>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" compoundref="Menu_8java" startline="45">ce204_hw4_app.Menus.Menu.scanner</references>
+        <references refid="classce204__hw4__app_1_1App_1a45b1be5449020dce05f62c29c1684558" compoundref="App_8java" startline="119" endline="121">ce204_hw4_app.App.setMainMenu</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a0f634076e519dfe70c742e57b3e75939" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_app.Menus.VendorMenu.addCar</definition>
+        <argsstring>()</argsstring>
+        <name>addCar</name>
+        <briefdescription>
+<para>Prompts the user for car and vendor information and adds a car to the system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" line="100" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" bodystart="100" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a8ddb1f317dbda3de06d3db9099726e33" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_app.Menus.VendorMenu.removeCar</definition>
+        <argsstring>()</argsstring>
+        <name>removeCar</name>
+        <briefdescription>
+<para>Prompts the user for the car number to remove and removes the corresponding car from the system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" line="142" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" bodystart="142" bodyend="182"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a menu for vendor-related actions in the car rental application. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_app.Menus.VendorMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1VendorMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_app.Menus.Menu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1Menu"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ce204_hw4_app.App</label>
+        <link refid="classce204__hw4__app_1_1App"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>scanner</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>selectedMenu</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Scanner</label>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_app.Menus.VendorMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1VendorMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_app.Menus.Menu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1Menu"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>app</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>scanner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" line="26" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/VendorMenu.java" bodystart="26" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a0f634076e519dfe70c742e57b3e75939" prot="private" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>addCar</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" prot="protected" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>app</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a9a9147902816683cb92612741c2b850e" prot="private" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>cars</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1a41fb46561d49b634d57ed3fd2841a10e" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>Menu</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a8ddb1f317dbda3de06d3db9099726e33" prot="private" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>removeCar</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1aeaf0207fde3ddc5f9c0bcbb90375953f" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>run</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" prot="protected" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>scanner</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1a859b6b6357a7743185b07d00f5faedef" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>VendorMenu</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1VendorMenu_1abf7752afb2746bdd6b4b4f52bcaa8c27" prot="private" virt="non-virtual"><scope>ce204_hw4_app::Menus::VendorMenu</scope><name>vendors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

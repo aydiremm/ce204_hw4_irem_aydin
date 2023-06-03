@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1reservation_1_1User" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::reservation::User</compoundname>
+    <basecompoundref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" prot="public" virt="non-virtual">ce204_hw4_lib.reservation.Observer</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1reservation_1_1User_1a8f31acba54f4abf0faa3b26a63da1b6d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.reservation.User.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of the object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java" line="24" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1User_1a9e8d7bf644e76f597143be2633094576" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_lib.reservation.User.User</definition>
+        <argsstring>(String name)</argsstring>
+        <name>User</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classce204__hw4__lib_1_1reservation_1_1User" kindref="compound">User</ref> object with the given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java" line="31" column="8" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1User_1acc787a81e4474e3d309900c485486dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.reservation.User.update</definition>
+        <argsstring>(String message)</argsstring>
+        <name>update</name>
+        <reimplements refid="interfacece204__hw4__lib_1_1reservation_1_1Observer_1a3b27ca8a3032f509392152b293f02d6a">update</reimplements>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Updates the user with a new notification message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method is called when a notification is received by the user. It
+   prints the received notification along with the user&apos;s name.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The notification message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java" line="43" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java" bodystart="43" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classce204__hw4__lib_1_1reservation_1_1User" kindref="compound">User</ref> class implementing the <ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref> interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>   This class represents a user who receives notifications as an
+   observer. It provides a method to update and print the received
+   notification.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_lib.reservation.Observer</label>
+        <link refid="interfacece204__hw4__lib_1_1reservation_1_1Observer"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.reservation.User</label>
+        <link refid="classce204__hw4__lib_1_1reservation_1_1User"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ce204_hw4_lib.reservation.Observer</label>
+        <link refid="interfacece204__hw4__lib_1_1reservation_1_1Observer"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.reservation.User</label>
+        <link refid="classce204__hw4__lib_1_1reservation_1_1User"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java" line="20" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java" bodystart="20" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1User_1a8f31acba54f4abf0faa3b26a63da1b6d" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::reservation::User</scope><name>name</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1User_1acc787a81e4474e3d309900c485486dfa" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::User</scope><name>update</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1User_1a9e8d7bf644e76f597143be2633094576" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::User</scope><name>User</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

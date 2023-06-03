@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainMenu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_app.Menus</a> &gt; <span class="el_source">MainMenu.java</span></div><h1>MainMenu.java</h1><pre class="source lang-java linenums">
+/**
+  @file MainMenu.java
+ 
+  @brief Contains the menu classes for the Car Rental Management System application.
+ 
+  This package includes the main menu class, which represents the main menu of the system.
+  The main menu allows users to select their role (vendor or user) or choose to exit the program.
+ */
+/**
+@package ce204_hw4_app.Menus
+@brief The ce204_hw4_app.Menus package contains all the classes and files related to the Rent Car App.
+*/
+package ce204_hw4_app.Menus;
+
+import ce204_hw4_app.App;
+import ce204_hw4_app.Main;
+
+/**
+ * @class MainMenu
+ *
+ * @brief Represents the main menu of the Car Rental Management System.
+ *
+ *        The MainMenu class extends the Menu class and provides functionality
+ *        for displaying the main menu options and handling user input. It
+ *        allows users to select their role (vendor or user) or choose to exit
+ *        the program.
+ **/
+public class MainMenu extends Menu {
+
+	/**
+	 * @brief Constructs a new MainMenu object.
+	 * @param app The main application object.
+	 */
+
+	public MainMenu(App app) {
+<span class="fc" id="L37">		super(app);</span>
+<span class="fc" id="L38">	}</span>
+
+	/**
+	 * @brief Displays the main menu and handles user input.
+	 *
+	 *        The run() method prompts the user to select their role and performs
+	 *        actions based on the selected choice. It allows users to log in as a
+	 *        vendor, log in as a user, or exit the program.
+	 */
+	@Override
+	public void run() {
+		// Prompt for login role
+<span class="fc" id="L50">		System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L51">		System.out.println(&quot;Welcome to the Car Rental Management System!&quot;);</span>
+<span class="fc" id="L52">		System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L53">		System.out.println(&quot;Please select your role:&quot;);</span>
+<span class="fc" id="L54">		System.out.println(&quot;1. Vendor&quot;);</span>
+<span class="fc" id="L55">		System.out.println(&quot;2. User&quot;);</span>
+<span class="fc" id="L56">		System.out.println(&quot;3. Exit&quot;);</span>
+<span class="fc" id="L57">		System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L58">		System.out.print(&quot;Enter your choice: &quot;);</span>
+<span class="fc" id="L59">		int choice = scanner.nextInt();</span>
+<span class="fc" id="L60">		scanner.nextLine(); // Consume the newline character</span>
+
+		// Perform actions based on selected role
+<span class="fc bfc" id="L63" title="All 4 branches covered.">		switch (choice) {</span>
+		case 1:
+			// Vendor login
+<span class="fc" id="L66">			app.setVendorMenu();</span>
+<span class="fc" id="L67">			break;</span>
+
+		case 2:
+			// User login
+<span class="fc" id="L71">			app.setUserMenu();</span>
+<span class="fc" id="L72">			break;</span>
+
+		case 3:
+			// Exit the program
+<span class="fc" id="L76">			System.out.println(&quot;Exiting...&quot;);</span>
+<span class="fc" id="L77">			Main.isRunning = false;</span>
+<span class="fc" id="L78">			break;</span>
+
+		default:
+<span class="fc" id="L81">			System.out.println(&quot;Invalid choice.&quot;);</span>
+			break;
+		}
+<span class="fc" id="L84">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

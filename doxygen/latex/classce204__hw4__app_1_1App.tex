@@ -1,0 +1,326 @@
+\hypertarget{classce204__hw4__app_1_1App}{}\doxysection{ce204\+\_\+hw4\+\_\+app.\+App Class Reference}
+\label{classce204__hw4__app_1_1App}\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+
+
+This is the application class. This class manages the main logic of the rental application, listing the cars and vendors, and allowing navigation between menus.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__app_1_1App_a1862c5ed69471beb57061a9df9400f72}{App}} (Scanner \mbox{\hyperlink{classce204__hw4__app_1_1App_ae059ebde02c55adf77d895f9e03bcfe2}{scanner}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{App_8java}{App.\+java}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__app_1_1App_a09751ceb690d98d4e993b23fb3d584ac}{run\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Runs the menu and allows the user to navigate between menus. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} $>$ \mbox{\hyperlink{classce204__hw4__app_1_1App_a02856f89c949919b7e20aac2e0cb4ae6}{get\+Cars}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of cars. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor}{Vendor}} $>$ \mbox{\hyperlink{classce204__hw4__app_1_1App_ae9a397f2a6d8c508cba3b63405254cb3}{get\+Vendors}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of vendors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__app_1_1App_ac94655a70cb3de5b193bf05248335ddd}{set\+Menu}} (\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu}{Menu}} menu)
+\begin{DoxyCompactList}\small\item\em Sets the selected menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__app_1_1App_a45b1be5449020dce05f62c29c1684558}{set\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Sets the main menu as the selected menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__app_1_1App_a08352aeacaf5af0418b9a78f95488fc4}{set\+Vendor\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Sets the vendor menu as the selected menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__app_1_1App_ae4b4a88655bef56183426ac0efabb0e2}{set\+User\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Sets the user menu as the selected menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu}{Menu}} \mbox{\hyperlink{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}{selected\+Menu}}
+\begin{DoxyCompactList}\small\item\em The currently selected menu. \end{DoxyCompactList}\item 
+Scanner \mbox{\hyperlink{classce204__hw4__app_1_1App_ae059ebde02c55adf77d895f9e03bcfe2}{scanner}}
+\begin{DoxyCompactList}\small\item\em The user menu object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the application class. This class manages the main logic of the rental application, listing the cars and vendors, and allowing navigation between menus. 
+
+Definition at line 27 of file App.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_a1862c5ed69471beb57061a9df9400f72}\label{classce204__hw4__app_1_1App_a1862c5ed69471beb57061a9df9400f72}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!App@{App}}
+\index{App@{App}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{App()}{App()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+app.\+App.\+App (\begin{DoxyParamCaption}\item[{Scanner}]{scanner }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{App_8java}{App.\+java}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scanner} & A Scanner object used to get user input. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                                 \{}
+\DoxyCodeLine{71         this.\mbox{\hyperlink{classce204__hw4__app_1_1App_ae059ebde02c55adf77d895f9e03bcfe2}{scanner}} = \mbox{\hyperlink{classce204__hw4__app_1_1App_ae059ebde02c55adf77d895f9e03bcfe2}{scanner}};}
+\DoxyCodeLine{72         cars = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{73         vendors = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{74         mainMenu = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1MainMenu}{MainMenu}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{75         vendorMenu = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1VendorMenu}{VendorMenu}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{76         userMenu = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1UserMenu}{UserMenu}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{77         \mbox{\hyperlink{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}{selectedMenu}} = mainMenu;}
+\DoxyCodeLine{78     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+App.\+scanner, and ce204\+\_\+hw4\+\_\+app.\+App.\+selected\+Menu.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_a02856f89c949919b7e20aac2e0cb4ae6}\label{classce204__hw4__app_1_1App_a02856f89c949919b7e20aac2e0cb4ae6}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!getCars@{getCars}}
+\index{getCars@{getCars}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{getCars()}{getCars()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}}$>$ ce204\+\_\+hw4\+\_\+app.\+App.\+get\+Cars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of cars. 
+
+\begin{DoxyReturn}{Returns}
+A list of Car objects containing the cars. 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                \{}
+\DoxyCodeLine{95         \textcolor{keywordflow}{return} cars;}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+Menus.\+User\+Menu.\+User\+Menu(), and ce204\+\_\+hw4\+\_\+app.\+Menus.\+Vendor\+Menu.\+Vendor\+Menu().
+
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_ae9a397f2a6d8c508cba3b63405254cb3}\label{classce204__hw4__app_1_1App_ae9a397f2a6d8c508cba3b63405254cb3}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!getVendors@{getVendors}}
+\index{getVendors@{getVendors}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{getVendors()}{getVendors()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor}{Vendor}}$>$ ce204\+\_\+hw4\+\_\+app.\+App.\+get\+Vendors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of vendors. 
+
+\begin{DoxyReturn}{Returns}
+A list of Vendor objects containing the vendors. 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103                                      \{}
+\DoxyCodeLine{104         \textcolor{keywordflow}{return} vendors;}
+\DoxyCodeLine{105     \}}
+
+\end{DoxyCode}
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+Menus.\+Vendor\+Menu.\+Vendor\+Menu().
+
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_a09751ceb690d98d4e993b23fb3d584ac}\label{classce204__hw4__app_1_1App_a09751ceb690d98d4e993b23fb3d584ac}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!runMenu@{runMenu}}
+\index{runMenu@{runMenu}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{runMenu()}{runMenu()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+app.\+App.\+run\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs the menu and allows the user to navigate between menus. 
+
+
+
+Definition at line 83 of file App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                           \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classce204__hw4__app_1_1Main}{Main}}.\mbox{\hyperlink{classce204__hw4__app_1_1Main_a54832fe50629736e52f49bef3c8421e1}{isRunning}}) \{}
+\DoxyCodeLine{85             \mbox{\hyperlink{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}{selectedMenu}}.\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_afddd026a97261b7f8d1573a9d12b574a}{run}}();}
+\DoxyCodeLine{86         \}}
+\DoxyCodeLine{87     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+Main.\+is\+Running, ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+run(), and ce204\+\_\+hw4\+\_\+app.\+App.\+selected\+Menu.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+Main.\+main().
+
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_a45b1be5449020dce05f62c29c1684558}\label{classce204__hw4__app_1_1App_a45b1be5449020dce05f62c29c1684558}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!setMainMenu@{setMainMenu}}
+\index{setMainMenu@{setMainMenu}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{setMainMenu()}{setMainMenu()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+app.\+App.\+set\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the main menu as the selected menu. 
+
+
+
+Definition at line 119 of file App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119                               \{}
+\DoxyCodeLine{120         \mbox{\hyperlink{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}{selectedMenu}} = mainMenu;}
+\DoxyCodeLine{121     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+App.\+selected\+Menu.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+Menus.\+User\+Menu.\+run(), and ce204\+\_\+hw4\+\_\+app.\+Menus.\+Vendor\+Menu.\+run().
+
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_ac94655a70cb3de5b193bf05248335ddd}\label{classce204__hw4__app_1_1App_ac94655a70cb3de5b193bf05248335ddd}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!setMenu@{setMenu}}
+\index{setMenu@{setMenu}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{setMenu()}{setMenu()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+app.\+App.\+set\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu}{Menu}}}]{menu }\end{DoxyParamCaption})}
+
+
+
+Sets the selected menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & The menu object to be set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112                                    \{}
+\DoxyCodeLine{113         this.\mbox{\hyperlink{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}{selectedMenu}} = menu;}
+\DoxyCodeLine{114     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_ae4b4a88655bef56183426ac0efabb0e2}\label{classce204__hw4__app_1_1App_ae4b4a88655bef56183426ac0efabb0e2}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!setUserMenu@{setUserMenu}}
+\index{setUserMenu@{setUserMenu}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{setUserMenu()}{setUserMenu()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+app.\+App.\+set\+User\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the user menu as the selected menu. 
+
+
+
+Definition at line 133 of file App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133                               \{}
+\DoxyCodeLine{134         \mbox{\hyperlink{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}{selectedMenu}} = userMenu;}
+\DoxyCodeLine{135     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+App.\+selected\+Menu.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+Menus.\+Main\+Menu.\+run().
+
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_a08352aeacaf5af0418b9a78f95488fc4}\label{classce204__hw4__app_1_1App_a08352aeacaf5af0418b9a78f95488fc4}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!setVendorMenu@{setVendorMenu}}
+\index{setVendorMenu@{setVendorMenu}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{setVendorMenu()}{setVendorMenu()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+app.\+App.\+set\+Vendor\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the vendor menu as the selected menu. 
+
+
+
+Definition at line 126 of file App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126                                 \{}
+\DoxyCodeLine{127         \mbox{\hyperlink{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}{selectedMenu}} = vendorMenu;}
+\DoxyCodeLine{128     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+App.\+selected\+Menu.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+Menus.\+Main\+Menu.\+run().
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_ae059ebde02c55adf77d895f9e03bcfe2}\label{classce204__hw4__app_1_1App_ae059ebde02c55adf77d895f9e03bcfe2}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!scanner@{scanner}}
+\index{scanner@{scanner}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{scanner}{scanner}}
+{\footnotesize\ttfamily Scanner ce204\+\_\+hw4\+\_\+app.\+App.\+scanner}
+
+
+
+The user menu object. 
+
+
+
+Definition at line 62 of file App.\+java.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+App.\+App(), and ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+Menu().
+
+\mbox{\Hypertarget{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}\label{classce204__hw4__app_1_1App_a766f5556ee1c07396063bc54c800e1f6}} 
+\index{ce204\_hw4\_app.App@{ce204\_hw4\_app.App}!selectedMenu@{selectedMenu}}
+\index{selectedMenu@{selectedMenu}!ce204\_hw4\_app.App@{ce204\_hw4\_app.App}}
+\doxysubsubsection{\texorpdfstring{selectedMenu}{selectedMenu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu}{Menu}} ce204\+\_\+hw4\+\_\+app.\+App.\+selected\+Menu}
+
+
+
+The currently selected menu. 
+
+
+
+Definition at line 42 of file App.\+java.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+App.\+App(), ce204\+\_\+hw4\+\_\+app.\+App.\+run\+Menu(), ce204\+\_\+hw4\+\_\+app.\+App.\+set\+Main\+Menu(), ce204\+\_\+hw4\+\_\+app.\+App.\+set\+User\+Menu(), and ce204\+\_\+hw4\+\_\+app.\+App.\+set\+Vendor\+Menu().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+app/\mbox{\hyperlink{App_8java}{App.\+java}}\end{DoxyCompactItemize}

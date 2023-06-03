@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CreditCardPaymentProcessor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_lib.payment</a> &gt; <span class="el_source">CreditCardPaymentProcessor.java</span></div><h1>CreditCardPaymentProcessor.java</h1><pre class="source lang-java linenums">/**
+  @file CreditCardPaymentProcessor.java
+  @brief Contains classes related to payment processing and strategies.
+ */
+/**
+@package ce204_hw4_lib.payment
+@brief The ce204_hw4_lib.payment package contains all the classes and files related to the Rent Car App.
+*/
+
+package ce204_hw4_lib.payment;
+
+/**
+ * @class CreditCardPaymentProcessor
+ * @brief A class for processing credit card payments.
+ *
+ * This class implements the PaymentProcessor interface and provides functionality
+ * to process credit card payments. It takes a credit card number as a parameter
+ * and uses it to process the payment.
+ */
+public class CreditCardPaymentProcessor implements PaymentProcessor {
+	/**
+	 * @brief The credit card number associated with the account.
+	 */
+	private String creditCardNumber;
+
+
+  /**
+   * @brief Constructs a CreditCardPaymentProcessor object with the specified credit card number.
+   * @param The credit card number to be used for processing payments.
+   */
+<span class="fc" id="L31">  public CreditCardPaymentProcessor(String creditCardNumber) {</span>
+<span class="fc" id="L32">    this.creditCardNumber = creditCardNumber;</span>
+<span class="fc" id="L33">  }</span>
+
+
+
+  /**
+   * @brief Processes a payment using the credit card.
+   * @param amount The amount to be paid.
+   *
+   * This method processes the payment using the credit card number provided during
+   * object construction. It prints the amount being paid and a success message
+   * indicating that the payment has been processed successfully.
+   */
+
+  @Override
+  public void processPayment(double amount) {
+    // Code to process credit card payment goes here
+<span class="fc" id="L49">    System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L50">    System.out.println(&quot;Processing credit card payment...&quot;);</span>
+<span class="fc" id="L51">    System.out.println(&quot;\nAmount: $&quot; + amount);</span>
+<span class="fc" id="L52">    System.out.println(&quot;\nPayment processed successfully!&quot;);</span>
+<span class="fc" id="L53">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

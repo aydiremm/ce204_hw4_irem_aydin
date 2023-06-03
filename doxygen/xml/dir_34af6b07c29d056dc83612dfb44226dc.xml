@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_34af6b07c29d056dc83612dfb44226dc" kind="dir">
+    <compoundname>ce204_hw4/src/main</compoundname>
+    <innerdir refid="dir_3f336e0cd03f5064b3e689fd9fce283d">ce204_hw4/src/main/java</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/"/>
+  </compounddef>
+</doxygen>

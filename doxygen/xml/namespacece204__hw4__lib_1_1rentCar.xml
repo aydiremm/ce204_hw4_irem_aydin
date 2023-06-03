@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__lib_1_1rentCar" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_lib::rentCar</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1Car" prot="public">ce204_hw4_lib::rentCar::Car</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1CarFactory" prot="public">ce204_hw4_lib::rentCar::CarFactory</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1EconomicCar" prot="public">ce204_hw4_lib::rentCar::EconomicCar</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1LuxuryCar" prot="public">ce204_hw4_lib::rentCar::LuxuryCar</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1SportsCar" prot="public">ce204_hw4_lib::rentCar::SportsCar</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar" prot="public">ce204_hw4_lib::rentCar::SUVCar</innerclass>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1Vendor" prot="public">ce204_hw4_lib::rentCar::Vendor</innerclass>
+    <briefdescription>
+<para>The <ref refid="namespacece204__hw4__lib_1_1rentCar" kindref="compound">ce204_hw4_lib.rentCar</ref> package contains all the classes and files related to the Rent <ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref> App. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="namespacece204__hw4__lib_1_1rentCar" kindref="compound">ce204_hw4_lib.rentCar</ref> package contains all the classes and files related to the Calculator App. </para>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Car.java" line="9" column="1"/>
+  </compounddef>
+</doxygen>

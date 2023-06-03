@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="User_8java" kind="file" language="Java">
+    <compoundname>User.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1reservation_1_1User" prot="public">ce204_hw4_lib::reservation::User</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1reservation">ce204_hw4_lib::reservation</innernamespace>
+    <briefdescription>
+<para>This package contains classes related to reservations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.reservation;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classce204__hw4__lib_1_1reservation_1_1User" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1reservation_1_1User" kindref="compound">User</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>name;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classce204__hw4__lib_1_1reservation_1_1User_1a9e8d7bf644e76f597143be2633094576" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1User_1a9e8d7bf644e76f597143be2633094576" kindref="member">User</ref>(String<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.name<sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classce204__hw4__lib_1_1reservation_1_1User_1acc787a81e4474e3d309900c485486dfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1User_1acc787a81e4474e3d309900c485486dfa" kindref="member">update</ref>(String<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>Received<sp/>notification:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>message);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/User.java"/>
+  </compounddef>
+</doxygen>

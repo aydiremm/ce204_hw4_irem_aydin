@@ -1,0 +1,100 @@
+\hypertarget{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Credit\+Card\+Payment\+Processor Class Reference}
+\label{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor}\index{ce204\_hw4\_lib.payment.CreditCardPaymentProcessor@{ce204\_hw4\_lib.payment.CreditCardPaymentProcessor}}
+
+
+A class for processing credit card payments.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+lib.\+payment.\+Credit\+Card\+Payment\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_afb71860cb6180773c67d86f78c2c4168}{Credit\+Card\+Payment\+Processor}} (String credit\+Card\+Number)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor}{Credit\+Card\+Payment\+Processor}} object with the specified credit card number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_abe73630a6c96a473b3a8f98ba2c427b7}{process\+Payment}} (double amount)
+\begin{DoxyCompactList}\small\item\em Processes a payment using the credit card. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for processing credit card payments. 
+
+This class implements the \mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor}{Payment\+Processor}} interface and provides functionality to process credit card payments. It takes a credit card number as a parameter and uses it to process the payment. 
+
+Definition at line 20 of file Credit\+Card\+Payment\+Processor.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_afb71860cb6180773c67d86f78c2c4168}\label{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_afb71860cb6180773c67d86f78c2c4168}} 
+\index{ce204\_hw4\_lib.payment.CreditCardPaymentProcessor@{ce204\_hw4\_lib.payment.CreditCardPaymentProcessor}!CreditCardPaymentProcessor@{CreditCardPaymentProcessor}}
+\index{CreditCardPaymentProcessor@{CreditCardPaymentProcessor}!ce204\_hw4\_lib.payment.CreditCardPaymentProcessor@{ce204\_hw4\_lib.payment.CreditCardPaymentProcessor}}
+\doxysubsubsection{\texorpdfstring{CreditCardPaymentProcessor()}{CreditCardPaymentProcessor()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+lib.\+payment.\+Credit\+Card\+Payment\+Processor.\+Credit\+Card\+Payment\+Processor (\begin{DoxyParamCaption}\item[{String}]{credit\+Card\+Number }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor}{Credit\+Card\+Payment\+Processor}} object with the specified credit card number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & credit card number to be used for processing payments. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Credit\+Card\+Payment\+Processor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                                                              \{}
+\DoxyCodeLine{32     this.creditCardNumber = creditCardNumber;}
+\DoxyCodeLine{33   \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_abe73630a6c96a473b3a8f98ba2c427b7}\label{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_abe73630a6c96a473b3a8f98ba2c427b7}} 
+\index{ce204\_hw4\_lib.payment.CreditCardPaymentProcessor@{ce204\_hw4\_lib.payment.CreditCardPaymentProcessor}!processPayment@{processPayment}}
+\index{processPayment@{processPayment}!ce204\_hw4\_lib.payment.CreditCardPaymentProcessor@{ce204\_hw4\_lib.payment.CreditCardPaymentProcessor}}
+\doxysubsubsection{\texorpdfstring{processPayment()}{processPayment()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+payment.\+Credit\+Card\+Payment\+Processor.\+process\+Payment (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Processes a payment using the credit card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to be paid.\\
+\hline
+\end{DoxyParams}
+This method processes the payment using the credit card number provided during object construction. It prints the amount being paid and a success message indicating that the payment has been processed successfully. 
+
+Reimplemented from \mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor_a694986cd3904d68398afeae23ff0d93f}{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Payment\+Processor}}.
+
+
+
+Definition at line 47 of file Credit\+Card\+Payment\+Processor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                             \{}
+\DoxyCodeLine{48     \textcolor{comment}{// Code to process credit card payment goes here}}
+\DoxyCodeLine{49     System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{50     System.out.println(\textcolor{stringliteral}{"{}Processing credit card payment..."{}});}
+\DoxyCodeLine{51     System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nAmount: \$"{}} + amount);}
+\DoxyCodeLine{52     System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nPayment processed successfully!"{}});}
+\DoxyCodeLine{53   \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/payment/\mbox{\hyperlink{CreditCardPaymentProcessor_8java}{Credit\+Card\+Payment\+Processor.\+java}}\end{DoxyCompactItemize}

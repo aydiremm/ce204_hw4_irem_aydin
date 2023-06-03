@@ -1,0 +1,134 @@
+\hypertarget{classce204__hw4__app_1_1Menus_1_1VendorMenu}{}\doxysection{ce204\+\_\+hw4\+\_\+app.\+Menus.\+Vendor\+Menu Class Reference}
+\label{classce204__hw4__app_1_1Menus_1_1VendorMenu}\index{ce204\_hw4\_app.Menus.VendorMenu@{ce204\_hw4\_app.Menus.VendorMenu}}
+
+
+Represents a menu for vendor-\/related actions in the car rental application.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+app.\+Menus.\+Vendor\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classce204__hw4__app_1_1Menus_1_1VendorMenu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1VendorMenu_a859b6b6357a7743185b07d00f5faedef}{Vendor\+Menu}} (\mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1VendorMenu}{Vendor\+Menu}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1VendorMenu_aeaf0207fde3ddc5f9c0bcbb90375953f}{run}} ()
+\begin{DoxyCompactList}\small\item\em Executes the main functionality of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a menu for vendor-\/related actions in the car rental application. 
+
+Definition at line 26 of file Vendor\+Menu.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1Menus_1_1VendorMenu_a859b6b6357a7743185b07d00f5faedef}\label{classce204__hw4__app_1_1Menus_1_1VendorMenu_a859b6b6357a7743185b07d00f5faedef}} 
+\index{ce204\_hw4\_app.Menus.VendorMenu@{ce204\_hw4\_app.Menus.VendorMenu}!VendorMenu@{VendorMenu}}
+\index{VendorMenu@{VendorMenu}!ce204\_hw4\_app.Menus.VendorMenu@{ce204\_hw4\_app.Menus.VendorMenu}}
+\doxysubsubsection{\texorpdfstring{VendorMenu()}{VendorMenu()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+app.\+Menus.\+Vendor\+Menu.\+Vendor\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__app_1_1App}{App}}}]{app }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1VendorMenu}{Vendor\+Menu}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & The \mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} object representing the car rental application. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Vendor\+Menu.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                              \{}
+\DoxyCodeLine{42     super(\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}});}
+\DoxyCodeLine{43     cars = \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}}.\mbox{\hyperlink{classce204__hw4__app_1_1App_a02856f89c949919b7e20aac2e0cb4ae6}{getCars}}();}
+\DoxyCodeLine{44     vendors = \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}}.\mbox{\hyperlink{classce204__hw4__app_1_1App_ae9a397f2a6d8c508cba3b63405254cb3}{getVendors}}();}
+\DoxyCodeLine{45   \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+app, ce204\+\_\+hw4\+\_\+app.\+App.\+get\+Cars(), and ce204\+\_\+hw4\+\_\+app.\+App.\+get\+Vendors().
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1Menus_1_1VendorMenu_aeaf0207fde3ddc5f9c0bcbb90375953f}\label{classce204__hw4__app_1_1Menus_1_1VendorMenu_aeaf0207fde3ddc5f9c0bcbb90375953f}} 
+\index{ce204\_hw4\_app.Menus.VendorMenu@{ce204\_hw4\_app.Menus.VendorMenu}!run@{run}}
+\index{run@{run}!ce204\_hw4\_app.Menus.VendorMenu@{ce204\_hw4\_app.Menus.VendorMenu}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+app.\+Menus.\+Vendor\+Menu.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executes the main functionality of the class. 
+
+This method represents the main entry point of the class and is responsible for executing its core functionality. It displays a menu for vendors, allowing them to add or remove cars, or exit the menu. The user\textquotesingle{}s choice is read from the input using a Scanner object. Based on the chosen option, the corresponding method is called to perform the requested action. The loop continues until the user chooses to exit the menu. 
+
+Reimplemented from \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_afddd026a97261b7f8d1573a9d12b574a}{ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu}}.
+
+
+
+Definition at line 56 of file Vendor\+Menu.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                     \{}
+\DoxyCodeLine{57     \textcolor{keywordtype}{boolean} exitVendorMenu = \textcolor{keyword}{false};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keywordflow}{while} (!exitVendorMenu) \{}
+\DoxyCodeLine{60       System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{61       System.out.println(\textcolor{stringliteral}{"{}Vendor Menu"{}});}
+\DoxyCodeLine{62       System.out.println(\textcolor{stringliteral}{"{}1. Add Car"{}});}
+\DoxyCodeLine{63       System.out.println(\textcolor{stringliteral}{"{}2. Remove Car"{}});}
+\DoxyCodeLine{64       System.out.println(\textcolor{stringliteral}{"{}3. Exit"{}});}
+\DoxyCodeLine{65       System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{66       System.out.print(\textcolor{stringliteral}{"{}Enter your choice: "{}});}
+\DoxyCodeLine{67       \textcolor{keywordtype}{int} choice = \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_ad20792e6d4114b7358f78be1e8443edd}{scanner}}.nextInt();}
+\DoxyCodeLine{68       \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_ad20792e6d4114b7358f78be1e8443edd}{scanner}}.nextLine(); \textcolor{comment}{// Consume the newline character}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70       \textcolor{keywordflow}{switch} (choice) \{}
+\DoxyCodeLine{71         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{72           addCar();}
+\DoxyCodeLine{73           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{76           removeCar();}
+\DoxyCodeLine{77           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{80           exitVendorMenu = \textcolor{keyword}{true};}
+\DoxyCodeLine{81           System.out.println(\textcolor{stringliteral}{"{}Exiting Vendor Menu..."{}});}
+\DoxyCodeLine{82           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{85           System.out.println(\textcolor{stringliteral}{"{}Invalid choice. Please try again."{}});}
+\DoxyCodeLine{86           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{87       \}}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     \textcolor{comment}{// Return to the role selection menu after exiting the vendor menu}}
+\DoxyCodeLine{91     \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}}.\mbox{\hyperlink{classce204__hw4__app_1_1App_a45b1be5449020dce05f62c29c1684558}{setMainMenu}}();}
+\DoxyCodeLine{92   \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+app, ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+scanner, and ce204\+\_\+hw4\+\_\+app.\+App.\+set\+Main\+Menu().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+app/\+Menus/\mbox{\hyperlink{VendorMenu_8java}{Vendor\+Menu.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__app_1_1Menus" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_app::Menus</compoundname>
+    <innerclass refid="classce204__hw4__app_1_1Menus_1_1MainMenu" prot="public">ce204_hw4_app::Menus::MainMenu</innerclass>
+    <innerclass refid="classce204__hw4__app_1_1Menus_1_1Menu" prot="public">ce204_hw4_app::Menus::Menu</innerclass>
+    <innerclass refid="classce204__hw4__app_1_1Menus_1_1UserMenu" prot="public">ce204_hw4_app::Menus::UserMenu</innerclass>
+    <innerclass refid="classce204__hw4__app_1_1Menus_1_1VendorMenu" prot="public">ce204_hw4_app::Menus::VendorMenu</innerclass>
+    <briefdescription>
+<para>The <ref refid="namespacece204__hw4__app_1_1Menus" kindref="compound">ce204_hw4_app.Menus</ref> package contains all the classes and files related to the Rent Car <ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/MainMenu.java" line="11" column="1"/>
+  </compounddef>
+</doxygen>

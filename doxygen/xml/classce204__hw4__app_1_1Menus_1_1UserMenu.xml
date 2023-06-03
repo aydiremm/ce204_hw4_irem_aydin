@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__app_1_1Menus_1_1UserMenu" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_app::Menus::UserMenu</compoundname>
+    <basecompoundref refid="classce204__hw4__app_1_1Menus_1_1Menu" prot="public" virt="non-virtual">ce204_hw4_app.Menus.Menu</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classce204__hw4__app_1_1Menus_1_1UserMenu_1acf2979f22421a248dbea115d3ef91795" prot="package" static="no" mutable="no">
+        <type>List&lt; <ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref> &gt;</type>
+        <definition>List&lt;Car&gt; ce204_hw4_app.Menus.UserMenu.cars</definition>
+        <argsstring></argsstring>
+        <name>cars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" line="41" column="6" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1UserMenu_1afaa85cec4f3da7ffd597b62549284bbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_app.Menus.UserMenu.UserMenu</definition>
+        <argsstring>(App app)</argsstring>
+        <name>UserMenu</name>
+        <param>
+          <type><ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref></type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classce204__hw4__app_1_1Menus_1_1UserMenu" kindref="compound">UserMenu</ref> object with the specified <ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" line="48" column="8" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" bodystart="48" bodyend="51"/>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" compoundref="Menu_8java" startline="41">ce204_hw4_app.Menus.Menu.app</references>
+        <references refid="classce204__hw4__app_1_1App_1a02856f89c949919b7e20aac2e0cb4ae6" compoundref="App_8java" startline="94" endline="96">ce204_hw4_app.App.getCars</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1UserMenu_1a7a826d22e3310259d597ed276c75b1a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_app.Menus.UserMenu.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classce204__hw4__app_1_1Menus_1_1Menu_1afddd026a97261b7f8d1573a9d12b574a">run</reimplements>
+        <briefdescription>
+<para>Displays the user menu and handles user input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   The run() method prompts the user to select an option from the user
+   menu and performs actions based on the selected choice. It allows
+   users to view available cars, rent a car, or exit the menu.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" line="61" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" bodystart="61" bodyend="98"/>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" compoundref="Menu_8java" startline="41">ce204_hw4_app.Menus.Menu.app</references>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" compoundref="Menu_8java" startline="45">ce204_hw4_app.Menus.Menu.scanner</references>
+        <references refid="classce204__hw4__app_1_1App_1a45b1be5449020dce05f62c29c1684558" compoundref="App_8java" startline="119" endline="121">ce204_hw4_app.App.setMainMenu</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1UserMenu_1aed5313f9624245622da56268194c83c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_app.Menus.UserMenu.viewAvailableCars</definition>
+        <argsstring>()</argsstring>
+        <name>viewAvailableCars</name>
+        <briefdescription>
+<para>Displays the list of available cars. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" line="103" column="14" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" bodystart="103" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1UserMenu_1a017548c6a73c84e90c1a31b239c27fb3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_app.Menus.UserMenu.rentCar</definition>
+        <argsstring>()</argsstring>
+        <name>rentCar</name>
+        <briefdescription>
+<para>Handles the process of renting a car. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" line="115" column="14" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" bodystart="115" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the user menu of the Car Rental Management System. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>   The UserMenu class extends the Menu class and provides functionality
+   for displaying the user menu options and handling user input. It
+   allows users to view available cars, rent a car, or exit the menu.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_app.Menus.UserMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1UserMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_app.Menus.Menu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1Menu"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ce204_hw4_app.App</label>
+        <link refid="classce204__hw4__app_1_1App"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>scanner</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>selectedMenu</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Scanner</label>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_app.Menus.UserMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1UserMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cars</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>List&lt; ce204_hw4_lib.rentCar.Car &gt;</label>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_app.Menus.Menu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1Menu"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>app</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>scanner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" line="39" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/UserMenu.java" bodystart="39" bodyend="234"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" prot="protected" virt="non-virtual"><scope>ce204_hw4_app::Menus::UserMenu</scope><name>app</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1acf2979f22421a248dbea115d3ef91795" prot="package" virt="non-virtual"><scope>ce204_hw4_app::Menus::UserMenu</scope><name>cars</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1a41fb46561d49b634d57ed3fd2841a10e" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::UserMenu</scope><name>Menu</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1a017548c6a73c84e90c1a31b239c27fb3" prot="private" virt="non-virtual"><scope>ce204_hw4_app::Menus::UserMenu</scope><name>rentCar</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1a7a826d22e3310259d597ed276c75b1a2" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::UserMenu</scope><name>run</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" prot="protected" virt="non-virtual"><scope>ce204_hw4_app::Menus::UserMenu</scope><name>scanner</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1afaa85cec4f3da7ffd597b62549284bbc" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::UserMenu</scope><name>UserMenu</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1UserMenu_1aed5313f9624245622da56268194c83c3" prot="private" virt="non-virtual"><scope>ce204_hw4_app::Menus::UserMenu</scope><name>viewAvailableCars</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

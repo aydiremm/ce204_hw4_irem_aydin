@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::reservation::ConsoleOutputCapturer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1abd67e9fb07305f67d88679979eb3d7a3" prot="private" static="no" mutable="no">
+        <type>ByteArrayOutputStream</type>
+        <definition>ByteArrayOutputStream ce204_hw4_lib.reservation.ConsoleOutputCapturer.outputStream</definition>
+        <argsstring></argsstring>
+        <name>outputStream</name>
+        <briefdescription>
+<para>Represents the ByteArrayOutputStream used for capturing console output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable stores the ByteArrayOutputStream instance that is used to capture the console output. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" line="28" column="31" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1af4bb5664bd058fbea4e15b7613050a12" prot="private" static="no" mutable="no">
+        <type>PrintStream</type>
+        <definition>PrintStream ce204_hw4_lib.reservation.ConsoleOutputCapturer.originalPrintStream</definition>
+        <argsstring></argsstring>
+        <name>originalPrintStream</name>
+        <briefdescription>
+<para>Represents the original PrintStream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This variable stores the original PrintStream instance before it is
+   replaced with the custom PrintStream.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" line="35" column="21" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1a269b85d0b19d18354ef6cbec73cb5c4c" prot="private" static="no" mutable="no">
+        <type>PrintStream</type>
+        <definition>PrintStream ce204_hw4_lib.reservation.ConsoleOutputCapturer.customPrintStream</definition>
+        <argsstring></argsstring>
+        <name>customPrintStream</name>
+        <briefdescription>
+<para>Represents the custom PrintStream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This variable stores the custom PrintStream instance that is used to
+   redirect the console output to the ByteArrayOutputStream.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" line="42" column="21" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1a7a70153f9220f684226da7a39843b247" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.reservation.ConsoleOutputCapturer.start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>Starts capturing console output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" line="47" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1a04e81ce6b7fb4423334f41cacbd8c649" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.reservation.ConsoleOutputCapturer.stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+<para>Stops capturing console output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" line="58" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1aa2c16a94d07c2bb014b31f83a816591f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.reservation.ConsoleOutputCapturer.getOutput</definition>
+        <argsstring>()</argsstring>
+        <name>getOutput</name>
+        <briefdescription>
+<para>Gets the captured console output as a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The captured console output. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" line="68" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A utility class for capturing console output. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" line="20" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutputCapturer.java" bodystart="20" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1a269b85d0b19d18354ef6cbec73cb5c4c" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutputCapturer</scope><name>customPrintStream</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1aa2c16a94d07c2bb014b31f83a816591f" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutputCapturer</scope><name>getOutput</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1af4bb5664bd058fbea4e15b7613050a12" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutputCapturer</scope><name>originalPrintStream</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1abd67e9fb07305f67d88679979eb3d7a3" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutputCapturer</scope><name>outputStream</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1a7a70153f9220f684226da7a39843b247" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutputCapturer</scope><name>start</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_1a04e81ce6b7fb4423334f41cacbd8c649" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutputCapturer</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

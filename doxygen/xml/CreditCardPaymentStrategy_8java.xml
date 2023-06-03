@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="CreditCardPaymentStrategy_8java" kind="file" language="Java">
+    <compoundname>CreditCardPaymentStrategy.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy" prot="public">ce204_hw4_lib::payment::CreditCardPaymentStrategy</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1payment">ce204_hw4_lib::payment</innernamespace>
+    <briefdescription>
+<para>Contains classes related to payment processing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.payment;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy" kindref="compound">CreditCardPaymentStrategy</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" kindref="compound">PaymentStrategy</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>cardNumber;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>expirationDate;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>cvv;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a49abdbbda7b3fcb6ea0574cf38da4309" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a49abdbbda7b3fcb6ea0574cf38da4309" kindref="member">CreditCardPaymentStrategy</ref>(String<sp/>cardNumber,<sp/>String<sp/>expirationDate,<sp/>String<sp/>cvv)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.cardNumber<sp/>=<sp/>cardNumber;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.expirationDate<sp/>=<sp/>expirationDate;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.cvv<sp/>=<sp/>cvv;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a62b6f4212d5decf0fd7ed4d4d5abb2f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a62b6f4212d5decf0fd7ed4d4d5abb2f3" kindref="member">pay</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Paying<sp/>$&quot;</highlight><highlight class="normal"><sp/>+<sp/>amount<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>with<sp/>Credit<sp/>Card:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>cardNumber);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Additional<sp/>code<sp/>for<sp/>processing<sp/>credit<sp/>card<sp/>payment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java"/>
+  </compounddef>
+</doxygen>

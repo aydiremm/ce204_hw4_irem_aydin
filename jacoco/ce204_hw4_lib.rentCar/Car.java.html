@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Car.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_lib.rentCar</a> &gt; <span class="el_source">Car.java</span></div><h1>Car.java</h1><pre class="source lang-java linenums">/**
+  @file Car.java
+ 
+  @brief Car abstract class.
+ 
+  This abstract class represents a car. It provides common attributes and methods that all car types inherit.
+ */
+/**
+@package ce204_hw4_lib.rentCar
+@brief The ce204_hw4_lib.rentCar package contains all the classes and files related to the Rent Car App.
+*/
+package ce204_hw4_lib.rentCar;
+
+/**
+ * @class Car
+ * @brief Package for car rental management.
+ * 
+ */
+public abstract class Car {
+	/**
+	 * @brief The brand of the item.
+	 */
+	protected String brand;
+	/**
+	 * @brief The model of the item.
+	 */
+	protected String model;
+	/**
+	 * @brief The year of the item.
+	 */
+	protected int year;
+	/**
+	 * @brief The price of the item.
+	 */
+	protected double price;
+	/**
+	 * @brief The vendor associated with the item.
+	 */
+	protected Vendor vendor;
+
+	/**
+	 * @brief Constructs a car object with the specified brand, model, and year.
+	 *
+	 * @param brand The brand of the car.
+	 * @param model The model of the car.
+	 * @param year  The year of the car.
+	 */
+<span class="fc" id="L48">	public Car(String brand, String model, int year) {</span>
+<span class="fc" id="L49">		this.brand = brand;</span>
+<span class="fc" id="L50">		this.model = model;</span>
+<span class="fc" id="L51">		this.year = year;</span>
+<span class="fc" id="L52">		this.vendor = null;</span>
+<span class="fc" id="L53">	}</span>
+
+	/**
+	 * @brief Displays the information about the car.
+	 *
+	 *        This method should be implemented by the subclasses to display
+	 *        specific information about the car type.
+	 */
+	public abstract void displayInfo();
+
+	/**
+	 * @brief Gets the price of the car.
+	 *
+	 * @return The price of the car.
+	 */
+	public double getPrice() {
+<span class="fc" id="L69">		return price;</span>
+	}
+
+	/**
+	 * @brief Sets the price of the car.
+	 *
+	 * @param price The price of the car.
+	 */
+	public void setPrice(double price) {
+<span class="fc" id="L78">		this.price = price;</span>
+<span class="fc" id="L79">	}</span>
+
+	/**
+	 * @brief Gets the brand of the car.
+	 *
+	 * @return The brand of the car.
+	 */
+	public String getBrand() {
+<span class="fc" id="L87">		return brand;</span>
+	}
+
+	/**
+	 * @brief Gets the model of the car.
+	 *
+	 * @return The model of the car.
+	 */
+	public String getModel() {
+<span class="fc" id="L96">		return model;</span>
+	}
+
+	/**
+	 * @brief Gets the year of the car.
+	 *
+	 * @return The year of the car.
+	 */
+	public int getYear() {
+<span class="fc" id="L105">		return year;</span>
+	}
+
+	/**
+	 * @brief Sets the vendor of the car.
+	 *
+	 * @return The vendor of the car.
+	 */
+	public void setVendor(Vendor vendor) {
+<span class="fc" id="L114">		this.vendor = vendor;</span>
+<span class="fc" id="L115">	}</span>
+
+	/**
+	 * @brief Gets the vendor of the car.
+	 *
+	 * @return The vendor of the car.
+	 */
+	public Vendor getVendor() {
+<span class="fc" id="L123">		return vendor;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

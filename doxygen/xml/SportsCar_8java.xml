@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="SportsCar_8java" kind="file" language="Java">
+    <compoundname>SportsCar.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1SportsCar" prot="public">ce204_hw4_lib::rentCar::SportsCar</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1rentCar">ce204_hw4_lib::rentCar</innernamespace>
+    <briefdescription>
+<para>This file serves as a demonstration file for the Rent Car class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.rentCar;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classce204__hw4__lib_1_1rentCar_1_1SportsCar" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1rentCar_1_1SportsCar" kindref="compound">SportsCar</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classce204__hw4__lib_1_1rentCar_1_1SportsCar_1a4d343550fe3d694b120989ed08a5e27b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1SportsCar_1a4d343550fe3d694b120989ed08a5e27b" kindref="member">SportsCar</ref>(String<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" kindref="member">brand</ref>,<sp/>String<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" kindref="member">model</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" kindref="member">year</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super(<ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" kindref="member">brand</ref>,<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" kindref="member">model</ref>,<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" kindref="member">year</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classce204__hw4__lib_1_1rentCar_1_1SportsCar_1aa8181e78d92c5e1a11bdfed7d85847d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1SportsCar_1aa8181e78d92c5e1a11bdfed7d85847d2" kindref="member">displayInfo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Sports<sp/>Car:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" kindref="member">brand</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" kindref="member">model</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" kindref="member">year</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/SportsCar.java"/>
+  </compounddef>
+</doxygen>

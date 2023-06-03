@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_dbeb9157f18651ef4eab5d0ee509a0b4" kind="dir">
+    <compoundname>ce204_hw4/src/main/java/ce204_hw4_app/Menus</compoundname>
+    <innerfile refid="MainMenu_8java">MainMenu.java</innerfile>
+    <innerfile refid="Menu_8java">Menu.java</innerfile>
+    <innerfile refid="UserMenu_8java">UserMenu.java</innerfile>
+    <innerfile refid="VendorMenu_8java">VendorMenu.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/"/>
+  </compounddef>
+</doxygen>

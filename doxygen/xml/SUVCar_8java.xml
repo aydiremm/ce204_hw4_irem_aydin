@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="SUVCar_8java" kind="file" language="Java">
+    <compoundname>SUVCar.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar" prot="public">ce204_hw4_lib::rentCar::SUVCar</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1rentCar">ce204_hw4_lib::rentCar</innernamespace>
+    <briefdescription>
+<para>This file serves as a demonstration file for the Rent Car class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.rentCar;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar" kindref="compound">SUVCar</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9e3fea2e6110187230f45b82b3831183" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9e3fea2e6110187230f45b82b3831183" kindref="member">SUVCar</ref>(String<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" kindref="member">brand</ref>,<sp/>String<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" kindref="member">model</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" kindref="member">year</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>super(<ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" kindref="member">brand</ref>,<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" kindref="member">model</ref>,<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" kindref="member">year</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9f65380cdadf0b00d6e6eb19591710ee" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9f65380cdadf0b00d6e6eb19591710ee" kindref="member">displayInfo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;SUV<sp/>Car:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" kindref="member">brand</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" kindref="member">model</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" kindref="member">year</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/SUVCar.java"/>
+  </compounddef>
+</doxygen>

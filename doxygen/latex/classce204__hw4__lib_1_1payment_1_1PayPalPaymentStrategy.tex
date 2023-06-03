@@ -1,0 +1,109 @@
+\hypertarget{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Pay\+Pal\+Payment\+Strategy Class Reference}
+\label{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy}\index{ce204\_hw4\_lib.payment.PayPalPaymentStrategy@{ce204\_hw4\_lib.payment.PayPalPaymentStrategy}}
+
+
+Implements the Pay\+Pal payment strategy.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+lib.\+payment.\+Pay\+Pal\+Payment\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_aa76ec18889d0f7e50ca0b6d1c663f002}{Pay\+Pal\+Payment\+Strategy}} (String email)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy}{Pay\+Pal\+Payment\+Strategy}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_a63c51b7a134d86d776119d8111e26944}{pay}} (double amount)
+\begin{DoxyCompactList}\small\item\em Performs the payment using the Pay\+Pal account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements the Pay\+Pal payment strategy. 
+
+\begin{DoxyVerb}   This class represents a payment strategy that allows making payments
+   using a PayPal account. The payment amount is processed with the
+   specified PayPal account.
+\end{DoxyVerb}
+ 
+
+Definition at line 20 of file Pay\+Pal\+Payment\+Strategy.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_aa76ec18889d0f7e50ca0b6d1c663f002}\label{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_aa76ec18889d0f7e50ca0b6d1c663f002}} 
+\index{ce204\_hw4\_lib.payment.PayPalPaymentStrategy@{ce204\_hw4\_lib.payment.PayPalPaymentStrategy}!PayPalPaymentStrategy@{PayPalPaymentStrategy}}
+\index{PayPalPaymentStrategy@{PayPalPaymentStrategy}!ce204\_hw4\_lib.payment.PayPalPaymentStrategy@{ce204\_hw4\_lib.payment.PayPalPaymentStrategy}}
+\doxysubsubsection{\texorpdfstring{PayPalPaymentStrategy()}{PayPalPaymentStrategy()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+lib.\+payment.\+Pay\+Pal\+Payment\+Strategy.\+Pay\+Pal\+Payment\+Strategy (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy}{Pay\+Pal\+Payment\+Strategy}} instance. 
+
+\begin{DoxyVerb}   This constructor initializes the PayPalPaymentStrategy with the
+   provided email address.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em email} & The email address associated with the Pay\+Pal account. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Pay\+Pal\+Payment\+Strategy.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34                                                \{}
+\DoxyCodeLine{35         this.email = email;}
+\DoxyCodeLine{36     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_a63c51b7a134d86d776119d8111e26944}\label{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_a63c51b7a134d86d776119d8111e26944}} 
+\index{ce204\_hw4\_lib.payment.PayPalPaymentStrategy@{ce204\_hw4\_lib.payment.PayPalPaymentStrategy}!pay@{pay}}
+\index{pay@{pay}!ce204\_hw4\_lib.payment.PayPalPaymentStrategy@{ce204\_hw4\_lib.payment.PayPalPaymentStrategy}}
+\doxysubsubsection{\texorpdfstring{pay()}{pay()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+payment.\+Pay\+Pal\+Payment\+Strategy.\+pay (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Performs the payment using the Pay\+Pal account. 
+
+\begin{DoxyVerb}   This method processes the specified payment amount using the PayPal
+   account associated with this strategy. It prints the payment amount
+   and the PayPal account email address to the console. Additional code
+   for processing the PayPal payment may be included.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to be paid. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_ac8dc89712d14a43bf57f627d776829b1}{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Payment\+Strategy}}.
+
+
+
+Definition at line 49 of file Pay\+Pal\+Payment\+Strategy.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                    \{}
+\DoxyCodeLine{50         System.out.println(\textcolor{stringliteral}{"{}Paying \$"{}} + amount + \textcolor{stringliteral}{"{} with PayPal account: "{}} + email);}
+\DoxyCodeLine{51         \textcolor{comment}{// Additional code for processing PayPal payment}}
+\DoxyCodeLine{52     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/payment/\mbox{\hyperlink{PayPalPaymentStrategy_8java}{Pay\+Pal\+Payment\+Strategy.\+java}}\end{DoxyCompactItemize}

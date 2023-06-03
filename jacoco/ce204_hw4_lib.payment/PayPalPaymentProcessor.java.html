@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PayPalPaymentProcessor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_lib.payment</a> &gt; <span class="el_source">PayPalPaymentProcessor.java</span></div><h1>PayPalPaymentProcessor.java</h1><pre class="source lang-java linenums">/**
+  @file PayPalPaymentProcessor.java
+  @brief Contains classes related to payment processing.
+ */
+
+/**
+@package ce204_hw4_lib.payment
+@brief The ce204_hw4_lib.payment package contains all the classes and files related to the Rent Car App.
+*/
+package ce204_hw4_lib.payment;
+
+/**
+ * @class PayPalPaymentProcessor
+ * @brief This class provides a method to process payments using the PayPal
+ *        payment system.
+ */
+<span class="fc" id="L17">public class PayPalPaymentProcessor {</span>
+
+	/**
+	 * @brief Processes a payment using the PayPal payment system.
+	 *
+	 *        This method takes in the payment amount and the customer's email
+	 *        address and performs the necessary steps to process the payment using
+	 *        PayPal.
+	 *
+	 * @param amount The amount to be paid.
+	 * @param email  The customer's email address associated with the payment.
+	 *
+	 * 
+	 */
+	public void processPayment(double amount, String email) {
+		// Code to process PayPal payment goes here
+<span class="fc" id="L33">		System.out.println(&quot;Processing PayPal payment...&quot;);</span>
+<span class="fc" id="L34">		System.out.println(&quot;Amount: $&quot; + amount);</span>
+<span class="fc" id="L35">		System.out.println(&quot;Email: &quot; + email);</span>
+<span class="fc" id="L36">		System.out.println(&quot;Payment processed successfully!&quot;);</span>
+<span class="fc" id="L37">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserMenu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_app.Menus</a> &gt; <span class="el_source">UserMenu.java</span></div><h1>UserMenu.java</h1><pre class="source lang-java linenums">
+/**
+  @file UserMenu.java
+ 
+  @brief Contains the menu classes for the Car Rental Management System application.
+ 
+  This package includes the menu classes used in the application, such as the UserMenu and MainMenu classes.
+  These classes provide functionality for displaying menus, handling user input, and performing specific tasks based on user choices.
+ */
+/**
+
+@package ce204_hw4_app.Menus
+@brief The ce204_hw4_app.Menus package contains all the classes and files related to the Rent Car App.
+*/
+package ce204_hw4_app.Menus;
+
+import java.util.List;
+import java.util.Scanner;
+
+import ce204_hw4_app.App;
+import ce204_hw4_lib.payment.CashPaymentStrategy;
+import ce204_hw4_lib.payment.CreditCardPaymentProcessor;
+import ce204_hw4_lib.payment.PayPalPaymentStrategy;
+import ce204_hw4_lib.payment.PaymentProcessor;
+import ce204_hw4_lib.payment.PaymentStrategy;
+import ce204_hw4_lib.payment.Reservation;
+import ce204_hw4_lib.rentCar.Car;
+import ce204_hw4_lib.rentCar.Vendor;
+
+/**
+ * @class UserMenu
+ *
+ * @brief Represents the user menu of the Car Rental Management System.
+ *
+ *        The UserMenu class extends the Menu class and provides functionality
+ *        for displaying the user menu options and handling user input. It
+ *        allows users to view available cars, rent a car, or exit the menu.
+ */
+public class UserMenu extends Menu {
+
+	List&lt;Car&gt; cars;
+
+	/**
+	 * @brief Constructs a UserMenu object with the specified App instance.
+	 *
+	 * @param app The App instance.
+	 */
+	public UserMenu(App app) {
+<span class="fc" id="L49">		super(app);</span>
+<span class="fc" id="L50">		cars = app.getCars();</span>
+<span class="fc" id="L51">	}</span>
+
+	/**
+	 * @brief Displays the user menu and handles user input.
+	 *
+	 *        The run() method prompts the user to select an option from the user
+	 *        menu and performs actions based on the selected choice. It allows
+	 *        users to view available cars, rent a car, or exit the menu.
+	 */
+	@Override
+	public void run() {
+<span class="fc" id="L62">		boolean exitUserMenu = false;</span>
+
+<span class="fc bfc" id="L64" title="All 2 branches covered.">		while (!exitUserMenu) {</span>
+<span class="fc" id="L65">			System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L66">			System.out.println(&quot;User Menu&quot;);</span>
+<span class="fc" id="L67">			System.out.println(&quot;1. View Available Cars&quot;);</span>
+<span class="fc" id="L68">			System.out.println(&quot;2. Rent a Car&quot;);</span>
+<span class="fc" id="L69">			System.out.println(&quot;3. Exit&quot;);</span>
+<span class="fc" id="L70">			System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L71">			System.out.print(&quot;Enter your choice: &quot;);</span>
+<span class="fc" id="L72">			int choice = scanner.nextInt();</span>
+<span class="fc" id="L73">			scanner.nextLine(); // Consume the newline character</span>
+
+<span class="fc bfc" id="L75" title="All 4 branches covered.">			switch (choice) {</span>
+			case 1:
+<span class="fc" id="L77">				viewAvailableCars();</span>
+<span class="fc" id="L78">				break;</span>
+
+			case 2:
+<span class="fc" id="L81">				rentCar();</span>
+<span class="fc" id="L82">				break;</span>
+
+			case 3:
+<span class="fc" id="L85">				exitUserMenu = true;</span>
+<span class="fc" id="L86">				System.out.println(&quot;Exiting User Menu...&quot;);</span>
+<span class="fc" id="L87">				break;</span>
+
+			default:
+<span class="fc" id="L90">				System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L91">				System.out.println(&quot;Invalid choice. Please try again.&quot;);</span>
+				break;
+			}
+<span class="fc" id="L94">		}</span>
+
+		// Return to the role selection menu after exiting the user menu
+<span class="fc" id="L97">		app.setMainMenu();</span>
+<span class="fc" id="L98">	}</span>
+
+	/**
+	 * @brief Displays the list of available cars.
+	 */
+	private void viewAvailableCars() {
+<span class="fc" id="L104">		System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L105">		System.out.println(&quot;Available Cars:&quot;);</span>
+
+<span class="fc bfc" id="L107" title="All 2 branches covered.">		for (Car car : cars) {</span>
+<span class="fc" id="L108">			car.displayInfo();</span>
+<span class="fc" id="L109">		}</span>
+<span class="fc" id="L110">	}</span>
+
+	/**
+	 * @brief Handles the process of renting a car.
+	 */
+	private void rentCar() {
+<span class="fc" id="L116">		System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L117">		System.out.println(&quot;Renting a Car&quot;);</span>
+		// Display available cars for selection
+<span class="fc" id="L119">		System.out.println(&quot;\nAvailable Cars:&quot;);</span>
+
+<span class="fc bfc" id="L121" title="All 2 branches covered.">		for (int i = 0; i &lt; cars.size(); i++) {</span>
+<span class="fc" id="L122">			System.out.println((i + 1) + &quot;. &quot; + cars.get(i).getBrand() + &quot; &quot; + cars.get(i).getModel());</span>
+		}
+
+		// Prompt for car selection
+<span class="fc" id="L126">		System.out.print(&quot;\nEnter the number of the car to rent: &quot;);</span>
+<span class="fc" id="L127">		int carNumber = scanner.nextInt();</span>
+<span class="fc" id="L128">		scanner.nextLine(); // Consume the newline character</span>
+
+		// Check if the car number is valid
+<span class="pc bpc" id="L131" title="1 of 4 branches missed.">		if (carNumber &gt;= 1 &amp;&amp; carNumber &lt;= cars.size()) {</span>
+<span class="fc" id="L132">			Car carToRent = cars.get(carNumber - 1);</span>
+			// Display car information and rental cost
+<span class="fc" id="L134">			System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L135">			System.out.println(&quot;Car Details:&quot;);</span>
+<span class="fc" id="L136">			carToRent.displayInfo();</span>
+<span class="fc" id="L137">			System.out.println(&quot;Rental Cost: &quot; + carToRent.getPrice());</span>
+			// Prompt user to rent the car
+<span class="fc" id="L139">			System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L140">			System.out.print(&quot;Do you want to rent this car? (y/n): &quot;);</span>
+<span class="fc" id="L141">			String choice = scanner.nextLine();</span>
+
+<span class="fc bfc" id="L143" title="All 2 branches covered.">			if (choice.equalsIgnoreCase(&quot;y&quot;)) {</span>
+				// Prompt for payment method
+<span class="fc" id="L145">				System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L146">				System.out.println(&quot;Payment Methods:&quot;);</span>
+<span class="fc" id="L147">				System.out.println(&quot;1. Credit Card&quot;);</span>
+<span class="fc" id="L148">				System.out.println(&quot;2. PayPal&quot;);</span>
+<span class="fc" id="L149">				System.out.println(&quot;3. Cash&quot;);</span>
+<span class="fc" id="L150">				System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L151">				System.out.print(&quot;Select payment method: &quot;);</span>
+<span class="fc" id="L152">				int paymentMethod = scanner.nextInt();</span>
+<span class="fc" id="L153">				scanner.nextLine(); // Consume the newline character</span>
+				PaymentStrategy paymentStrategy;
+
+				// Process payment based on the selected method
+<span class="fc bfc" id="L157" title="All 4 branches covered.">				switch (paymentMethod) {</span>
+				case 1:
+<span class="fc" id="L159">					System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L160">					System.out.print(&quot;Enter credit card number: &quot;);</span>
+<span class="fc" id="L161">					String creditCardNumber = scanner.nextLine();</span>
+<span class="fc" id="L162">					System.out.print(&quot;Enter expiration date: &quot;);</span>
+<span class="fc" id="L163">					String expirationDate = scanner.nextLine();</span>
+<span class="fc" id="L164">					System.out.print(&quot;Enter CVV: &quot;);</span>
+<span class="fc" id="L165">					String cvv = scanner.nextLine();</span>
+<span class="fc" id="L166">					PaymentProcessor creditCardPaymentProcessor = new CreditCardPaymentProcessor(creditCardNumber);</span>
+<span class="fc" id="L167">					creditCardPaymentProcessor.processPayment(carToRent.getPrice());</span>
+<span class="fc" id="L168">					System.out.println(&quot;\\nPayment successful!&quot;);</span>
+<span class="fc" id="L169">					System.out.println(&quot;\nYou have rented the following car&quot;);</span>
+<span class="fc" id="L170">					carToRent.displayInfo();</span>
+<span class="fc" id="L171">					break;</span>
+
+				case 2:
+<span class="fc" id="L174">					System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L175">					System.out.print(&quot;Enter PayPal email: &quot;);</span>
+<span class="fc" id="L176">					String email = scanner.nextLine();</span>
+<span class="fc" id="L177">					PaymentStrategy payPalPaymentStrategy = new PayPalPaymentStrategy(email);</span>
+<span class="fc" id="L178">					Reservation reservation = new Reservation(payPalPaymentStrategy);</span>
+<span class="fc" id="L179">					reservation.processPayment(carToRent.getPrice());</span>
+<span class="fc" id="L180">					System.out.println(&quot;Payment successful!&quot;);</span>
+<span class="fc" id="L181">					System.out.println(&quot;You have rented the following car:&quot;);</span>
+<span class="fc" id="L182">					carToRent.displayInfo();</span>
+<span class="fc" id="L183">					break;</span>
+
+				case 3:
+<span class="fc" id="L186">					System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L187">					System.out.print(&quot;Enter cash: &quot;);</span>
+<span class="fc" id="L188">					Integer cash = scanner.nextInt();</span>
+<span class="fc" id="L189">					scanner.nextLine();</span>
+<span class="fc" id="L190">					CashPaymentStrategy cashPayment = new CashPaymentStrategy();</span>
+<span class="fc" id="L191">					cashPayment.pay(cash);</span>
+<span class="fc" id="L192">					System.out.println(&quot;Payment successful!&quot;);</span>
+<span class="fc" id="L193">					System.out.println(&quot;You have rented the following car:&quot;);</span>
+<span class="fc" id="L194">					carToRent.displayInfo();</span>
+<span class="fc" id="L195">					break;</span>
+
+				default:
+<span class="fc" id="L198">					System.out.println(&quot;Invalid payment method. Renting failed!&quot;);</span>
+<span class="fc" id="L199">					return;</span>
+				}
+
+				// Prompt for billing information
+<span class="fc" id="L203">				System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L204">				System.out.println(&quot;\nBilling Information&quot;);</span>
+<span class="fc" id="L205">				System.out.print(&quot;Enter user name: &quot;);</span>
+<span class="fc" id="L206">				String customerName = scanner.nextLine();</span>
+<span class="fc" id="L207">				System.out.print(&quot;Enter user address: &quot;);</span>
+<span class="fc" id="L208">				String customerAddress = scanner.nextLine();</span>
+				// Generate and display the bill
+<span class="fc" id="L210">				System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L211">				System.out.println(&quot;\n******* Rental Bill ********&quot;);</span>
+<span class="fc" id="L212">				System.out.println(&quot;User Name: &quot; + customerName);</span>
+<span class="fc" id="L213">				System.out.println(&quot;User Address: &quot; + customerAddress);</span>
+<span class="fc" id="L214">				System.out.println(&quot;Car Details:&quot;);</span>
+<span class="fc" id="L215">				carToRent.displayInfo();</span>
+<span class="fc" id="L216">				System.out.println(&quot;Rental Cost: &quot; + carToRent.getPrice());</span>
+				// Generate and display the vendor
+<span class="fc" id="L218">				Vendor vendor = carToRent.getVendor();</span>
+
+<span class="fc bfc" id="L220" title="All 2 branches covered.">				if (vendor != null) {</span>
+<span class="fc" id="L221">					System.out.println(&quot;Vendor Information: &quot;);</span>
+<span class="fc" id="L222">					System.out.println(&quot;Name: &quot; + vendor.getVendorName());</span>
+<span class="fc" id="L223">					System.out.println(&quot;Contact: &quot; + vendor.getContactInformation());</span>
+<span class="fc" id="L224">					System.out.println(&quot;*************************&quot;);</span>
+				}
+<span class="fc" id="L226">			} else {</span>
+<span class="fc" id="L227">				System.out.println(&quot;Car rental canceled.&quot;);</span>
+			}
+<span class="fc" id="L229">		} else {</span>
+<span class="fc" id="L230">			System.out.println(&quot;Invalid car number!&quot;);</span>
+		}
+<span class="fc" id="L232">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

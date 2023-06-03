@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Subject_8java" kind="file" language="Java">
+    <compoundname>Subject.java</compoundname>
+    <innerclass refid="interfacece204__hw4__lib_1_1reservation_1_1Subject" prot="public">ce204_hw4_lib::reservation::Subject</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1reservation">ce204_hw4_lib::reservation</innernamespace>
+    <briefdescription>
+<para>This package contains classes related to reservations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.reservation;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="interfacece204__hw4__lib_1_1reservation_1_1Subject" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacece204__hw4__lib_1_1reservation_1_1Subject" kindref="compound">Subject</ref><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a2d08a95bd94c013432803359f2fb8df1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a2d08a95bd94c013432803359f2fb8df1" kindref="member">registerObserver</ref>(<ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref><sp/>observer);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a1327375ffdaf2f056ef053f235e860f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a1327375ffdaf2f056ef053f235e860f0" kindref="member">removeObserver</ref>(<ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref><sp/>observer);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a64a1e5580fdd319944c7d00906a564c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a64a1e5580fdd319944c7d00906a564c3" kindref="member">notifyObservers</ref>(String<sp/>message);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/Subject.java"/>
+  </compounddef>
+</doxygen>

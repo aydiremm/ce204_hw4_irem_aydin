@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ReservationManager_8java" kind="file" language="Java">
+    <compoundname>ReservationManager.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager" prot="public">ce204_hw4_lib::reservation::ReservationManager</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1reservation">ce204_hw4_lib::reservation</innernamespace>
+    <briefdescription>
+<para>This package contains classes related to reservations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.reservation;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.ArrayList;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Scanner;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.ArrayList;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager" kindref="compound">ReservationManager</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1reservation_1_1Subject" kindref="compound">Subject</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;Observer&gt;<sp/>observers;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>upcomingReservation;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1af8a2f2b922bd47a8effa79027a0b5f1d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1af8a2f2b922bd47a8effa79027a0b5f1d" kindref="member">ReservationManager</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>observers<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArrayList&lt;&gt;();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aa4eef76dc573efb63892397b96eb443e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Observer&gt;<sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aa4eef76dc573efb63892397b96eb443e" kindref="member">getObservers</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>observers;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a4bf8ecb5e021b11d4680f368a645f0f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a4bf8ecb5e021b11d4680f368a645f0f4" kindref="member">registerObserver</ref>(<ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref><sp/>observer)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>observers.add(observer);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a0b7af25d0d6b609170bdaab04a8c6382" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a0b7af25d0d6b609170bdaab04a8c6382" kindref="member">removeObserver</ref>(<ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref><sp/>observer)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>observers.remove(observer);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a72319cb172f9de5c1f5e7a82aa44c1c9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a72319cb172f9de5c1f5e7a82aa44c1c9" kindref="member">notifyObservers</ref>(String<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref><sp/>observer<sp/>:<sp/>observers)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>observer.update(message);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aaa9f85811f6a9cf5dee0485ca2e8369c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aaa9f85811f6a9cf5dee0485ca2e8369c" kindref="member">setReservation</ref>(String<sp/>reservation)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>upcomingReservation<sp/>=<sp/>reservation;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a72319cb172f9de5c1f5e7a82aa44c1c9" kindref="member">notifyObservers</ref>(</highlight><highlight class="stringliteral">&quot;Upcoming<sp/>reservation:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>reservation);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java"/>
+  </compounddef>
+</doxygen>

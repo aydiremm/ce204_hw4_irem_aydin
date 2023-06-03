@@ -1,0 +1,106 @@
+\hypertarget{classce204__hw4__app_1_1Main}{}\doxysection{ce204\+\_\+hw4\+\_\+app.\+Main Class Reference}
+\label{classce204__hw4__app_1_1Main}\index{ce204\_hw4\_app.Main@{ce204\_hw4\_app.Main}}
+
+
+The main purpose of the main section in this code is to serve as the entry point of the Car Rental Management System application. This method allows the user to select their role (Vendor or User) and displays the corresponding menu based on the chosen role.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classce204__hw4__app_1_1Main_a475412a7b82bfdc0a705a2c5c7693f4d}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} \mbox{\hyperlink{classce204__hw4__app_1_1Main_af8df6ed8fd59f8d64274b945732becd4}{app}}
+\begin{DoxyCompactList}\small\item\em The main application instance. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classce204__hw4__app_1_1Main_a54832fe50629736e52f49bef3c8421e1}{is\+Running}} = true
+\begin{DoxyCompactList}\small\item\em Flag indicating if the program is running. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main purpose of the main section in this code is to serve as the entry point of the Car Rental Management System application. This method allows the user to select their role (Vendor or User) and displays the corresponding menu based on the chosen role. 
+
+It performs the following steps\+:
+
+Displays a menu to the user for role selection\+: Vendor, User, or Exit. Based on the user\textquotesingle{}s selection, it performs the respective operation\+: If the selection is 1, it redirects to the Vendor role and calls the vendor\+Menu method. If the selection is 2, it redirects to the User role and calls the user\+Menu method. If the selection is 3, it exits the program. If an invalid selection is made, it displays an error message and exits the program. Each menu (vendor\+Menu and user\+Menu) can contain sub-\/menus and operations to perform specific tasks. After completing user operations, the main method is called again to return to the role selection menu. 
+
+Definition at line 38 of file Main.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1Main_a475412a7b82bfdc0a705a2c5c7693f4d}\label{classce204__hw4__app_1_1Main_a475412a7b82bfdc0a705a2c5c7693f4d}} 
+\index{ce204\_hw4\_app.Main@{ce204\_hw4\_app.Main}!main@{main}}
+\index{main@{main}!ce204\_hw4\_app.Main@{ce204\_hw4\_app.Main}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void ce204\+\_\+hw4\+\_\+app.\+Main.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The main method that starts the Car Rental Management System application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The command line arguments. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Main.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                            \{}
+\DoxyCodeLine{56         \mbox{\hyperlink{classce204__hw4__app_1_1Main_af8df6ed8fd59f8d64274b945732becd4}{app}} = \textcolor{keyword}{new} App(\textcolor{keyword}{new} Scanner(System.in));}
+\DoxyCodeLine{57         \mbox{\hyperlink{classce204__hw4__app_1_1Main_af8df6ed8fd59f8d64274b945732becd4}{app}}.\mbox{\hyperlink{classce204__hw4__app_1_1App_a09751ceb690d98d4e993b23fb3d584ac}{runMenu}}();}
+\DoxyCodeLine{58     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+Main.\+app, and ce204\+\_\+hw4\+\_\+app.\+App.\+run\+Menu().
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1Main_af8df6ed8fd59f8d64274b945732becd4}\label{classce204__hw4__app_1_1Main_af8df6ed8fd59f8d64274b945732becd4}} 
+\index{ce204\_hw4\_app.Main@{ce204\_hw4\_app.Main}!app@{app}}
+\index{app@{app}!ce204\_hw4\_app.Main@{ce204\_hw4\_app.Main}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} ce204\+\_\+hw4\+\_\+app.\+Main.\+app\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The main application instance. 
+
+
+
+Definition at line 43 of file Main.\+java.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+Main.\+main().
+
+\mbox{\Hypertarget{classce204__hw4__app_1_1Main_a54832fe50629736e52f49bef3c8421e1}\label{classce204__hw4__app_1_1Main_a54832fe50629736e52f49bef3c8421e1}} 
+\index{ce204\_hw4\_app.Main@{ce204\_hw4\_app.Main}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!ce204\_hw4\_app.Main@{ce204\_hw4\_app.Main}}
+\doxysubsubsection{\texorpdfstring{isRunning}{isRunning}}
+{\footnotesize\ttfamily boolean ce204\+\_\+hw4\+\_\+app.\+Main.\+is\+Running = true\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Flag indicating if the program is running. 
+
+
+
+Definition at line 48 of file Main.\+java.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+app.\+Menus.\+Main\+Menu.\+run(), and ce204\+\_\+hw4\+\_\+app.\+App.\+run\+Menu().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+app/\mbox{\hyperlink{Main_8java}{Main.\+java}}\end{DoxyCompactItemize}

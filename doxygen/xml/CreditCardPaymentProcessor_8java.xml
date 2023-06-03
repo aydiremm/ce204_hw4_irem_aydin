@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="CreditCardPaymentProcessor_8java" kind="file" language="Java">
+    <compoundname>CreditCardPaymentProcessor.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor" prot="public">ce204_hw4_lib::payment::CreditCardPaymentProcessor</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1payment">ce204_hw4_lib::payment</innernamespace>
+    <briefdescription>
+<para>Contains classes related to payment processing and strategies. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.payment;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor" kindref="compound">CreditCardPaymentProcessor</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor" kindref="compound">PaymentProcessor</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>creditCardNumber;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1afb71860cb6180773c67d86f78c2c4168" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1afb71860cb6180773c67d86f78c2c4168" kindref="member">CreditCardPaymentProcessor</ref>(String<sp/>creditCardNumber)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>this.creditCardNumber<sp/>=<sp/>creditCardNumber;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="47" refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1abe73630a6c96a473b3a8f98ba2c427b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1abe73630a6c96a473b3a8f98ba2c427b7" kindref="member">processPayment</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Code<sp/>to<sp/>process<sp/>credit<sp/>card<sp/>payment<sp/>goes<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;------------------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Processing<sp/>credit<sp/>card<sp/>payment...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;\nAmount:<sp/>$&quot;</highlight><highlight class="normal"><sp/>+<sp/>amount);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;\nPayment<sp/>processed<sp/>successfully!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java"/>
+  </compounddef>
+</doxygen>

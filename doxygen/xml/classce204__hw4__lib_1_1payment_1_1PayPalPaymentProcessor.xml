@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::payment::PayPalPaymentProcessor</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor_1ae650a43434d2348a45da333b3c796217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.payment.PayPalPaymentProcessor.processPayment</definition>
+        <argsstring>(double amount, String email)</argsstring>
+        <name>processPayment</name>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+<para>Processes a payment using the PayPal payment system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method takes in the payment amount and the customer&apos;s email
+   address and performs the necessary steps to process the payment using
+   PayPal.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to be paid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The customer&apos;s email address associated with the payment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentProcessor.java" line="31" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentProcessor.java" bodystart="31" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class provides a method to process payments using the PayPal payment system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentProcessor.java" line="17" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentProcessor.java" bodystart="17" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor_1ae650a43434d2348a45da333b3c796217" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::PayPalPaymentProcessor</scope><name>processPayment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::payment::CashPaymentStrategy</compoundname>
+    <basecompoundref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" prot="public" virt="non-virtual">ce204_hw4_lib.payment.PaymentStrategy</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy_1ae80123d2d4cd377998732b0b1f2f16cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.payment.CashPaymentStrategy.pay</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>pay</name>
+        <reimplements refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_1ac8dc89712d14a43bf57f627d776829b1">pay</reimplements>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Performs a cash payment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to be paid. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CashPaymentStrategy.java" line="23" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CashPaymentStrategy.java" bodystart="23" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a payment strategy for cash payments. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.CashPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.CashPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CashPaymentStrategy.java" line="17" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CashPaymentStrategy.java" bodystart="17" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy_1ae80123d2d4cd377998732b0b1f2f16cd" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::CashPaymentStrategy</scope><name>pay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

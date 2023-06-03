@@ -1,0 +1,144 @@
+\hypertarget{classce204__hw4__app_1_1Menus_1_1UserMenu}{}\doxysection{ce204\+\_\+hw4\+\_\+app.\+Menus.\+User\+Menu Class Reference}
+\label{classce204__hw4__app_1_1Menus_1_1UserMenu}\index{ce204\_hw4\_app.Menus.UserMenu@{ce204\_hw4\_app.Menus.UserMenu}}
+
+
+Represents the user menu of the Car Rental Management System.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+app.\+Menus.\+User\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classce204__hw4__app_1_1Menus_1_1UserMenu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1UserMenu_afaa85cec4f3da7ffd597b62549284bbc}{User\+Menu}} (\mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}})
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1UserMenu}{User\+Menu}} object with the specified \mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1UserMenu_a7a826d22e3310259d597ed276c75b1a2}{run}} ()
+\begin{DoxyCompactList}\small\item\em Displays the user menu and handles user input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents the user menu of the Car Rental Management System. 
+
+\begin{DoxyVerb}   The UserMenu class extends the Menu class and provides functionality
+   for displaying the user menu options and handling user input. It
+   allows users to view available cars, rent a car, or exit the menu.
+\end{DoxyVerb}
+ 
+
+Definition at line 39 of file User\+Menu.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1Menus_1_1UserMenu_afaa85cec4f3da7ffd597b62549284bbc}\label{classce204__hw4__app_1_1Menus_1_1UserMenu_afaa85cec4f3da7ffd597b62549284bbc}} 
+\index{ce204\_hw4\_app.Menus.UserMenu@{ce204\_hw4\_app.Menus.UserMenu}!UserMenu@{UserMenu}}
+\index{UserMenu@{UserMenu}!ce204\_hw4\_app.Menus.UserMenu@{ce204\_hw4\_app.Menus.UserMenu}}
+\doxysubsubsection{\texorpdfstring{UserMenu()}{UserMenu()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+app.\+Menus.\+User\+Menu.\+User\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__app_1_1App}{App}}}]{app }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1UserMenu}{User\+Menu}} object with the specified \mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & The \mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file User\+Menu.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                              \{}
+\DoxyCodeLine{49         super(\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}});}
+\DoxyCodeLine{50         cars = \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}}.\mbox{\hyperlink{classce204__hw4__app_1_1App_a02856f89c949919b7e20aac2e0cb4ae6}{getCars}}();}
+\DoxyCodeLine{51     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+app, and ce204\+\_\+hw4\+\_\+app.\+App.\+get\+Cars().
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1Menus_1_1UserMenu_a7a826d22e3310259d597ed276c75b1a2}\label{classce204__hw4__app_1_1Menus_1_1UserMenu_a7a826d22e3310259d597ed276c75b1a2}} 
+\index{ce204\_hw4\_app.Menus.UserMenu@{ce204\_hw4\_app.Menus.UserMenu}!run@{run}}
+\index{run@{run}!ce204\_hw4\_app.Menus.UserMenu@{ce204\_hw4\_app.Menus.UserMenu}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+app.\+Menus.\+User\+Menu.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the user menu and handles user input. 
+
+\begin{DoxyVerb}   The run() method prompts the user to select an option from the user
+   menu and performs actions based on the selected choice. It allows
+   users to view available cars, rent a car, or exit the menu.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_afddd026a97261b7f8d1573a9d12b574a}{ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu}}.
+
+
+
+Definition at line 61 of file User\+Menu.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                       \{}
+\DoxyCodeLine{62         \textcolor{keywordtype}{boolean} exitUserMenu = \textcolor{keyword}{false};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64         \textcolor{keywordflow}{while} (!exitUserMenu) \{}
+\DoxyCodeLine{65             System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{66             System.out.println(\textcolor{stringliteral}{"{}User Menu"{}});}
+\DoxyCodeLine{67             System.out.println(\textcolor{stringliteral}{"{}1. View Available Cars"{}});}
+\DoxyCodeLine{68             System.out.println(\textcolor{stringliteral}{"{}2. Rent a Car"{}});}
+\DoxyCodeLine{69             System.out.println(\textcolor{stringliteral}{"{}3. Exit"{}});}
+\DoxyCodeLine{70             System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{71             System.out.print(\textcolor{stringliteral}{"{}Enter your choice: "{}});}
+\DoxyCodeLine{72             \textcolor{keywordtype}{int} choice = \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_ad20792e6d4114b7358f78be1e8443edd}{scanner}}.nextInt();}
+\DoxyCodeLine{73             \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_ad20792e6d4114b7358f78be1e8443edd}{scanner}}.nextLine(); \textcolor{comment}{// Consume the newline character}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75             \textcolor{keywordflow}{switch} (choice) \{}
+\DoxyCodeLine{76             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{77                 viewAvailableCars();}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{81                 rentCar();}
+\DoxyCodeLine{82                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{85                 exitUserMenu = \textcolor{keyword}{true};}
+\DoxyCodeLine{86                 System.out.println(\textcolor{stringliteral}{"{}Exiting User Menu..."{}});}
+\DoxyCodeLine{87                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{90                 System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{91                 System.out.println(\textcolor{stringliteral}{"{}Invalid choice. Please try again."{}});}
+\DoxyCodeLine{92                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{93             \}}
+\DoxyCodeLine{94         \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96         \textcolor{comment}{// Return to the role selection menu after exiting the user menu}}
+\DoxyCodeLine{97         \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}}.\mbox{\hyperlink{classce204__hw4__app_1_1App_a45b1be5449020dce05f62c29c1684558}{setMainMenu}}();}
+\DoxyCodeLine{98     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+app, ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+scanner, and ce204\+\_\+hw4\+\_\+app.\+App.\+set\+Main\+Menu().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+app/\+Menus/\mbox{\hyperlink{UserMenu_8java}{User\+Menu.\+java}}\end{DoxyCompactItemize}

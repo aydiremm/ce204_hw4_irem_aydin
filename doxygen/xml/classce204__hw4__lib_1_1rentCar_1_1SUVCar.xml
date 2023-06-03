@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1rentCar_1_1SUVCar" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::rentCar::SUVCar</compoundname>
+    <basecompoundref refid="classce204__hw4__lib_1_1rentCar_1_1Car" prot="public" virt="non-virtual">ce204_hw4_lib.rentCar.Car</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9e3fea2e6110187230f45b82b3831183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_lib.rentCar.SUVCar.SUVCar</definition>
+        <argsstring>(String brand, String model, int year)</argsstring>
+        <name>SUVCar</name>
+        <param>
+          <type>String</type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an <ref refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar" kindref="compound">SUVCar</ref> object with the specified brand, model, and year. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>brand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The brand of the SUV car. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The model of the SUV car. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The year of the SUV car. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/SUVCar.java" line="31" column="10" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/SUVCar.java" bodystart="31" bodyend="33"/>
+        <references refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" compoundref="Car_8java" startline="23">ce204_hw4_lib.rentCar.Car.brand</references>
+        <references refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" compoundref="Car_8java" startline="27">ce204_hw4_lib.rentCar.Car.model</references>
+        <references refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" compoundref="Car_8java" startline="31">ce204_hw4_lib.rentCar.Car.year</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9f65380cdadf0b00d6e6eb19591710ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.rentCar.SUVCar.displayInfo</definition>
+        <argsstring>()</argsstring>
+        <name>displayInfo</name>
+        <reimplements refid="classce204__hw4__lib_1_1rentCar_1_1Car_1ad060643ac21cb2e756213cd0daaeb387">displayInfo</reimplements>
+        <briefdescription>
+<para>Displays the information about the SUV car. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method overrides the <ref refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9f65380cdadf0b00d6e6eb19591710ee" kindref="member">displayInfo()</ref> method in the <ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref> class to display specific information about the SUV car. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/SUVCar.java" line="41" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/SUVCar.java" bodystart="41" bodyend="43"/>
+        <references refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" compoundref="Car_8java" startline="23">ce204_hw4_lib.rentCar.Car.brand</references>
+        <references refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" compoundref="Car_8java" startline="27">ce204_hw4_lib.rentCar.Car.model</references>
+        <references refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" compoundref="Car_8java" startline="31">ce204_hw4_lib.rentCar.Car.year</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar" kindref="compound">SUVCar</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents an SUV car, which is a type of <ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_lib.rentCar.Car</label>
+        <link refid="classce204__hw4__lib_1_1rentCar_1_1Car"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.rentCar.SUVCar</label>
+        <link refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ce204_hw4_lib.rentCar.Car</label>
+        <link refid="classce204__hw4__lib_1_1rentCar_1_1Car"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>vendor</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.rentCar.SUVCar</label>
+        <link refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ce204_hw4_lib.rentCar.Vendor</label>
+        <link refid="classce204__hw4__lib_1_1rentCar_1_1Vendor"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/SUVCar.java" line="22" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/SUVCar.java" bodystart="22" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a967fd014b44f2cf526dd3286176e441a" prot="protected" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>brand</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1ae7a4982d80a75ca08d46f4d1bff6aaa4" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>Car</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9f65380cdadf0b00d6e6eb19591710ee" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>displayInfo</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1ad2bf6201696cdc2a409739e1866921d0" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>getBrand</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a49d2f2bee446096152411b9c1ef032e3" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>getModel</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a25c6e65bb22dabe6291141203ffcb4ef" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>getPrice</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a42c493c75d74ba3f485a35a864200cc2" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>getVendor</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a757e2ddda9cb671045f460a5a5f21410" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>getYear</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a1155e788293e9b9a736b566f7b19af4e" prot="protected" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>model</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a956300d7cd80ebae3cf4bcee18fb48f2" prot="protected" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>price</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1ab9d0c0b758a044889ba11037736e1935" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>setPrice</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1acf1ac203ea15e7e70d2fb11bfc8b6c1b" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>setVendor</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1SUVCar_1a9e3fea2e6110187230f45b82b3831183" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>SUVCar</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a7ffa0c2571bfeaf0b54b677aee654afa" prot="protected" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>vendor</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Car_1a085358301de85587b3b6b6f324bb0923" prot="protected" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::SUVCar</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+\hypertarget{classce204__hw4__lib_1_1payment_1_1Reservation}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Reservation Class Reference}
+\label{classce204__hw4__lib_1_1payment_1_1Reservation}\index{ce204\_hw4\_lib.payment.Reservation@{ce204\_hw4\_lib.payment.Reservation}}
+
+
+Represents a reservation for a payment.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1Reservation_a4fd8a8f1916488a421db09f34b4a11a0}{Reservation}} (\mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy}{Payment\+Strategy}} payment\+Strategy)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1Reservation}{Reservation}} object with the specified payment strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1Reservation_a2e72388d47d413a7d5a4a8e48dbee124}{process\+Payment}} (double amount)
+\begin{DoxyCompactList}\small\item\em Processes a payment for the reservation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a reservation for a payment. 
+
+\begin{DoxyVerb}   This class encapsulates the logic for processing a payment for a
+   reservation using a payment strategy defined by the client. The
+   payment strategy is passed as a parameter during object creation and
+   can be changed at runtime.
+\end{DoxyVerb}
+ 
+
+Definition at line 21 of file Reservation.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1payment_1_1Reservation_a4fd8a8f1916488a421db09f34b4a11a0}\label{classce204__hw4__lib_1_1payment_1_1Reservation_a4fd8a8f1916488a421db09f34b4a11a0}} 
+\index{ce204\_hw4\_lib.payment.Reservation@{ce204\_hw4\_lib.payment.Reservation}!Reservation@{Reservation}}
+\index{Reservation@{Reservation}!ce204\_hw4\_lib.payment.Reservation@{ce204\_hw4\_lib.payment.Reservation}}
+\doxysubsubsection{\texorpdfstring{Reservation()}{Reservation()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+lib.\+payment.\+Reservation.\+Reservation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy}{Payment\+Strategy}}}]{payment\+Strategy }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1Reservation}{Reservation}} object with the specified payment strategy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payment\+Strategy} & The payment strategy to be used for processing payments. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file Reservation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                                         \{}
+\DoxyCodeLine{34         this.paymentStrategy = paymentStrategy;}
+\DoxyCodeLine{35     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1payment_1_1Reservation_a2e72388d47d413a7d5a4a8e48dbee124}\label{classce204__hw4__lib_1_1payment_1_1Reservation_a2e72388d47d413a7d5a4a8e48dbee124}} 
+\index{ce204\_hw4\_lib.payment.Reservation@{ce204\_hw4\_lib.payment.Reservation}!processPayment@{processPayment}}
+\index{processPayment@{processPayment}!ce204\_hw4\_lib.payment.Reservation@{ce204\_hw4\_lib.payment.Reservation}}
+\doxysubsubsection{\texorpdfstring{processPayment()}{processPayment()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+payment.\+Reservation.\+process\+Payment (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Processes a payment for the reservation. 
+
+\begin{DoxyVerb}   This method delegates the payment processing to the payment strategy
+   provided during object creation.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to be paid for the reservation. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file Reservation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                               \{}
+\DoxyCodeLine{46         paymentStrategy.\mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_ac8dc89712d14a43bf57f627d776829b1}{pay}}(amount);}
+\DoxyCodeLine{47     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+lib.\+payment.\+Payment\+Strategy.\+pay().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/payment/\mbox{\hyperlink{Reservation_8java}{Reservation.\+java}}\end{DoxyCompactItemize}

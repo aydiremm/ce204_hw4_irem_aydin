@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CarFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_lib.rentCar</a> &gt; <span class="el_source">CarFactory.java</span></div><h1>CarFactory.java</h1><pre class="source lang-java linenums">/**
+  @file CarFactory.java
+  @brief CarFactory class creates a car object based on the provided car type, brand, model, and year.
+ */
+/**
+@package ce204_hw4_lib.rentCar
+@brief The ce204_hw4_lib.rentCar package contains all the classes and files related to the Rent Car App.
+*/
+package ce204_hw4_lib.rentCar;
+
+/**
+ * @class CarFactory
+ * @brief Creates a car object based on the provided car type, brand, model, and
+ * 
+ */
+<span class="fc" id="L16">public class CarFactory {</span>
+
+	/**
+	 * 
+	 * @brief Creates a new instance of a Car based on the given car type, brand,
+	 *        model, and year.
+	 * 
+	 * @param carType The type of car to create. Valid values are &quot;economic&quot;,
+	 *                &quot;luxury&quot;, &quot;suv&quot;, and &quot;sports&quot;.
+	 * 
+	 * @param brand   The brand of the car.
+	 * 
+	 * @param model   The model of the car.
+	 * 
+	 * @param year    The manufacturing year of the car.
+	 * 
+	 * @return A Car object of the specified type, or null if the car type is
+	 *         invalid.
+	 */
+	public static Car createCar(String carType, String brand, String model, int year) {
+<span class="fc" id="L36">		Car car = null;</span>
+
+<span class="fc bfc" id="L38" title="All 5 branches covered.">		switch (carType.toLowerCase()) {</span>
+		case &quot;economic&quot;:
+<span class="fc" id="L40">			car = new EconomicCar(brand, model, year);</span>
+<span class="fc" id="L41">			break;</span>
+
+		case &quot;luxury&quot;:
+<span class="fc" id="L44">			car = new LuxuryCar(brand, model, year);</span>
+<span class="fc" id="L45">			break;</span>
+
+		case &quot;suv&quot;:
+<span class="fc" id="L48">			car = new SUVCar(brand, model, year);</span>
+<span class="fc" id="L49">			break;</span>
+
+		case &quot;sports&quot;:
+<span class="fc" id="L52">			car = new SportsCar(brand, model, year);</span>
+<span class="fc" id="L53">			break;</span>
+
+		default:
+<span class="fc" id="L56">			System.out.println(&quot;Invalid car type.&quot;);</span>
+		}
+
+<span class="fc" id="L59">		return car;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

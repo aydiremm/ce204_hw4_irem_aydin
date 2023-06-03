@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1rentCar_1_1CarFactory" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::rentCar::CarFactory</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1CarFactory_1ac2a37a2dc0832321bae26ce45a2e4017" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref></type>
+        <definition>static Car ce204_hw4_lib.rentCar.CarFactory.createCar</definition>
+        <argsstring>(String carType, String brand, String model, int year)</argsstring>
+        <name>createCar</name>
+        <param>
+          <type>String</type>
+          <declname>carType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new instance of a <ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref> based on the given car type, brand, model, and year. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of car to create. Valid values are &quot;economic&quot;, &quot;luxury&quot;, &quot;suv&quot;, and &quot;sports&quot;.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The brand of the car.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The model of the car.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The manufacturing year of the car.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref> object of the specified type, or null if the car type is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/CarFactory.java" line="35" column="19" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/CarFactory.java" bodystart="35" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Creates a car object based on the provided car type, brand, model, and. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/CarFactory.java" line="16" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/CarFactory.java" bodystart="16" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1CarFactory_1ac2a37a2dc0832321bae26ce45a2e4017" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::CarFactory</scope><name>createCar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_6cd36787f901b4ad8727d37c818a9e8e" kind="dir">
+    <compoundname>ce204_hw4/src/main/java/ce204_hw4_lib/payment</compoundname>
+    <innerfile refid="CashPaymentStrategy_8java">CashPaymentStrategy.java</innerfile>
+    <innerfile refid="CreditCardPaymentProcessor_8java">CreditCardPaymentProcessor.java</innerfile>
+    <innerfile refid="CreditCardPaymentStrategy_8java">CreditCardPaymentStrategy.java</innerfile>
+    <innerfile refid="PaymentProcessor_8java">PaymentProcessor.java</innerfile>
+    <innerfile refid="PaymentStrategy_8java">PaymentStrategy.java</innerfile>
+    <innerfile refid="PayPalPaymentProcessor_8java">PayPalPaymentProcessor.java</innerfile>
+    <innerfile refid="PayPalPaymentStrategy_8java">PayPalPaymentStrategy.java</innerfile>
+    <innerfile refid="Reservation_8java">Reservation.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/"/>
+  </compounddef>
+</doxygen>

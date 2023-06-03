@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::payment::PaymentStrategy</compoundname>
+    <derivedcompoundref refid="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy" prot="public" virt="non-virtual">ce204_hw4_lib.payment.CashPaymentStrategy</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy" prot="public" virt="non-virtual">ce204_hw4_lib.payment.CreditCardPaymentStrategy</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy" prot="public" virt="non-virtual">ce204_hw4_lib.payment.PayPalPaymentStrategy</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_1ac8dc89712d14a43bf57f627d776829b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.payment.PaymentStrategy.pay</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>pay</name>
+        <reimplementedby refid="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy_1ae80123d2d4cd377998732b0b1f2f16cd">pay</reimplementedby>
+        <reimplementedby refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a62b6f4212d5decf0fd7ed4d4d5abb2f3">pay</reimplementedby>
+        <reimplementedby refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1a63c51b7a134d86d776119d8111e26944">pay</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Makes a payment for the specified amount. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method is implemented by concrete payment strategies to perform
+   the payment process.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to be paid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PaymentStrategy.java" line="30" column="6"/>
+        <referencedby refid="classce204__hw4__lib_1_1payment_1_1Reservation_1a2e72388d47d413a7d5a4a8e48dbee124" compoundref="Reservation_8java" startline="45" endline="47">ce204_hw4_lib.payment.Reservation.processPayment</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" kindref="compound">PaymentStrategy</ref> interface represents a payment strategy. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>   It provides a common interface for implementing different payment
+   strategies.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.CashPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy"/>
+      </node>
+      <node id="4">
+        <label>ce204_hw4_lib.payment.PayPalPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ce204_hw4_lib.payment.CreditCardPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PaymentStrategy.java" line="18" column="18" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PaymentStrategy.java" bodystart="18" bodyend="31"/>
+    <listofallmembers>
+      <member refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_1ac8dc89712d14a43bf57f627d776829b1" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::PaymentStrategy</scope><name>pay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

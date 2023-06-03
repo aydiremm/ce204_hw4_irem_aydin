@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::payment::CreditCardPaymentStrategy</compoundname>
+    <basecompoundref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" prot="public" virt="non-virtual">ce204_hw4_lib.payment.PaymentStrategy</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a7f7cd28f96a290600e3d703e0969500a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.payment.CreditCardPaymentStrategy.cardNumber</definition>
+        <argsstring></argsstring>
+        <name>cardNumber</name>
+        <briefdescription>
+<para>The card number associated with the account. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" line="21" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1ae9340a8555abfb1eb5a7a6cfaf36cc3a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.payment.CreditCardPaymentStrategy.expirationDate</definition>
+        <argsstring></argsstring>
+        <name>expirationDate</name>
+        <briefdescription>
+<para>The expiration date of the card. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" line="25" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1aab991d2474b291af2fd2b5856dab9652" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.payment.CreditCardPaymentStrategy.cvv</definition>
+        <argsstring></argsstring>
+        <name>cvv</name>
+        <briefdescription>
+<para>The CVV (Card Verification Value) of the card. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" line="29" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a49abdbbda7b3fcb6ea0574cf38da4309" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_lib.payment.CreditCardPaymentStrategy.CreditCardPaymentStrategy</definition>
+        <argsstring>(String cardNumber, String expirationDate, String cvv)</argsstring>
+        <name>CreditCardPaymentStrategy</name>
+        <param>
+          <type>String</type>
+          <declname>cardNumber</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>expirationDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>cvv</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy" kindref="compound">CreditCardPaymentStrategy</ref> object with the specified card number, expiration date, and CVV. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cardNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the credit card number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expirationDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expiration date of the credit card </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cvv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the CVV code of the credit card </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" line="39" column="8" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a62b6f4212d5decf0fd7ed4d4d5abb2f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.payment.CreditCardPaymentStrategy.pay</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>pay</name>
+        <reimplements refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_1ac8dc89712d14a43bf57f627d776829b1">pay</reimplements>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Makes a payment using the credit card payment strategy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to be paid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" line="50" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" bodystart="50" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy" kindref="compound">CreditCardPaymentStrategy</ref> class represents a payment strategy for credit card payments. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.CreditCardPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.CreditCardPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" line="16" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentStrategy.java" bodystart="16" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a7f7cd28f96a290600e3d703e0969500a" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::payment::CreditCardPaymentStrategy</scope><name>cardNumber</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a49abdbbda7b3fcb6ea0574cf38da4309" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::CreditCardPaymentStrategy</scope><name>CreditCardPaymentStrategy</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1aab991d2474b291af2fd2b5856dab9652" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::payment::CreditCardPaymentStrategy</scope><name>cvv</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1ae9340a8555abfb1eb5a7a6cfaf36cc3a" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::payment::CreditCardPaymentStrategy</scope><name>expirationDate</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_1a62b6f4212d5decf0fd7ed4d4d5abb2f3" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::CreditCardPaymentStrategy</scope><name>pay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

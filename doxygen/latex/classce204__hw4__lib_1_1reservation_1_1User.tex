@@ -1,0 +1,103 @@
+\hypertarget{classce204__hw4__lib_1_1reservation_1_1User}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+User Class Reference}
+\label{classce204__hw4__lib_1_1reservation_1_1User}\index{ce204\_hw4\_lib.reservation.User@{ce204\_hw4\_lib.reservation.User}}
+
+
+\mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1User}{User}} class implementing the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}} interface.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+lib.\+reservation.\+User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classce204__hw4__lib_1_1reservation_1_1User}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1User_a9e8d7bf644e76f597143be2633094576}{User}} (String name)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1User}{User}} object with the given name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1User_acc787a81e4474e3d309900c485486dfa}{update}} (String message)
+\begin{DoxyCompactList}\small\item\em Updates the user with a new notification message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1User}{User}} class implementing the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}} interface. 
+
+\begin{DoxyVerb}   This class represents a user who receives notifications as an
+   observer. It provides a method to update and print the received
+   notification.
+\end{DoxyVerb}
+ 
+
+Definition at line 20 of file User.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1User_a9e8d7bf644e76f597143be2633094576}\label{classce204__hw4__lib_1_1reservation_1_1User_a9e8d7bf644e76f597143be2633094576}} 
+\index{ce204\_hw4\_lib.reservation.User@{ce204\_hw4\_lib.reservation.User}!User@{User}}
+\index{User@{User}!ce204\_hw4\_lib.reservation.User@{ce204\_hw4\_lib.reservation.User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+lib.\+reservation.\+User.\+User (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1User}{User}} object with the given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the user. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file User.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                              \{}
+\DoxyCodeLine{32         this.name = name;}
+\DoxyCodeLine{33     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1User_acc787a81e4474e3d309900c485486dfa}\label{classce204__hw4__lib_1_1reservation_1_1User_acc787a81e4474e3d309900c485486dfa}} 
+\index{ce204\_hw4\_lib.reservation.User@{ce204\_hw4\_lib.reservation.User}!update@{update}}
+\index{update@{update}!ce204\_hw4\_lib.reservation.User@{ce204\_hw4\_lib.reservation.User}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+User.\+update (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})}
+
+
+
+Updates the user with a new notification message. 
+
+\begin{DoxyVerb}   This method is called when a notification is received by the user. It
+   prints the received notification along with the user's name.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em message} & The notification message. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer_a3b27ca8a3032f509392152b293f02d6a}{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Observer}}.
+
+
+
+Definition at line 43 of file User.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                        \{}
+\DoxyCodeLine{44         System.out.println(\textcolor{stringliteral}{"{}["{}} + name + \textcolor{stringliteral}{"{}] Received notification: "{}} + message);}
+\DoxyCodeLine{45     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/reservation/\mbox{\hyperlink{User_8java}{User.\+java}}\end{DoxyCompactItemize}

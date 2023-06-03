@@ -1,0 +1,94 @@
+\hypertarget{interfacece204__hw4__lib_1_1reservation_1_1Subject}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Subject Interface Reference}
+\label{interfacece204__hw4__lib_1_1reservation_1_1Subject}\index{ce204\_hw4\_lib.reservation.Subject@{ce204\_hw4\_lib.reservation.Subject}}
+
+
+The \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}} interface defines the contract for objects that can be observed by Observers.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Subject\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacece204__hw4__lib_1_1reservation_1_1Subject}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject_a2d08a95bd94c013432803359f2fb8df1}{register\+Observer}} (\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}} observer)
+\begin{DoxyCompactList}\small\item\em Registers an observer to receive updates from the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject_a1327375ffdaf2f056ef053f235e860f0}{remove\+Observer}} (\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}} observer)
+\begin{DoxyCompactList}\small\item\em Unregisters an observer from receiving updates from the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject_a64a1e5580fdd319944c7d00906a564c3}{notify\+Observers}} (String message)
+\begin{DoxyCompactList}\small\item\em Notifies all registered observers with the given message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}} interface defines the contract for objects that can be observed by Observers. 
+
+Definition at line 17 of file Subject.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacece204__hw4__lib_1_1reservation_1_1Subject_a64a1e5580fdd319944c7d00906a564c3}\label{interfacece204__hw4__lib_1_1reservation_1_1Subject_a64a1e5580fdd319944c7d00906a564c3}} 
+\index{ce204\_hw4\_lib.reservation.Subject@{ce204\_hw4\_lib.reservation.Subject}!notifyObservers@{notifyObservers}}
+\index{notifyObservers@{notifyObservers}!ce204\_hw4\_lib.reservation.Subject@{ce204\_hw4\_lib.reservation.Subject}}
+\doxysubsubsection{\texorpdfstring{notifyObservers()}{notifyObservers()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Subject.\+notify\+Observers (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})}
+
+
+
+Notifies all registered observers with the given message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to notify observers with. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a72319cb172f9de5c1f5e7a82aa44c1c9}{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager}}.
+
+\mbox{\Hypertarget{interfacece204__hw4__lib_1_1reservation_1_1Subject_a2d08a95bd94c013432803359f2fb8df1}\label{interfacece204__hw4__lib_1_1reservation_1_1Subject_a2d08a95bd94c013432803359f2fb8df1}} 
+\index{ce204\_hw4\_lib.reservation.Subject@{ce204\_hw4\_lib.reservation.Subject}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!ce204\_hw4\_lib.reservation.Subject@{ce204\_hw4\_lib.reservation.Subject}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Subject.\+register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Registers an observer to receive updates from the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to register. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a4bf8ecb5e021b11d4680f368a645f0f4}{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager}}.
+
+\mbox{\Hypertarget{interfacece204__hw4__lib_1_1reservation_1_1Subject_a1327375ffdaf2f056ef053f235e860f0}\label{interfacece204__hw4__lib_1_1reservation_1_1Subject_a1327375ffdaf2f056ef053f235e860f0}} 
+\index{ce204\_hw4\_lib.reservation.Subject@{ce204\_hw4\_lib.reservation.Subject}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!ce204\_hw4\_lib.reservation.Subject@{ce204\_hw4\_lib.reservation.Subject}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Subject.\+remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Unregisters an observer from receiving updates from the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to unregister. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a0b7af25d0d6b609170bdaab04a8c6382}{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/reservation/\mbox{\hyperlink{Subject_8java}{Subject.\+java}}\end{DoxyCompactItemize}

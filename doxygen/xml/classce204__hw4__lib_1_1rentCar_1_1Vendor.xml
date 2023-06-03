@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1rentCar_1_1Vendor" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::rentCar::Vendor</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1aad52b53bf50dec12f9c8574b4f9f2ee9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_lib.rentCar.Vendor.vendorId</definition>
+        <argsstring></argsstring>
+        <name>vendorId</name>
+        <briefdescription>
+<para>The unique identifier of the vendor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="29" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a722d18c119c4a61177ea09073df69049" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.rentCar.Vendor.vendorName</definition>
+        <argsstring></argsstring>
+        <name>vendorName</name>
+        <briefdescription>
+<para>The name of the vendor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="33" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1ad80aa4c45b4617e9e11a2df0cd5f18a4" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.rentCar.Vendor.contactInformation</definition>
+        <argsstring></argsstring>
+        <name>contactInformation</name>
+        <briefdescription>
+<para>The contact information of the vendor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="37" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1ac9e34167fd637f4a3cbedd94c40c7b84" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref> &gt;</type>
+        <definition>List&lt;Car&gt; ce204_hw4_lib.rentCar.Vendor.cars</definition>
+        <argsstring></argsstring>
+        <name>cars</name>
+        <briefdescription>
+<para>The list of cars associated with the vendor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="41" column="14" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a8d8a1ff661a59622a6936728dc3379c0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ce204_hw4_lib.rentCar.Vendor.rentalCost</definition>
+        <argsstring></argsstring>
+        <name>rentalCost</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The rental cost for the vendor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="45" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a6bf01c37a4a40865534bb3dabf5d3de3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_lib.rentCar.Vendor.Vendor</definition>
+        <argsstring>(int vendorId, String vendorName, String contactInformation)</argsstring>
+        <name>Vendor</name>
+        <param>
+          <type>int</type>
+          <declname>vendorId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>vendorName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>contactInformation</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classce204__hw4__lib_1_1rentCar_1_1Vendor" kindref="compound">Vendor</ref> object with the specified details. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This constructor creates a Vendor object with the provided vendor ID,
+   vendor name, and contact information. It also initializes an empty
+   list of cars.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vendorId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the vendor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vendorName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the vendor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contactInformation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The contact information of the vendor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="58" column="8" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a6cf93b69fd33fc5b651e69278ce44963" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_lib.rentCar.Vendor.getVendorId</definition>
+        <argsstring>()</argsstring>
+        <name>getVendorId</name>
+        <briefdescription>
+<para>Retrieves the vendor ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method returns the ID of the vendor.
+</verbatim> <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vendor ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="72" column="12" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a641c6fb6a87156dd689437e802a651e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.rentCar.Vendor.getVendorName</definition>
+        <argsstring>()</argsstring>
+        <name>getVendorName</name>
+        <briefdescription>
+<para>Retrieves the vendor name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method returns the name of the vendor.
+</verbatim> <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vendor name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="83" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1ad3acbedf1ad5c0ad60859c9c39433542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.rentCar.Vendor.getContactInformation</definition>
+        <argsstring>()</argsstring>
+        <name>getContactInformation</name>
+        <briefdescription>
+<para>Retrieves the contact information of the vendor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method returns the contact information of the vendor.
+</verbatim> <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contact information of the vendor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="94" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a4dd4544b23de714ea6170d31cf14ac1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ce204_hw4_lib.rentCar.Vendor.calculateRentalCost</definition>
+        <argsstring>(int rentalDuration, String carType)</argsstring>
+        <name>calculateRentalCost</name>
+        <param>
+          <type>int</type>
+          <declname>rentalDuration</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>carType</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the rental cost based on the rental duration and car type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method calculates the rental cost by multiplying the base price
+   of the car type with the rental duration.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rentalDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the rental in days. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>carType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the car (e.g., &quot;economic&quot;, &quot;luxury&quot;, &quot;suv&quot;, &quot;sports&quot;). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>calculated rental cost. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="109" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="109" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a48277b56c4cd213f98e48b4fe4a28d97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ce204_hw4_lib.rentCar.Vendor.getRentalCost</definition>
+        <argsstring>()</argsstring>
+        <name>getRentalCost</name>
+        <briefdescription>
+<para>Retrieves the rental cost. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method returns the rental cost calculated by the previous call to
+   calculateRentalCost().
+</verbatim> <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rental cost. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="134" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1aa5c3b00bc23afa0b2202979ac383f29f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.rentCar.Vendor.addCar</definition>
+        <argsstring>(Car car)</argsstring>
+        <name>addCar</name>
+        <param>
+          <type><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref></type>
+          <declname>car</declname>
+        </param>
+        <briefdescription>
+<para>Adds a car to the vendor&apos;s inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method adds the specified car to the vendor&apos;s inventory.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>car</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The car to be added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="145" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a9776b7db0e2ccccc8c364b480f23e1cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.rentCar.Vendor.removeCar</definition>
+        <argsstring>(Car car)</argsstring>
+        <name>removeCar</name>
+        <param>
+          <type><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref></type>
+          <declname>car</declname>
+        </param>
+        <briefdescription>
+<para>Removes a car from the vendor&apos;s inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method removes the specified car from the vendor&apos;s inventory.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>car</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The car to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="156" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1rentCar_1_1Vendor_1aa9c1bccb34efccd0b002cd99ee5488ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ce204_hw4_lib.rentCar.Vendor.hasCar</definition>
+        <argsstring>(Car car)</argsstring>
+        <name>hasCar</name>
+        <param>
+          <type><ref refid="classce204__hw4__lib_1_1rentCar_1_1Car" kindref="compound">Car</ref></type>
+          <declname>car</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the vendor has a specific car in their inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method checks if the specified car is present in the vendor&apos;s
+   inventory.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>car</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The car to be checked. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the vendor has the car, false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="169" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="169" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a car rental vendor. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>   This class represents a car rental vendor and provides methods to
+   manage and calculate rental costs for cars.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" line="25" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/rentCar/Vendor.java" bodystart="25" bodyend="172"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1aa5c3b00bc23afa0b2202979ac383f29f" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>addCar</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a4dd4544b23de714ea6170d31cf14ac1a" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>calculateRentalCost</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1ac9e34167fd637f4a3cbedd94c40c7b84" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>cars</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1ad80aa4c45b4617e9e11a2df0cd5f18a4" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>contactInformation</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1ad3acbedf1ad5c0ad60859c9c39433542" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>getContactInformation</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a48277b56c4cd213f98e48b4fe4a28d97" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>getRentalCost</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a6cf93b69fd33fc5b651e69278ce44963" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>getVendorId</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a641c6fb6a87156dd689437e802a651e1" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>getVendorName</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1aa9c1bccb34efccd0b002cd99ee5488ae" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>hasCar</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a9776b7db0e2ccccc8c364b480f23e1cc" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>removeCar</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a8d8a1ff661a59622a6936728dc3379c0" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>rentalCost</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a6bf01c37a4a40865534bb3dabf5d3de3" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>Vendor</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1aad52b53bf50dec12f9c8574b4f9f2ee9" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>vendorId</name></member>
+      <member refid="classce204__hw4__lib_1_1rentCar_1_1Vendor_1a722d18c119c4a61177ea09073df69049" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::rentCar::Vendor</scope><name>vendorName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

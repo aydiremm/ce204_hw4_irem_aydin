@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__lib" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_lib</compoundname>
+    <innernamespace refid="namespacece204__hw4__lib_1_1payment">ce204_hw4_lib::payment</innernamespace>
+    <innernamespace refid="namespacece204__hw4__lib_1_1rentCar">ce204_hw4_lib::rentCar</innernamespace>
+    <innernamespace refid="namespacece204__hw4__lib_1_1reservation">ce204_hw4_lib::reservation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

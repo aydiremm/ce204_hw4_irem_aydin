@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="App_8java" kind="file" language="Java">
+    <compoundname>App.java</compoundname>
+    <innerclass refid="classce204__hw4__app_1_1App" prot="public">ce204_hw4_app::App</innerclass>
+    <innernamespace refid="namespacece204__hw4__app">ce204_hw4_app</innernamespace>
+    <briefdescription>
+<para>Contains the application class for the car rental system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_app;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.ArrayList;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Scanner;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacece204__hw4__app" kindref="compound">ce204_hw4_app</ref>.<ref refid="namespacece204__hw4__app_1_1Menus" kindref="compound">Menus</ref>.*;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ce204_hw4_lib.rentCar.Car;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ce204_hw4_lib.rentCar.Vendor;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classce204__hw4__app_1_1App" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;Car&gt;<sp/>cars;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;Vendor&gt;<sp/>vendors;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classce204__hw4__app_1_1App_1a766f5556ee1c07396063bc54c800e1f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1Menu" kindref="compound">Menu</ref><sp/><ref refid="classce204__hw4__app_1_1App_1a766f5556ee1c07396063bc54c800e1f6" kindref="member">selectedMenu</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1MainMenu" kindref="compound">MainMenu</ref><sp/>mainMenu;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1VendorMenu" kindref="compound">VendorMenu</ref><sp/>vendorMenu;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1UserMenu" kindref="compound">UserMenu</ref><sp/>userMenu;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classce204__hw4__app_1_1App_1ae059ebde02c55adf77d895f9e03bcfe2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Scanner<sp/><ref refid="classce204__hw4__app_1_1App_1ae059ebde02c55adf77d895f9e03bcfe2" kindref="member">scanner</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classce204__hw4__app_1_1App_1a1862c5ed69471beb57061a9df9400f72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1App_1a1862c5ed69471beb57061a9df9400f72" kindref="member">App</ref>(Scanner<sp/><ref refid="classce204__hw4__app_1_1App_1ae059ebde02c55adf77d895f9e03bcfe2" kindref="member">scanner</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.scanner<sp/>=<sp/><ref refid="classce204__hw4__app_1_1App_1ae059ebde02c55adf77d895f9e03bcfe2" kindref="member">scanner</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cars<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArrayList&lt;&gt;();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vendors<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArrayList&lt;&gt;();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mainMenu<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1MainMenu" kindref="compound">MainMenu</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vendorMenu<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1VendorMenu" kindref="compound">VendorMenu</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>userMenu<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Menus_1_1UserMenu" kindref="compound">UserMenu</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1App_1a766f5556ee1c07396063bc54c800e1f6" kindref="member">selectedMenu</ref><sp/>=<sp/>mainMenu;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classce204__hw4__app_1_1App_1a09751ceb690d98d4e993b23fb3d584ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1App_1a09751ceb690d98d4e993b23fb3d584ac" kindref="member">runMenu</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="classce204__hw4__app_1_1Main" kindref="compound">Main</ref>.<ref refid="classce204__hw4__app_1_1Main_1a54832fe50629736e52f49bef3c8421e1" kindref="member">isRunning</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1App_1a766f5556ee1c07396063bc54c800e1f6" kindref="member">selectedMenu</ref>.<ref refid="classce204__hw4__app_1_1Menus_1_1Menu_1afddd026a97261b7f8d1573a9d12b574a" kindref="member">run</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classce204__hw4__app_1_1App_1a02856f89c949919b7e20aac2e0cb4ae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Car&gt;<sp/><ref refid="classce204__hw4__app_1_1App_1a02856f89c949919b7e20aac2e0cb4ae6" kindref="member">getCars</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cars;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classce204__hw4__app_1_1App_1ae9a397f2a6d8c508cba3b63405254cb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Vendor&gt;<sp/><ref refid="classce204__hw4__app_1_1App_1ae9a397f2a6d8c508cba3b63405254cb3" kindref="member">getVendors</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vendors;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classce204__hw4__app_1_1App_1ac94655a70cb3de5b193bf05248335ddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1App_1ac94655a70cb3de5b193bf05248335ddd" kindref="member">setMenu</ref>(<ref refid="classce204__hw4__app_1_1Menus_1_1Menu" kindref="compound">Menu</ref><sp/>menu)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.selectedMenu<sp/>=<sp/>menu;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classce204__hw4__app_1_1App_1a45b1be5449020dce05f62c29c1684558" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1App_1a45b1be5449020dce05f62c29c1684558" kindref="member">setMainMenu</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1App_1a766f5556ee1c07396063bc54c800e1f6" kindref="member">selectedMenu</ref><sp/>=<sp/>mainMenu;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classce204__hw4__app_1_1App_1a08352aeacaf5af0418b9a78f95488fc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1App_1a08352aeacaf5af0418b9a78f95488fc4" kindref="member">setVendorMenu</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1App_1a766f5556ee1c07396063bc54c800e1f6" kindref="member">selectedMenu</ref><sp/>=<sp/>vendorMenu;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="classce204__hw4__app_1_1App_1ae4b4a88655bef56183426ac0efabb0e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1App_1ae4b4a88655bef56183426ac0efabb0e2" kindref="member">setUserMenu</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1App_1a766f5556ee1c07396063bc54c800e1f6" kindref="member">selectedMenu</ref><sp/>=<sp/>userMenu;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/App.java"/>
+  </compounddef>
+</doxygen>

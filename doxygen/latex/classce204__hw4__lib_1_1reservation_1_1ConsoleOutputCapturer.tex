@@ -1,0 +1,103 @@
+\hypertarget{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Console\+Output\+Capturer Class Reference}
+\label{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer}\index{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer@{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer}}
+
+
+A utility class for capturing console output.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_a7a70153f9220f684226da7a39843b247}{start}} ()
+\begin{DoxyCompactList}\small\item\em Starts capturing console output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_a04e81ce6b7fb4423334f41cacbd8c649}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops capturing console output. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_aa2c16a94d07c2bb014b31f83a816591f}{get\+Output}} ()
+\begin{DoxyCompactList}\small\item\em Gets the captured console output as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class for capturing console output. 
+
+Definition at line 20 of file Console\+Output\+Capturer.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_aa2c16a94d07c2bb014b31f83a816591f}\label{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_aa2c16a94d07c2bb014b31f83a816591f}} 
+\index{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer@{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!ce204\_hw4\_lib.reservation.ConsoleOutputCapturer@{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer}}
+\doxysubsubsection{\texorpdfstring{getOutput()}{getOutput()}}
+{\footnotesize\ttfamily String ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Console\+Output\+Capturer.\+get\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the captured console output as a string. 
+
+\begin{DoxyReturn}{Returns}
+The captured console output. 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Console\+Output\+Capturer.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                               \{}
+\DoxyCodeLine{69         \textcolor{keywordflow}{return} outputStream.toString().trim();}
+\DoxyCodeLine{70     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_a7a70153f9220f684226da7a39843b247}\label{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_a7a70153f9220f684226da7a39843b247}} 
+\index{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer@{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer}!start@{start}}
+\index{start@{start}!ce204\_hw4\_lib.reservation.ConsoleOutputCapturer@{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Console\+Output\+Capturer.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts capturing console output. 
+
+
+
+Definition at line 47 of file Console\+Output\+Capturer.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                         \{}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         outputStream = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{50         originalPrintStream = System.out;}
+\DoxyCodeLine{51         customPrintStream = \textcolor{keyword}{new} PrintStream(outputStream);}
+\DoxyCodeLine{52         System.setOut(customPrintStream);}
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_a04e81ce6b7fb4423334f41cacbd8c649}\label{classce204__hw4__lib_1_1reservation_1_1ConsoleOutputCapturer_a04e81ce6b7fb4423334f41cacbd8c649}} 
+\index{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer@{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer}!stop@{stop}}
+\index{stop@{stop}!ce204\_hw4\_lib.reservation.ConsoleOutputCapturer@{ce204\_hw4\_lib.reservation.ConsoleOutputCapturer}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Console\+Output\+Capturer.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops capturing console output. 
+
+
+
+Definition at line 58 of file Console\+Output\+Capturer.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                        \{}
+\DoxyCodeLine{59         System.out.flush();}
+\DoxyCodeLine{60         System.setOut(originalPrintStream);}
+\DoxyCodeLine{61         customPrintStream.close();}
+\DoxyCodeLine{62     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/reservation/\mbox{\hyperlink{ConsoleOutputCapturer_8java}{Console\+Output\+Capturer.\+java}}\end{DoxyCompactItemize}

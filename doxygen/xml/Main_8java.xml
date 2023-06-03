@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Main_8java" kind="file" language="Java">
+    <compoundname>Main.java</compoundname>
+    <innerclass refid="classce204__hw4__app_1_1Main" prot="public">ce204_hw4_app::Main</innerclass>
+    <innernamespace refid="namespacece204__hw4__app">ce204_hw4_app</innernamespace>
+    <briefdescription>
+<para>Contains the main package for the Car Rental Management System application. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_app;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Scanner;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classce204__hw4__app_1_1Main" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__app_1_1Main" kindref="compound">Main</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classce204__hw4__app_1_1Main_1af8df6ed8fd59f8d64274b945732becd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref><sp/><ref refid="classce204__hw4__app_1_1Main_1af8df6ed8fd59f8d64274b945732becd4" kindref="member">app</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classce204__hw4__app_1_1Main_1a54832fe50629736e52f49bef3c8421e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Main_1a54832fe50629736e52f49bef3c8421e1" kindref="member">isRunning</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classce204__hw4__app_1_1Main_1a475412a7b82bfdc0a705a2c5c7693f4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1Main_1a475412a7b82bfdc0a705a2c5c7693f4d" kindref="member">main</ref>(String[]<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1Main_1af8df6ed8fd59f8d64274b945732becd4" kindref="member">app</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Scanner(System.in));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classce204__hw4__app_1_1Main_1af8df6ed8fd59f8d64274b945732becd4" kindref="member">app</ref>.<ref refid="classce204__hw4__app_1_1App_1a09751ceb690d98d4e993b23fb3d584ac" kindref="member">runMenu</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/Main.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CreditCardPaymentStrategy.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_lib.payment</a> &gt; <span class="el_source">CreditCardPaymentStrategy.java</span></div><h1>CreditCardPaymentStrategy.java</h1><pre class="source lang-java linenums">/**
+  @file CreditCardPaymentStrategy.java
+  @brief Contains classes related to payment processing.
+ */
+/**
+@package ce204_hw4_lib.payment
+@brief The ce204_hw4_lib.payment package contains all the classes and files related to the Rent Car App.
+*/
+package ce204_hw4_lib.payment;
+
+/**
+ * @class CreditCardPaymentStrategy
+ * @brief The CreditCardPaymentStrategy class represents a payment strategy for
+ *        credit card payments.
+ */
+public class CreditCardPaymentStrategy implements PaymentStrategy {
+
+	/**
+	 * @brief The card number associated with the account.
+	 */
+	private String cardNumber;
+	/**
+	 * @brief The expiration date of the card.
+	 */
+	private String expirationDate;
+	/**
+	 * @brief The CVV (Card Verification Value) of the card.
+	 */
+	private String cvv;
+
+	/**
+	 * @brief Constructs a CreditCardPaymentStrategy object with the specified card
+	 *        number, expiration date, and CVV.
+	 *
+	 * @param cardNumber     the credit card number
+	 * @param expirationDate the expiration date of the credit card
+	 * @param cvv            the CVV code of the credit card
+	 */
+<span class="fc" id="L39">	public CreditCardPaymentStrategy(String cardNumber, String expirationDate, String cvv) {</span>
+<span class="fc" id="L40">		this.cardNumber = cardNumber;</span>
+<span class="fc" id="L41">		this.expirationDate = expirationDate;</span>
+<span class="fc" id="L42">		this.cvv = cvv;</span>
+<span class="fc" id="L43">	}</span>
+
+	/**
+	 * @brief Makes a payment using the credit card payment strategy.
+	 *
+	 * @param amount the amount to be paid
+	 */
+	public void pay(double amount) {
+<span class="fc" id="L51">		System.out.println(&quot;Paying $&quot; + amount + &quot; with Credit Card: &quot; + cardNumber);</span>
+		// Additional code for processing credit card payment
+<span class="fc" id="L53">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

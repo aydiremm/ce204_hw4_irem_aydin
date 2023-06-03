@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VendorMenu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ce204_hw4</a> &gt; <a href="index.source.html" class="el_package">ce204_hw4_app.Menus</a> &gt; <span class="el_source">VendorMenu.java</span></div><h1>VendorMenu.java</h1><pre class="source lang-java linenums">/**
+  @file VendorMenu.java
+  @brief Represents a menu for vendor-related actions in the car rental application.
+ */
+/**
+
+@package ce204_hw4_app.Menus
+@brief The ce204_hw4_app.Menus package contains all the classes and files related to the Rent Car App.
+*/
+package ce204_hw4_app.Menus;
+
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Scanner;
+
+import ce204_hw4_app.App;
+import ce204_hw4_lib.rentCar.Car;
+import ce204_hw4_lib.rentCar.CarFactory;
+import ce204_hw4_lib.rentCar.Vendor;
+
+
+/**
+ * @class VendorMenu
+ * @brief Represents a menu for vendor-related actions in the car rental application.
+ */
+public class VendorMenu extends Menu {
+	/**
+	 * @brief List of cars available in the system.
+	 */
+  private List&lt;Car&gt; cars;
+  /**
+   * @brief List of vendors in the system.
+   */
+  private List&lt;Vendor&gt; vendors;
+
+  /**
+     * @brief Constructs a new VendorMenu object.
+     *
+     * @param app The App object representing the car rental application.
+     */
+  public VendorMenu(App app) {
+<span class="fc" id="L42">    super(app);</span>
+<span class="fc" id="L43">    cars = app.getCars();</span>
+<span class="fc" id="L44">    vendors = app.getVendors();</span>
+<span class="fc" id="L45">  }</span>
+  /**
+   * @brief Executes the main functionality of the class.
+   *
+   * @details This method represents the main entry point of the class and is responsible for executing its core functionality.
+   * It displays a menu for vendors, allowing them to add or remove cars, or exit the menu.
+   * The user's choice is read from the input using a Scanner object.
+   * Based on the chosen option, the corresponding method is called to perform the requested action.
+   * The loop continues until the user chooses to exit the menu.
+   */
+  @Override
+  public void run() {
+<span class="fc" id="L57">    boolean exitVendorMenu = false;</span>
+
+<span class="fc bfc" id="L59" title="All 2 branches covered.">    while (!exitVendorMenu) {</span>
+<span class="fc" id="L60">      System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L61">      System.out.println(&quot;Vendor Menu&quot;);</span>
+<span class="fc" id="L62">      System.out.println(&quot;1. Add Car&quot;);</span>
+<span class="fc" id="L63">      System.out.println(&quot;2. Remove Car&quot;);</span>
+<span class="fc" id="L64">      System.out.println(&quot;3. Exit&quot;);</span>
+<span class="fc" id="L65">      System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L66">      System.out.print(&quot;Enter your choice: &quot;);</span>
+<span class="fc" id="L67">      int choice = scanner.nextInt();</span>
+<span class="fc" id="L68">      scanner.nextLine(); // Consume the newline character</span>
+
+<span class="fc bfc" id="L70" title="All 4 branches covered.">      switch (choice) {</span>
+        case 1:
+<span class="fc" id="L72">          addCar();</span>
+<span class="fc" id="L73">          break;</span>
+
+        case 2:
+<span class="fc" id="L76">          removeCar();</span>
+<span class="fc" id="L77">          break;</span>
+
+        case 3:
+<span class="fc" id="L80">          exitVendorMenu = true;</span>
+<span class="fc" id="L81">          System.out.println(&quot;Exiting Vendor Menu...&quot;);</span>
+<span class="fc" id="L82">          break;</span>
+
+        default:
+<span class="fc" id="L85">          System.out.println(&quot;Invalid choice. Please try again.&quot;);</span>
+          break;
+      }
+<span class="fc" id="L88">    }</span>
+
+    // Return to the role selection menu after exiting the vendor menu
+<span class="fc" id="L91">    app.setMainMenu();</span>
+<span class="fc" id="L92">  }</span>
+
+
+
+
+  /**
+   * @brief Prompts the user for car and vendor information and adds a car to the system.
+   */
+  private void addCar() {
+<span class="fc" id="L101">    System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L102">    System.out.println(&quot;Adding Car&quot;);</span>
+    // Prompt for car information
+<span class="fc" id="L104">    System.out.print(&quot;Enter car type (economic/luxury/suv/sports): &quot;);</span>
+<span class="fc" id="L105">    String carType = scanner.nextLine();</span>
+<span class="fc" id="L106">    System.out.print(&quot;Enter car brand: &quot;);</span>
+<span class="fc" id="L107">    String brand = scanner.nextLine();</span>
+<span class="fc" id="L108">    System.out.print(&quot;Enter car model: &quot;);</span>
+<span class="fc" id="L109">    String model = scanner.nextLine();</span>
+<span class="fc" id="L110">    System.out.print(&quot;Enter car year: &quot;);</span>
+<span class="fc" id="L111">    int year = scanner.nextInt();</span>
+<span class="fc" id="L112">    scanner.nextLine(); // Consume the newline character</span>
+<span class="fc" id="L113">    System.out.print(&quot;Enter car price: &quot;);</span>
+<span class="fc" id="L114">    double price = scanner.nextDouble();</span>
+<span class="fc" id="L115">    scanner.nextLine(); // Consume the newline character</span>
+    // Prompt for vendor information
+<span class="fc" id="L117">    System.out.print(&quot;Enter vendor ID: &quot;);</span>
+<span class="fc" id="L118">    int vendorId = scanner.nextInt();</span>
+<span class="fc" id="L119">    scanner.nextLine(); // Consume the newline character</span>
+<span class="fc" id="L120">    System.out.print(&quot;Enter vendor name: &quot;);</span>
+<span class="fc" id="L121">    String vendorName = scanner.nextLine();</span>
+<span class="fc" id="L122">    System.out.print(&quot;Enter vendor contact information: &quot;);</span>
+<span class="fc" id="L123">    String contactInformation = scanner.nextLine();</span>
+    // Create car using CarFactory
+<span class="fc" id="L125">    Car car = CarFactory.createCar(carType, brand, model, year);</span>
+
+<span class="pc bpc" id="L127" title="1 of 2 branches missed.">    if (car != null) {</span>
+<span class="fc" id="L128">      car.setPrice(price);</span>
+<span class="fc" id="L129">      cars.add(car);</span>
+      // Create vendor
+<span class="fc" id="L131">      Vendor vendor = new Vendor(vendorId, vendorName, contactInformation);</span>
+<span class="fc" id="L132">      car.setVendor(vendor);</span>
+<span class="fc" id="L133">      vendor.addCar(car);</span>
+<span class="fc" id="L134">      vendors.add(vendor);</span>
+<span class="fc" id="L135">      System.out.println(&quot;Car added successfully!&quot;);</span>
+    }
+<span class="fc" id="L137">  }</span>
+
+  /**
+   * @brief Prompts the user for the car number to remove and removes the corresponding car from the system.
+   */
+  private void removeCar() {
+<span class="fc" id="L143">    System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L144">    System.out.println(&quot;Removing Car&quot;);</span>
+    // Display available cars for selection
+<span class="fc" id="L146">    System.out.println(&quot;\nAvailable Cars:&quot;);</span>
+
+<span class="fc bfc" id="L148" title="All 2 branches covered.">    for (int i = 0; i &lt; cars.size(); i++) {</span>
+<span class="fc" id="L149">      System.out.println((i + 1) + &quot;. &quot; + cars.get(i).getBrand() + &quot; &quot; + cars.get(i).getModel());</span>
+    }
+
+    // Prompt for car selection
+<span class="fc" id="L153">    System.out.print(&quot;\nEnter the number of the car to remove: &quot;);</span>
+<span class="fc" id="L154">    String carNumberStr = scanner.nextLine();</span>
+    int carNumber;
+
+    try {
+<span class="fc" id="L158">      carNumber = Integer.parseInt(carNumberStr);</span>
+
+      // Check if the car number is valid
+<span class="pc bpc" id="L161" title="1 of 4 branches missed.">      if (carNumber &gt;= 1 &amp;&amp; carNumber &lt;= cars.size()) {</span>
+<span class="fc" id="L162">        Car carToRemove = cars.get(carNumber - 1);</span>
+        // Remove the car from the list of cars and its associated vendor
+<span class="fc" id="L164">        cars.remove(carToRemove);</span>
+
+<span class="fc bfc" id="L166" title="All 2 branches covered.">        for (Vendor vendor : vendors) {</span>
+<span class="pc bpc" id="L167" title="1 of 2 branches missed.">          if (vendor.hasCar(carToRemove)) {</span>
+<span class="fc" id="L168">            vendor.removeCar(carToRemove);</span>
+          }
+<span class="fc" id="L170">        }</span>
+
+<span class="fc" id="L172">        System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L173">        System.out.println(&quot;Car removed successfully!&quot;);</span>
+<span class="fc" id="L174">      } else {</span>
+<span class="fc" id="L175">        System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L176">        System.out.println(&quot;Invalid car number!&quot;);</span>
+      }
+<span class="fc" id="L178">    } catch (Exception e) {</span>
+<span class="fc" id="L179">      System.out.println(&quot;------------------------------------------------&quot;);</span>
+<span class="fc" id="L180">      System.out.println(&quot;Invalid car number!&quot;);</span>
+<span class="fc" id="L181">    }</span>
+<span class="fc" id="L182">  }</span>
+
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1reservation_1_1ReservationManager" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::reservation::ReservationManager</compoundname>
+    <basecompoundref refid="interfacece204__hw4__lib_1_1reservation_1_1Subject" prot="public" virt="non-virtual">ce204_hw4_lib.reservation.Subject</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a3b76d21bd38281948e38df8bb8c6e44d" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref> &gt;</type>
+        <definition>List&lt;Observer&gt; ce204_hw4_lib.reservation.ReservationManager.observers</definition>
+        <argsstring></argsstring>
+        <name>observers</name>
+        <briefdescription>
+<para>Represents a list of observers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable stores a List of <ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref> objects that are interested in receiving updates. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="30" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aa5439804bb606bc1cb9d33eab87200a8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.reservation.ReservationManager.upcomingReservation</definition>
+        <argsstring></argsstring>
+        <name>upcomingReservation</name>
+        <briefdescription>
+<para>Represents the upcoming reservation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable stores a String representing the details of the upcoming reservation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="36" column="18" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1af8a2f2b922bd47a8effa79027a0b5f1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_lib.reservation.ReservationManager.ReservationManager</definition>
+        <argsstring>()</argsstring>
+        <name>ReservationManager</name>
+        <briefdescription>
+<para>Constructs a new <ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager" kindref="compound">ReservationManager</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="41" column="10" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aa4eef76dc573efb63892397b96eb443e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref> &gt;</type>
+        <definition>List&lt;Observer&gt; ce204_hw4_lib.reservation.ReservationManager.getObservers</definition>
+        <argsstring>()</argsstring>
+        <name>getObservers</name>
+        <briefdescription>
+<para>Returns the list of observers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The list of observers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="50" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a4bf8ecb5e021b11d4680f368a645f0f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.reservation.ReservationManager.registerObserver</definition>
+        <argsstring>(Observer observer)</argsstring>
+        <name>registerObserver</name>
+        <reimplements refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a2d08a95bd94c013432803359f2fb8df1">registerObserver</reimplements>
+        <param>
+          <type><ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref></type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+<para>Registers an observer to receive updates from the <ref refid="interfacece204__hw4__lib_1_1reservation_1_1Subject" kindref="compound">Subject</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The observer to register. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="54" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a0b7af25d0d6b609170bdaab04a8c6382" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.reservation.ReservationManager.removeObserver</definition>
+        <argsstring>(Observer observer)</argsstring>
+        <name>removeObserver</name>
+        <reimplements refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a1327375ffdaf2f056ef053f235e860f0">removeObserver</reimplements>
+        <param>
+          <type><ref refid="interfacece204__hw4__lib_1_1reservation_1_1Observer" kindref="compound">Observer</ref></type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+<para>Unregisters an observer from receiving updates from the <ref refid="interfacece204__hw4__lib_1_1reservation_1_1Subject" kindref="compound">Subject</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The observer to unregister. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="59" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a72319cb172f9de5c1f5e7a82aa44c1c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.reservation.ReservationManager.notifyObservers</definition>
+        <argsstring>(String message)</argsstring>
+        <name>notifyObservers</name>
+        <reimplements refid="interfacece204__hw4__lib_1_1reservation_1_1Subject_1a64a1e5580fdd319944c7d00906a564c3">notifyObservers</reimplements>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Notifies all registered observers with the given message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to notify observers with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="63" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="63" bodyend="67"/>
+        <referencedby refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aaa9f85811f6a9cf5dee0485ca2e8369c" compoundref="ReservationManager_8java" startline="73" endline="76">ce204_hw4_lib.reservation.ReservationManager.setReservation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aaa9f85811f6a9cf5dee0485ca2e8369c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.reservation.ReservationManager.setReservation</definition>
+        <argsstring>(String reservation)</argsstring>
+        <name>setReservation</name>
+        <param>
+          <type>String</type>
+          <declname>reservation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the upcoming reservation and notifies the observers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reservation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The upcoming reservation to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="73" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="73" bodyend="76"/>
+        <references refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a72319cb172f9de5c1f5e7a82aa44c1c9" compoundref="ReservationManager_8java" startline="63" endline="67">ce204_hw4_lib.reservation.ReservationManager.notifyObservers</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager" kindref="compound">ReservationManager</ref> class manages reservations and notifies registered observers of changes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_lib.reservation.Subject</label>
+        <link refid="interfacece204__hw4__lib_1_1reservation_1_1Subject"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.reservation.ReservationManager</label>
+        <link refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ce204_hw4_lib.reservation.Subject</label>
+        <link refid="interfacece204__hw4__lib_1_1reservation_1_1Subject"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.reservation.ReservationManager</label>
+        <link refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" line="24" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ReservationManager.java" bodystart="24" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aa4eef76dc573efb63892397b96eb443e" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ReservationManager</scope><name>getObservers</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a72319cb172f9de5c1f5e7a82aa44c1c9" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ReservationManager</scope><name>notifyObservers</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a3b76d21bd38281948e38df8bb8c6e44d" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ReservationManager</scope><name>observers</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a4bf8ecb5e021b11d4680f368a645f0f4" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ReservationManager</scope><name>registerObserver</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1a0b7af25d0d6b609170bdaab04a8c6382" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ReservationManager</scope><name>removeObserver</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1af8a2f2b922bd47a8effa79027a0b5f1d" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ReservationManager</scope><name>ReservationManager</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aaa9f85811f6a9cf5dee0485ca2e8369c" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ReservationManager</scope><name>setReservation</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ReservationManager_1aa5439804bb606bc1cb9d33eab87200a8" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ReservationManager</scope><name>upcomingReservation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

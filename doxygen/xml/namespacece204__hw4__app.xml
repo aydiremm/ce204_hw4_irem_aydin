@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__app" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_app</compoundname>
+    <innerclass refid="classce204__hw4__app_1_1App" prot="public">ce204_hw4_app::App</innerclass>
+    <innerclass refid="classce204__hw4__app_1_1Main" prot="public">ce204_hw4_app::Main</innerclass>
+    <innernamespace refid="namespacece204__hw4__app_1_1Menus">ce204_hw4_app::Menus</innernamespace>
+    <briefdescription>
+<para>The ce204_hw4_apppackage contains all the classes and files related to the Rent Car app. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="namespacece204__hw4__app" kindref="compound">ce204_hw4_app</ref> package contains all the classes and files related to the Rent Car <ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref>. </para>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/App.java" line="6" column="1"/>
+  </compounddef>
+</doxygen>

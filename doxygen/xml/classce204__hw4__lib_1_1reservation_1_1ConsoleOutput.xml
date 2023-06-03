@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::reservation::ConsoleOutput</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1a7cba87d5f84ded939b907e619f6a06c7" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.reservation.ConsoleOutput.output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+<para>Represents the accumulated output for the <ref refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput" kindref="compound">ConsoleOutput</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This variable stores the accumulated output as a string.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" line="31" column="23" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1ad976953881a737e5fe1ae5445f2e6665" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ce204_hw4_lib.reservation.ConsoleOutput.print</definition>
+        <argsstring>(String message)</argsstring>
+        <name>print</name>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Prints the specified message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to be printed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" line="37" column="20" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1a4a6b1d258f15b0e20a399b5830b92ec6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String ce204_hw4_lib.reservation.ConsoleOutput.getOutput</definition>
+        <argsstring>()</argsstring>
+        <name>getOutput</name>
+        <briefdescription>
+<para>Returns the accumulated output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The accumulated output. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" line="45" column="22" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput" kindref="compound">ConsoleOutput</ref> class provides a mechanism to print messages to the console. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This file contains the definition of the <ref refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput" kindref="compound">ConsoleOutput</ref> class. </para>
+    </detaileddescription>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" line="25" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/reservation/ConsoleOutput.java" bodystart="25" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1a4a6b1d258f15b0e20a399b5830b92ec6" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutput</scope><name>getOutput</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1a7cba87d5f84ded939b907e619f6a06c7" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutput</scope><name>output</name></member>
+      <member refid="classce204__hw4__lib_1_1reservation_1_1ConsoleOutput_1ad976953881a737e5fe1ae5445f2e6665" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::reservation::ConsoleOutput</scope><name>print</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

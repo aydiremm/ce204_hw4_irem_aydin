@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::payment::CreditCardPaymentProcessor</compoundname>
+    <basecompoundref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor" prot="public" virt="non-virtual">ce204_hw4_lib.payment.PaymentProcessor</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1a17a0827f439e8ceea070ced9dd40503d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.payment.CreditCardPaymentProcessor.creditCardNumber</definition>
+        <argsstring></argsstring>
+        <name>creditCardNumber</name>
+        <briefdescription>
+<para>The credit card number associated with the account. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java" line="24" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1afb71860cb6180773c67d86f78c2c4168" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_lib.payment.CreditCardPaymentProcessor.CreditCardPaymentProcessor</definition>
+        <argsstring>(String creditCardNumber)</argsstring>
+        <name>CreditCardPaymentProcessor</name>
+        <param>
+          <type>String</type>
+          <declname>creditCardNumber</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor" kindref="compound">CreditCardPaymentProcessor</ref> object with the specified credit card number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>credit card number to be used for processing payments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java" line="31" column="10" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1abe73630a6c96a473b3a8f98ba2c427b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.payment.CreditCardPaymentProcessor.processPayment</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>processPayment</name>
+        <reimplements refid="interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor_1a694986cd3904d68398afeae23ff0d93f">processPayment</reimplements>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Processes a payment using the credit card. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to be paid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This method processes the payment using the credit card number provided during object construction. It prints the amount being paid and a success message indicating that the payment has been processed successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java" line="47" column="15" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java" bodystart="47" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class for processing credit card payments. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements the <ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor" kindref="compound">PaymentProcessor</ref> interface and provides functionality to process credit card payments. It takes a credit card number as a parameter and uses it to process the payment. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.PaymentProcessor</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.CreditCardPaymentProcessor</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.PaymentProcessor</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentProcessor"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.CreditCardPaymentProcessor</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java" line="20" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/CreditCardPaymentProcessor.java" bodystart="20" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1a17a0827f439e8ceea070ced9dd40503d" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::payment::CreditCardPaymentProcessor</scope><name>creditCardNumber</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1afb71860cb6180773c67d86f78c2c4168" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::CreditCardPaymentProcessor</scope><name>CreditCardPaymentProcessor</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1CreditCardPaymentProcessor_1abe73630a6c96a473b3a8f98ba2c427b7" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::CreditCardPaymentProcessor</scope><name>processPayment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,340 @@
+\hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor Class Reference}
+\label{classce204__hw4__lib_1_1rentCar_1_1Vendor}\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+
+
+Represents a car rental vendor.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_a6bf01c37a4a40865534bb3dabf5d3de3}{Vendor}} (int vendor\+Id, String vendor\+Name, String contact\+Information)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor}{Vendor}} object with the specified details. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_a6cf93b69fd33fc5b651e69278ce44963}{get\+Vendor\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the vendor ID. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_a641c6fb6a87156dd689437e802a651e1}{get\+Vendor\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the vendor name. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_ad3acbedf1ad5c0ad60859c9c39433542}{get\+Contact\+Information}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the contact information of the vendor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_a4dd4544b23de714ea6170d31cf14ac1a}{calculate\+Rental\+Cost}} (int rental\+Duration, String car\+Type)
+\begin{DoxyCompactList}\small\item\em Calculates the rental cost based on the rental duration and car type. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_a48277b56c4cd213f98e48b4fe4a28d97}{get\+Rental\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the rental cost. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_aa5c3b00bc23afa0b2202979ac383f29f}{add\+Car}} (\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} car)
+\begin{DoxyCompactList}\small\item\em Adds a car to the vendor\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_a9776b7db0e2ccccc8c364b480f23e1cc}{remove\+Car}} (\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} car)
+\begin{DoxyCompactList}\small\item\em Removes a car from the vendor\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor_aa9c1bccb34efccd0b002cd99ee5488ae}{has\+Car}} (\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}} car)
+\begin{DoxyCompactList}\small\item\em Checks if the vendor has a specific car in their inventory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a car rental vendor. 
+
+\begin{DoxyVerb}   This class represents a car rental vendor and provides methods to
+   manage and calculate rental costs for cars.
+\end{DoxyVerb}
+ 
+
+Definition at line 25 of file Vendor.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_a6bf01c37a4a40865534bb3dabf5d3de3}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_a6bf01c37a4a40865534bb3dabf5d3de3}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!Vendor@{Vendor}}
+\index{Vendor@{Vendor}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{Vendor()}{Vendor()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+Vendor (\begin{DoxyParamCaption}\item[{int}]{vendor\+Id,  }\item[{String}]{vendor\+Name,  }\item[{String}]{contact\+Information }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Vendor}{Vendor}} object with the specified details. 
+
+\begin{DoxyVerb}   This constructor creates a Vendor object with the provided vendor ID,
+   vendor name, and contact information. It also initializes an empty
+   list of cars.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em vendor\+Id} & The ID of the vendor. \\
+\hline
+{\em vendor\+Name} & The name of the vendor. \\
+\hline
+{\em contact\+Information} & The contact information of the vendor. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                                                               \{}
+\DoxyCodeLine{59         this.vendorId = vendorId;}
+\DoxyCodeLine{60         this.vendorName = vendorName;}
+\DoxyCodeLine{61         this.contactInformation = contactInformation;}
+\DoxyCodeLine{62         this.cars = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{63     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_aa5c3b00bc23afa0b2202979ac383f29f}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_aa5c3b00bc23afa0b2202979ac383f29f}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!addCar@{addCar}}
+\index{addCar@{addCar}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{addCar()}{addCar()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+add\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}}}]{car }\end{DoxyParamCaption})}
+
+
+
+Adds a car to the vendor\textquotesingle{}s inventory. 
+
+\begin{DoxyVerb}   This method adds the specified car to the vendor's inventory.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em car} & The car to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 145 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{145                                 \{}
+\DoxyCodeLine{146         cars.add(car);}
+\DoxyCodeLine{147     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_a4dd4544b23de714ea6170d31cf14ac1a}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_a4dd4544b23de714ea6170d31cf14ac1a}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!calculateRentalCost@{calculateRentalCost}}
+\index{calculateRentalCost@{calculateRentalCost}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{calculateRentalCost()}{calculateRentalCost()}}
+{\footnotesize\ttfamily double ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+calculate\+Rental\+Cost (\begin{DoxyParamCaption}\item[{int}]{rental\+Duration,  }\item[{String}]{car\+Type }\end{DoxyParamCaption})}
+
+
+
+Calculates the rental cost based on the rental duration and car type. 
+
+\begin{DoxyVerb}   This method calculates the rental cost by multiplying the base price
+   of the car type with the rental duration.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em rental\+Duration} & The duration of the rental in days. \\
+\hline
+{\em car\+Type} & The type of the car (e.\+g., \char`\"{}economic\char`\"{}, \char`\"{}luxury\char`\"{}, \char`\"{}suv\char`\"{}, \char`\"{}sports\char`\"{}). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & calculated rental cost. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 109 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109                                                                           \{ \textcolor{comment}{// bura yani}}
+\DoxyCodeLine{110         \textcolor{keywordtype}{double} basePrice = 0.0;}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112         \textcolor{keywordflow}{if} (carType.equalsIgnoreCase(\textcolor{stringliteral}{"{}economic"{}})) \{}
+\DoxyCodeLine{113             basePrice = 50.0;}
+\DoxyCodeLine{114         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (carType.equalsIgnoreCase(\textcolor{stringliteral}{"{}luxury"{}})) \{}
+\DoxyCodeLine{115             basePrice = 100.0;}
+\DoxyCodeLine{116         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (carType.equalsIgnoreCase(\textcolor{stringliteral}{"{}suv"{}})) \{}
+\DoxyCodeLine{117             basePrice = 80.0;}
+\DoxyCodeLine{118         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (carType.equalsIgnoreCase(\textcolor{stringliteral}{"{}sports"{}})) \{}
+\DoxyCodeLine{119             basePrice = 120.0;}
+\DoxyCodeLine{120         \}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122         rentalCost = basePrice * rentalDuration;}
+\DoxyCodeLine{123         \textcolor{keywordflow}{return} rentalCost;}
+\DoxyCodeLine{124     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_ad3acbedf1ad5c0ad60859c9c39433542}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_ad3acbedf1ad5c0ad60859c9c39433542}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!getContactInformation@{getContactInformation}}
+\index{getContactInformation@{getContactInformation}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{getContactInformation()}{getContactInformation()}}
+{\footnotesize\ttfamily String ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+get\+Contact\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the contact information of the vendor. 
+
+\begin{DoxyVerb}   This method returns the contact information of the vendor.
+\end{DoxyVerb}
+ 
+\begin{DoxyRetVals}{Return values}
+{\em The} & contact information of the vendor. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 94 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                           \{}
+\DoxyCodeLine{95         \textcolor{keywordflow}{return} contactInformation;}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_a48277b56c4cd213f98e48b4fe4a28d97}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_a48277b56c4cd213f98e48b4fe4a28d97}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!getRentalCost@{getRentalCost}}
+\index{getRentalCost@{getRentalCost}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{getRentalCost()}{getRentalCost()}}
+{\footnotesize\ttfamily double ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+get\+Rental\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the rental cost. 
+
+\begin{DoxyVerb}   This method returns the rental cost calculated by the previous call to
+   calculateRentalCost().
+\end{DoxyVerb}
+ 
+\begin{DoxyRetVals}{Return values}
+{\em The} & rental cost. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 134 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{134                                   \{}
+\DoxyCodeLine{135         \textcolor{keywordflow}{return} rentalCost;}
+\DoxyCodeLine{136     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_a6cf93b69fd33fc5b651e69278ce44963}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_a6cf93b69fd33fc5b651e69278ce44963}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!getVendorId@{getVendorId}}
+\index{getVendorId@{getVendorId}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{getVendorId()}{getVendorId()}}
+{\footnotesize\ttfamily int ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+get\+Vendor\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the vendor ID. 
+
+\begin{DoxyVerb}   This method returns the ID of the vendor.
+\end{DoxyVerb}
+ 
+\begin{DoxyRetVals}{Return values}
+{\em The} & vendor ID. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 72 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                              \{}
+\DoxyCodeLine{73         \textcolor{keywordflow}{return} vendorId;}
+\DoxyCodeLine{74     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_a641c6fb6a87156dd689437e802a651e1}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_a641c6fb6a87156dd689437e802a651e1}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!getVendorName@{getVendorName}}
+\index{getVendorName@{getVendorName}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{getVendorName()}{getVendorName()}}
+{\footnotesize\ttfamily String ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+get\+Vendor\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the vendor name. 
+
+\begin{DoxyVerb}   This method returns the name of the vendor.
+\end{DoxyVerb}
+ 
+\begin{DoxyRetVals}{Return values}
+{\em The} & vendor name. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 83 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                   \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} vendorName;}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_aa9c1bccb34efccd0b002cd99ee5488ae}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_aa9c1bccb34efccd0b002cd99ee5488ae}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!hasCar@{hasCar}}
+\index{hasCar@{hasCar}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{hasCar()}{hasCar()}}
+{\footnotesize\ttfamily boolean ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+has\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}}}]{car }\end{DoxyParamCaption})}
+
+
+
+Checks if the vendor has a specific car in their inventory. 
+
+\begin{DoxyVerb}   This method checks if the specified car is present in the vendor's
+   inventory.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em car} & The car to be checked. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the vendor has the car, false otherwise. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 169 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                                    \{}
+\DoxyCodeLine{170         \textcolor{keywordflow}{return} cars.contains(car);}
+\DoxyCodeLine{171     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1rentCar_1_1Vendor_a9776b7db0e2ccccc8c364b480f23e1cc}\label{classce204__hw4__lib_1_1rentCar_1_1Vendor_a9776b7db0e2ccccc8c364b480f23e1cc}} 
+\index{ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}!removeCar@{removeCar}}
+\index{removeCar@{removeCar}!ce204\_hw4\_lib.rentCar.Vendor@{ce204\_hw4\_lib.rentCar.Vendor}}
+\doxysubsubsection{\texorpdfstring{removeCar()}{removeCar()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+rent\+Car.\+Vendor.\+remove\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__lib_1_1rentCar_1_1Car}{Car}}}]{car }\end{DoxyParamCaption})}
+
+
+
+Removes a car from the vendor\textquotesingle{}s inventory. 
+
+\begin{DoxyVerb}   This method removes the specified car from the vendor's inventory.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em car} & The car to be removed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 156 of file Vendor.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{156                                    \{}
+\DoxyCodeLine{157         cars.remove(car);}
+\DoxyCodeLine{158     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/rent\+Car/\mbox{\hyperlink{Vendor_8java}{Vendor.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{classce204__hw4__app_1_1Menus_1_1MainMenu}{}\doxysection{ce204\+\_\+hw4\+\_\+app.\+Menus.\+Main\+Menu Class Reference}
+\label{classce204__hw4__app_1_1Menus_1_1MainMenu}\index{ce204\_hw4\_app.Menus.MainMenu@{ce204\_hw4\_app.Menus.MainMenu}}
+
+
+Represents the main menu of the Car Rental Management System.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+app.\+Menus.\+Main\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classce204__hw4__app_1_1Menus_1_1MainMenu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1MainMenu_ae63e7f18380f85233207898da22f285b}{Main\+Menu}} (\mbox{\hyperlink{classce204__hw4__app_1_1App}{App}} \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1MainMenu}{Main\+Menu}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1MainMenu_aeaf25aaa8b6fd323ce70dce815f92348}{run}} ()
+\begin{DoxyCompactList}\small\item\em Displays the main menu and handles user input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents the main menu of the Car Rental Management System. 
+
+\begin{DoxyVerb}   The MainMenu class extends the Menu class and provides functionality
+   for displaying the main menu options and handling user input. It
+   allows users to select their role (vendor or user) or choose to exit
+   the program.
+\end{DoxyVerb}
+ 
+
+Definition at line 29 of file Main\+Menu.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1Menus_1_1MainMenu_ae63e7f18380f85233207898da22f285b}\label{classce204__hw4__app_1_1Menus_1_1MainMenu_ae63e7f18380f85233207898da22f285b}} 
+\index{ce204\_hw4\_app.Menus.MainMenu@{ce204\_hw4\_app.Menus.MainMenu}!MainMenu@{MainMenu}}
+\index{MainMenu@{MainMenu}!ce204\_hw4\_app.Menus.MainMenu@{ce204\_hw4\_app.Menus.MainMenu}}
+\doxysubsubsection{\texorpdfstring{MainMenu()}{MainMenu()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+app.\+Menus.\+Main\+Menu.\+Main\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__app_1_1App}{App}}}]{app }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1MainMenu}{Main\+Menu}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & The main application object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Main\+Menu.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                              \{}
+\DoxyCodeLine{37         super(\mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}});}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+app.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__app_1_1Menus_1_1MainMenu_aeaf25aaa8b6fd323ce70dce815f92348}\label{classce204__hw4__app_1_1Menus_1_1MainMenu_aeaf25aaa8b6fd323ce70dce815f92348}} 
+\index{ce204\_hw4\_app.Menus.MainMenu@{ce204\_hw4\_app.Menus.MainMenu}!run@{run}}
+\index{run@{run}!ce204\_hw4\_app.Menus.MainMenu@{ce204\_hw4\_app.Menus.MainMenu}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+app.\+Menus.\+Main\+Menu.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the main menu and handles user input. 
+
+\begin{DoxyVerb}   The run() method prompts the user to select their role and performs
+   actions based on the selected choice. It allows users to log in as a
+   vendor, log in as a user, or exit the program.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_afddd026a97261b7f8d1573a9d12b574a}{ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu}}.
+
+
+
+Definition at line 48 of file Main\+Menu.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                       \{}
+\DoxyCodeLine{49         \textcolor{comment}{// Prompt for login role}}
+\DoxyCodeLine{50         System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{51         System.out.println(\textcolor{stringliteral}{"{}Welcome to the Car Rental Management System!"{}});}
+\DoxyCodeLine{52         System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{53         System.out.println(\textcolor{stringliteral}{"{}Please select your role:"{}});}
+\DoxyCodeLine{54         System.out.println(\textcolor{stringliteral}{"{}1. Vendor"{}});}
+\DoxyCodeLine{55         System.out.println(\textcolor{stringliteral}{"{}2. User"{}});}
+\DoxyCodeLine{56         System.out.println(\textcolor{stringliteral}{"{}3. Exit"{}});}
+\DoxyCodeLine{57         System.out.println(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{58         System.out.print(\textcolor{stringliteral}{"{}Enter your choice: "{}});}
+\DoxyCodeLine{59         \textcolor{keywordtype}{int} choice = \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_ad20792e6d4114b7358f78be1e8443edd}{scanner}}.nextInt();}
+\DoxyCodeLine{60         \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_ad20792e6d4114b7358f78be1e8443edd}{scanner}}.nextLine(); \textcolor{comment}{// Consume the newline character}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62         \textcolor{comment}{// Perform actions based on selected role}}
+\DoxyCodeLine{63         \textcolor{keywordflow}{switch} (choice) \{}
+\DoxyCodeLine{64         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{65             \textcolor{comment}{// Vendor login}}
+\DoxyCodeLine{66             \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}}.\mbox{\hyperlink{classce204__hw4__app_1_1App_a08352aeacaf5af0418b9a78f95488fc4}{setVendorMenu}}();}
+\DoxyCodeLine{67             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{70             \textcolor{comment}{// User login}}
+\DoxyCodeLine{71             \mbox{\hyperlink{classce204__hw4__app_1_1Menus_1_1Menu_a42b0a59e031e55bbc0fbd7c966e3b934}{app}}.\mbox{\hyperlink{classce204__hw4__app_1_1App_ae4b4a88655bef56183426ac0efabb0e2}{setUserMenu}}();}
+\DoxyCodeLine{72             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{75             \textcolor{comment}{// Exit the program}}
+\DoxyCodeLine{76             System.out.println(\textcolor{stringliteral}{"{}Exiting..."{}});}
+\DoxyCodeLine{77             Main.isRunning = \textcolor{keyword}{false};}
+\DoxyCodeLine{78             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{81             System.out.println(\textcolor{stringliteral}{"{}Invalid choice."{}});}
+\DoxyCodeLine{82             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{83         \}}
+\DoxyCodeLine{84     \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+app, ce204\+\_\+hw4\+\_\+app.\+Main.\+is\+Running, ce204\+\_\+hw4\+\_\+app.\+Menus.\+Menu.\+scanner, ce204\+\_\+hw4\+\_\+app.\+App.\+set\+User\+Menu(), and ce204\+\_\+hw4\+\_\+app.\+App.\+set\+Vendor\+Menu().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+app/\+Menus/\mbox{\hyperlink{MainMenu_8java}{Main\+Menu.\+java}}\end{DoxyCompactItemize}

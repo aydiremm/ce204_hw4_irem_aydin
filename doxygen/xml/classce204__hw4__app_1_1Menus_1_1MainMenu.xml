@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__app_1_1Menus_1_1MainMenu" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_app::Menus::MainMenu</compoundname>
+    <basecompoundref refid="classce204__hw4__app_1_1Menus_1_1Menu" prot="public" virt="non-virtual">ce204_hw4_app.Menus.Menu</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1MainMenu_1ae63e7f18380f85233207898da22f285b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_app.Menus.MainMenu.MainMenu</definition>
+        <argsstring>(App app)</argsstring>
+        <name>MainMenu</name>
+        <param>
+          <type><ref refid="classce204__hw4__app_1_1App" kindref="compound">App</ref></type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="classce204__hw4__app_1_1Menus_1_1MainMenu" kindref="compound">MainMenu</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The main application object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/MainMenu.java" line="36" column="8" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/MainMenu.java" bodystart="36" bodyend="38"/>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" compoundref="Menu_8java" startline="41">ce204_hw4_app.Menus.Menu.app</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__app_1_1Menus_1_1MainMenu_1aeaf25aaa8b6fd323ce70dce815f92348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_app.Menus.MainMenu.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classce204__hw4__app_1_1Menus_1_1Menu_1afddd026a97261b7f8d1573a9d12b574a">run</reimplements>
+        <briefdescription>
+<para>Displays the main menu and handles user input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   The run() method prompts the user to select their role and performs
+   actions based on the selected choice. It allows users to log in as a
+   vendor, log in as a user, or exit the program.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/MainMenu.java" line="48" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/MainMenu.java" bodystart="48" bodyend="84"/>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" compoundref="Menu_8java" startline="41">ce204_hw4_app.Menus.Menu.app</references>
+        <references refid="classce204__hw4__app_1_1Main_1a54832fe50629736e52f49bef3c8421e1" compoundref="Main_8java" startline="48">ce204_hw4_app.Main.isRunning</references>
+        <references refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" compoundref="Menu_8java" startline="45">ce204_hw4_app.Menus.Menu.scanner</references>
+        <references refid="classce204__hw4__app_1_1App_1ae4b4a88655bef56183426ac0efabb0e2" compoundref="App_8java" startline="133" endline="135">ce204_hw4_app.App.setUserMenu</references>
+        <references refid="classce204__hw4__app_1_1App_1a08352aeacaf5af0418b9a78f95488fc4" compoundref="App_8java" startline="126" endline="128">ce204_hw4_app.App.setVendorMenu</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the main menu of the Car Rental Management System. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>   The MainMenu class extends the Menu class and provides functionality
+   for displaying the main menu options and handling user input. It
+   allows users to select their role (vendor or user) or choose to exit
+   the program.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_app.Menus.MainMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1MainMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_app.Menus.Menu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1Menu"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ce204_hw4_app.App</label>
+        <link refid="classce204__hw4__app_1_1App"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>scanner</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>selectedMenu</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Scanner</label>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_app.Menus.MainMenu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1MainMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_app.Menus.Menu</label>
+        <link refid="classce204__hw4__app_1_1Menus_1_1Menu"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>app</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>scanner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_app/Menus/MainMenu.java" line="29" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_app/Menus/MainMenu.java" bodystart="29" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1a42b0a59e031e55bbc0fbd7c966e3b934" prot="protected" virt="non-virtual"><scope>ce204_hw4_app::Menus::MainMenu</scope><name>app</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1MainMenu_1ae63e7f18380f85233207898da22f285b" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::MainMenu</scope><name>MainMenu</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1a41fb46561d49b634d57ed3fd2841a10e" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::MainMenu</scope><name>Menu</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1MainMenu_1aeaf25aaa8b6fd323ce70dce815f92348" prot="public" virt="non-virtual"><scope>ce204_hw4_app::Menus::MainMenu</scope><name>run</name></member>
+      <member refid="classce204__hw4__app_1_1Menus_1_1Menu_1ad20792e6d4114b7358f78be1e8443edd" prot="protected" virt="non-virtual"><scope>ce204_hw4_app::Menus::MainMenu</scope><name>scanner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

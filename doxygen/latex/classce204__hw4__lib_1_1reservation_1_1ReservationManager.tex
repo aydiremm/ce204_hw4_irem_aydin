@@ -1,0 +1,218 @@
+\hypertarget{classce204__hw4__lib_1_1reservation_1_1ReservationManager}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager Class Reference}
+\label{classce204__hw4__lib_1_1reservation_1_1ReservationManager}\index{ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}}
+
+
+The \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager}{Reservation\+Manager}} class manages reservations and notifies registered observers of changes.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classce204__hw4__lib_1_1reservation_1_1ReservationManager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_af8a2f2b922bd47a8effa79027a0b5f1d}{Reservation\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager}{Reservation\+Manager}} object. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}} $>$ \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_aa4eef76dc573efb63892397b96eb443e}{get\+Observers}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of observers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a4bf8ecb5e021b11d4680f368a645f0f4}{register\+Observer}} (\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}} observer)
+\begin{DoxyCompactList}\small\item\em Registers an observer to receive updates from the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a0b7af25d0d6b609170bdaab04a8c6382}{remove\+Observer}} (\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}} observer)
+\begin{DoxyCompactList}\small\item\em Unregisters an observer from receiving updates from the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a72319cb172f9de5c1f5e7a82aa44c1c9}{notify\+Observers}} (String message)
+\begin{DoxyCompactList}\small\item\em Notifies all registered observers with the given message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_aaa9f85811f6a9cf5dee0485ca2e8369c}{set\+Reservation}} (String reservation)
+\begin{DoxyCompactList}\small\item\em Sets the upcoming reservation and notifies the observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager}{Reservation\+Manager}} class manages reservations and notifies registered observers of changes. 
+
+Definition at line 24 of file Reservation\+Manager.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ReservationManager_af8a2f2b922bd47a8effa79027a0b5f1d}\label{classce204__hw4__lib_1_1reservation_1_1ReservationManager_af8a2f2b922bd47a8effa79027a0b5f1d}} 
+\index{ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}!ReservationManager@{ReservationManager}}
+\index{ReservationManager@{ReservationManager}!ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}}
+\doxysubsubsection{\texorpdfstring{ReservationManager()}{ReservationManager()}}
+{\footnotesize\ttfamily ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager.\+Reservation\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager}{Reservation\+Manager}} object. 
+
+
+
+Definition at line 41 of file Reservation\+Manager.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                               \{}
+\DoxyCodeLine{42     observers = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{43   \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ReservationManager_aa4eef76dc573efb63892397b96eb443e}\label{classce204__hw4__lib_1_1reservation_1_1ReservationManager_aa4eef76dc573efb63892397b96eb443e}} 
+\index{ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}!getObservers@{getObservers}}
+\index{getObservers@{getObservers}!ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}}
+\doxysubsubsection{\texorpdfstring{getObservers()}{getObservers()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}}$>$ ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager.\+get\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of observers. 
+
+\begin{DoxyReturn}{Returns}
+The list of observers. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Reservation\+Manager.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                        \{}
+\DoxyCodeLine{51     \textcolor{keywordflow}{return} observers;}
+\DoxyCodeLine{52   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a72319cb172f9de5c1f5e7a82aa44c1c9}\label{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a72319cb172f9de5c1f5e7a82aa44c1c9}} 
+\index{ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}!notifyObservers@{notifyObservers}}
+\index{notifyObservers@{notifyObservers}!ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}}
+\doxysubsubsection{\texorpdfstring{notifyObservers()}{notifyObservers()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager.\+notify\+Observers (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})}
+
+
+
+Notifies all registered observers with the given message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to notify observers with. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject_a64a1e5580fdd319944c7d00906a564c3}{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Subject}}.
+
+
+
+Definition at line 63 of file Reservation\+Manager.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                               \{}
+\DoxyCodeLine{64     \textcolor{keywordflow}{for} (Observer observer : observers) \{}
+\DoxyCodeLine{65       observer.update(message);}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67   \}}
+
+\end{DoxyCode}
+
+
+Referenced by ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager.\+set\+Reservation().
+
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a4bf8ecb5e021b11d4680f368a645f0f4}\label{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a4bf8ecb5e021b11d4680f368a645f0f4}} 
+\index{ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager.\+register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Registers an observer to receive updates from the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to register. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject_a2d08a95bd94c013432803359f2fb8df1}{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Subject}}.
+
+
+
+Definition at line 54 of file Reservation\+Manager.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                                                   \{}
+\DoxyCodeLine{55     observers.add(observer);}
+\DoxyCodeLine{56   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a0b7af25d0d6b609170bdaab04a8c6382}\label{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a0b7af25d0d6b609170bdaab04a8c6382}} 
+\index{ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager.\+remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Observer}{Observer}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Unregisters an observer from receiving updates from the \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject}{Subject}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to unregister. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacece204__hw4__lib_1_1reservation_1_1Subject_a1327375ffdaf2f056ef053f235e860f0}{ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Subject}}.
+
+
+
+Definition at line 59 of file Reservation\+Manager.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                                 \{}
+\DoxyCodeLine{60     observers.remove(observer);}
+\DoxyCodeLine{61   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__lib_1_1reservation_1_1ReservationManager_aaa9f85811f6a9cf5dee0485ca2e8369c}\label{classce204__hw4__lib_1_1reservation_1_1ReservationManager_aaa9f85811f6a9cf5dee0485ca2e8369c}} 
+\index{ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}!setReservation@{setReservation}}
+\index{setReservation@{setReservation}!ce204\_hw4\_lib.reservation.ReservationManager@{ce204\_hw4\_lib.reservation.ReservationManager}}
+\doxysubsubsection{\texorpdfstring{setReservation()}{setReservation()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager.\+set\+Reservation (\begin{DoxyParamCaption}\item[{String}]{reservation }\end{DoxyParamCaption})}
+
+
+
+Sets the upcoming reservation and notifies the observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reservation} & The upcoming reservation to set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Reservation\+Manager.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                                  \{}
+\DoxyCodeLine{74     upcomingReservation = reservation;}
+\DoxyCodeLine{75     \mbox{\hyperlink{classce204__hw4__lib_1_1reservation_1_1ReservationManager_a72319cb172f9de5c1f5e7a82aa44c1c9}{notifyObservers}}(\textcolor{stringliteral}{"{}Upcoming reservation: "{}} + reservation);}
+\DoxyCodeLine{76   \}}
+
+\end{DoxyCode}
+
+
+References ce204\+\_\+hw4\+\_\+lib.\+reservation.\+Reservation\+Manager.\+notify\+Observers().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/reservation/\mbox{\hyperlink{ReservationManager_8java}{Reservation\+Manager.\+java}}\end{DoxyCompactItemize}

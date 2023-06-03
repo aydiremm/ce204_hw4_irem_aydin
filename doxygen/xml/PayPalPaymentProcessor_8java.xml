@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PayPalPaymentProcessor_8java" kind="file" language="Java">
+    <compoundname>PayPalPaymentProcessor.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor" prot="public">ce204_hw4_lib::payment::PayPalPaymentProcessor</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1payment">ce204_hw4_lib::payment</innernamespace>
+    <briefdescription>
+<para>Contains classes related to payment processing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.payment;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor" kindref="compound">PayPalPaymentProcessor</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor_1ae650a43434d2348a45da333b3c796217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentProcessor_1ae650a43434d2348a45da333b3c796217" kindref="member">processPayment</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amount,<sp/>String<sp/>email)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Code<sp/>to<sp/>process<sp/>PayPal<sp/>payment<sp/>goes<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Processing<sp/>PayPal<sp/>payment...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Amount:<sp/>$&quot;</highlight><highlight class="normal"><sp/>+<sp/>amount);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Email:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>email);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Payment<sp/>processed<sp/>successfully!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentProcessor.java"/>
+  </compounddef>
+</doxygen>

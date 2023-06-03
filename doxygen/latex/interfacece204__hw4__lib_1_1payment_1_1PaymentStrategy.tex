@@ -1,0 +1,64 @@
+\hypertarget{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy}{}\doxysection{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Payment\+Strategy Class Reference}
+\label{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy}\index{ce204\_hw4\_lib.payment.PaymentStrategy@{ce204\_hw4\_lib.payment.PaymentStrategy}}
+
+
+The \mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy}{Payment\+Strategy}} interface represents a payment strategy.  
+
+
+Inheritance diagram for ce204\+\_\+hw4\+\_\+lib.\+payment.\+Payment\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.177708cm]{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_ac8dc89712d14a43bf57f627d776829b1}{pay}} (double amount)
+\begin{DoxyCompactList}\small\item\em Makes a payment for the specified amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy}{Payment\+Strategy}} interface represents a payment strategy. 
+
+\begin{DoxyVerb}   It provides a common interface for implementing different payment
+   strategies.
+\end{DoxyVerb}
+ 
+
+Definition at line 18 of file Payment\+Strategy.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_ac8dc89712d14a43bf57f627d776829b1}\label{interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_ac8dc89712d14a43bf57f627d776829b1}} 
+\index{ce204\_hw4\_lib.payment.PaymentStrategy@{ce204\_hw4\_lib.payment.PaymentStrategy}!pay@{pay}}
+\index{pay@{pay}!ce204\_hw4\_lib.payment.PaymentStrategy@{ce204\_hw4\_lib.payment.PaymentStrategy}}
+\doxysubsubsection{\texorpdfstring{pay()}{pay()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+lib.\+payment.\+Payment\+Strategy.\+pay (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Makes a payment for the specified amount. 
+
+\begin{DoxyVerb}   This method is implemented by concrete payment strategies to perform
+   the payment process.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em amount} & the amount to be paid \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_a63c51b7a134d86d776119d8111e26944}{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Pay\+Pal\+Payment\+Strategy}}, \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1CreditCardPaymentStrategy_a62b6f4212d5decf0fd7ed4d4d5abb2f3}{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Credit\+Card\+Payment\+Strategy}}, and \mbox{\hyperlink{classce204__hw4__lib_1_1payment_1_1CashPaymentStrategy_ae80123d2d4cd377998732b0b1f2f16cd}{ce204\+\_\+hw4\+\_\+lib.\+payment.\+Cash\+Payment\+Strategy}}.
+
+
+
+Referenced by ce204\+\_\+hw4\+\_\+lib.\+payment.\+Reservation.\+process\+Payment().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204\+\_\+hw4/src/main/java/ce204\+\_\+hw4\+\_\+lib/payment/\mbox{\hyperlink{PaymentStrategy_8java}{Payment\+Strategy.\+java}}\end{DoxyCompactItemize}

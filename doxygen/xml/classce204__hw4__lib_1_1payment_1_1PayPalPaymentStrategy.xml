@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_lib::payment::PayPalPaymentStrategy</compoundname>
+    <basecompoundref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" prot="public" virt="non-virtual">ce204_hw4_lib.payment.PaymentStrategy</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1afdbe2bde017f269df526e10056463698" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_lib.payment.PayPalPaymentStrategy.email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <briefdescription>
+<para>The email address associated with the account. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java" line="24" column="16" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1aa76ec18889d0f7e50ca0b6d1c663f002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_lib.payment.PayPalPaymentStrategy.PayPalPaymentStrategy</definition>
+        <argsstring>(String email)</argsstring>
+        <name>PayPalPaymentStrategy</name>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy" kindref="compound">PayPalPaymentStrategy</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This constructor initializes the PayPalPaymentStrategy with the
+   provided email address.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email address associated with the PayPal account. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java" line="34" column="8" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1a63c51b7a134d86d776119d8111e26944" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_lib.payment.PayPalPaymentStrategy.pay</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>pay</name>
+        <reimplements refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_1ac8dc89712d14a43bf57f627d776829b1">pay</reimplements>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Performs the payment using the PayPal account. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   This method processes the specified payment amount using the PayPal
+   account associated with this strategy. It prints the payment amount
+   and the PayPal account email address to the console. Additional code
+   for processing the PayPal payment may be included.
+</verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to be paid. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java" line="49" column="13" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implements the PayPal payment strategy. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>   This class represents a payment strategy that allows making payments
+   using a PayPal account. The payment amount is processed with the
+   specified PayPal account.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.PayPalPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ce204_hw4_lib.payment.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy"/>
+      </node>
+      <node id="1">
+        <label>ce204_hw4_lib.payment.PayPalPaymentStrategy</label>
+        <link refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java" line="20" column="7" bodyfile="ce204_hw4/src/main/java/ce204_hw4_lib/payment/PayPalPaymentStrategy.java" bodystart="20" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1afdbe2bde017f269df526e10056463698" prot="private" virt="non-virtual"><scope>ce204_hw4_lib::payment::PayPalPaymentStrategy</scope><name>email</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1a63c51b7a134d86d776119d8111e26944" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::PayPalPaymentStrategy</scope><name>pay</name></member>
+      <member refid="classce204__hw4__lib_1_1payment_1_1PayPalPaymentStrategy_1aa76ec18889d0f7e50ca0b6d1c663f002" prot="public" virt="non-virtual"><scope>ce204_hw4_lib::payment::PayPalPaymentStrategy</scope><name>PayPalPaymentStrategy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

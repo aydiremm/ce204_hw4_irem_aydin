@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Reservation_8java" kind="file" language="Java">
+    <compoundname>Reservation.java</compoundname>
+    <innerclass refid="classce204__hw4__lib_1_1payment_1_1Reservation" prot="public">ce204_hw4_lib::payment::Reservation</innerclass>
+    <innernamespace refid="namespacece204__hw4__lib_1_1payment">ce204_hw4_lib::payment</innernamespace>
+    <briefdescription>
+<para>Contains classes related to payment processing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_lib.payment;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classce204__hw4__lib_1_1payment_1_1Reservation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__lib_1_1payment_1_1Reservation" kindref="compound">Reservation</ref><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" kindref="compound">PaymentStrategy</ref><sp/>paymentStrategy;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classce204__hw4__lib_1_1payment_1_1Reservation_1a4fd8a8f1916488a421db09f34b4a11a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1Reservation_1a4fd8a8f1916488a421db09f34b4a11a0" kindref="member">Reservation</ref>(<ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy" kindref="compound">PaymentStrategy</ref><sp/>paymentStrategy)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.paymentStrategy<sp/>=<sp/>paymentStrategy;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classce204__hw4__lib_1_1payment_1_1Reservation_1a2e72388d47d413a7d5a4a8e48dbee124" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__lib_1_1payment_1_1Reservation_1a2e72388d47d413a7d5a4a8e48dbee124" kindref="member">processPayment</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>paymentStrategy.<ref refid="interfacece204__hw4__lib_1_1payment_1_1PaymentStrategy_1ac8dc89712d14a43bf57f627d776829b1" kindref="member">pay</ref>(amount);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204_hw4/src/main/java/ce204_hw4_lib/payment/Reservation.java"/>
+  </compounddef>
+</doxygen>
