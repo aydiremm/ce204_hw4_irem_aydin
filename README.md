@@ -1136,7 +1136,8 @@ pause
 ![](assets/2023-05-25-00-57-01-image.png)
 
 
-Plantuml
-https://shorturl.at/qEHZ3
+##Plantuml
+
+- https://shorturl.at/qEHZ3
 ![Ekran görüntüsü 2023-06-03 040749](https://github.com/aydiremm/ce204_hw4_irem_aydin/assets/93348824/7d3c03ea-5430-4c4d-b632-e7a1f171f545)
 ![Ekran görüntüsü 2023-06-03 040832](https://github.com/aydiremm/ce204_hw4_irem_aydin/assets/93348824/31f6e2e8-1405-435c-9ae4-23f5d5fa29ae)
