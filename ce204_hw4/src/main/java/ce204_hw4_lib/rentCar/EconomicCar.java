@@ -1,9 +1,18 @@
+/**
+@file EconomicCar.java
+@brief This file serves as a demonstration file for the Rent Car class.
+*/
+
+/**
+@package ce204_hw4_lib.rentCar
+@brief The ce204_hw4_lib.rentCar package contains all the classes and files related to the Calculator App.
+*/
+
 package ce204_hw4_lib.rentCar;
 
 /**
- * @brief EconomicCar class.
- *
- *        This class represents an economic car, which is a type of Car.
+ * @brief EconomicCar class. This class represents an economic car, which is a
+ *        type of Car.
  */
 public class EconomicCar extends Car {
 

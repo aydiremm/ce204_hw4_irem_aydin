@@ -1,3 +1,12 @@
+/**
+  @file Subject.java
+  @brief This package contains classes related to reservations.
+ */
+/**
+@package ce204_hw4_lib.reservation
+@brief ce204_hw4_lib.reservation package contains all the classes and files related to the Rent Car App.
+*/
+
 package ce204_hw4_lib.reservation;
 
 /**

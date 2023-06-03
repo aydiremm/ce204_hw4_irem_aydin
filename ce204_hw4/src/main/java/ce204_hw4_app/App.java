@@ -1,3 +1,11 @@
+/**
+  @file App.java
+  @brief Contains the application class for the car rental system.
+ */
+/**
+@package ce204_hw4_app
+@brief The ce204_hw4_apppackage contains all the classes and files related to the Rent Car app.
+*/
 package ce204_hw4_app;
 
 import java.util.ArrayList;
@@ -8,74 +16,99 @@ import ce204_hw4_app.Menus.*;
 import ce204_hw4_lib.rentCar.Car;
 import ce204_hw4_lib.rentCar.Vendor;
 
-/**      *
- *      @name  App.java 
+/**
+ * @class App
  *
- *      @brief This is the application class.
- *      This class manages the main logic of the rental application, 
- *      listing the cars and vendors, and allowing navigation between menus.
+ * @brief This is the application class. This class manages the main logic of
+ *        the rental application, listing the cars and vendors, and allowing
+ *        navigation between menus.
+ * 
  **/
 public class App {
-	
-    private List<Car> cars;
-    private List<Vendor> vendors;
-    public Menu selectedMenu;
-    
-    private MainMenu mainMenu;
-    private VendorMenu vendorMenu;
-    private UserMenu userMenu;
-    
-    public Scanner scanner;
-    
 
-    /**
-     * @brief Constructor for the App.java class.
-     *
-     * @param scanner A Scanner object used to get user input.
-     */
+	/**
+	 * @brief List of Car objects.
+	 */
+	private List<Car> cars;
 
-    public App(Scanner scanner) {
-    	this.scanner = scanner;
-    	cars = new ArrayList<>();
-    	vendors = new ArrayList<>();
-    	mainMenu = new MainMenu(this);
-    	vendorMenu = new VendorMenu(this);
-    	userMenu = new UserMenu(this);
-    	selectedMenu = mainMenu;
-    }
-    
-    /**
-     * @brief Runs the menu and allows the user to navigate between menus.
-     */
-    public void runMenu() {
-    	while(Main.isRunning) {
-        	selectedMenu.run();
-    	}
-    }
-    
-    /**
-     * @brief Returns the list of cars.
-     *
-     * @return A list of Car objects containing the cars.
-     */
-    public List<Car> getCars() {
-    	return cars;
-    }
+	/**
+	 * @brief List of Vendor objects.
+	 */
+	private List<Vendor> vendors;
 
-    /**
-     * @brief Returns the list of vendors.
-     *
-     * @return A list of Vendor objects containing the vendors.
-     */
+	/**
+	 * @brief The currently selected menu.
+	 */
+	public Menu selectedMenu;
+
+	/**
+	 * @brief The main menu object.
+	 */
+	private MainMenu mainMenu;
+
+	/**
+	 * @brief The vendor menu object.
+	 */
+	private VendorMenu vendorMenu;
+
+	/**
+	 * @brief The user menu object.
+	 */
+	private UserMenu userMenu;
+
+	/**
+	 * @brief The user menu object.
+	 */
+	public Scanner scanner;
+
+	/**
+	 * @brief Constructor for the App.java class.
+	 *
+	 * @param scanner A Scanner object used to get user input.
+	 */
+
+	public App(Scanner scanner) {
+		this.scanner = scanner;
+		cars = new ArrayList<>();
+		vendors = new ArrayList<>();
+		mainMenu = new MainMenu(this);
+		vendorMenu = new VendorMenu(this);
+		userMenu = new UserMenu(this);
+		selectedMenu = mainMenu;
+	}
+
+	/**
+	 * @brief Runs the menu and allows the user to navigate between menus.
+	 */
+	public void runMenu() {
+		while (Main.isRunning) {
+			selectedMenu.run();
+		}
+	}
+
+	/**
+	 * @brief Returns the list of cars.
+	 *
+	 * @return A list of Car objects containing the cars.
+	 */
+	public List<Car> getCars() {
+		return cars;
+	}
+
+	/**
+	 * @brief Returns the list of vendors.
+	 *
+	 * @return A list of Vendor objects containing the vendors.
+	 */
 	public List<Vendor> getVendors() {
 		return vendors;
 	}
-    
+
 	/**
-     * @brief Sets the selected menu.
-     *
-     * @param menu The menu object to be set.
-     */
+	 * @brief Sets the selected menu.
+	 *
+	 * @param menu The menu object to be set.
+	 */
 	public void setMenu(Menu menu) {
 		this.selectedMenu = menu;
 	}
@@ -86,14 +119,14 @@ public class App {
 	public void setMainMenu() {
 		selectedMenu = mainMenu;
 	}
-	
+
 	/**
 	 * @brief Sets the vendor menu as the selected menu.
 	 */
 	public void setVendorMenu() {
 		selectedMenu = vendorMenu;
 	}
-	
+
 	/**
 	 * @brief Sets the user menu as the selected menu.
 	 */
